@@ -1,0 +1,20 @@
+name: Fehler melden
+description: Einen reproduzierbaren Fehler im Release Candidate beschreiben.
+body:
+  - type: markdown
+    attributes:
+      value: "Bitte keine Zugangsdaten, Sitzungstokens oder Kundendaten posten. Sicherheitslücken privat über Security → Report a vulnerability melden."
+  - type: input
+    id: versions
+    attributes:
+      label: Versionen
+      description: Modul, Gambio, PHP und Theme
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte und Ergebnis
+      description: Was hast du gemacht, was passiert und was erwartest du?
+    validations:
+      required: true
