@@ -26,6 +26,14 @@ Artikel schreiben, Kategorien pflegen und die Darstellung direkt im Shop gestalt
 
 Du kannst Blogkarten auch über **`[c1zz_blog]`** in unterstützte CMS-Inhalte und Produktbeschreibungen einbinden. Der Bereich **Einbinden** erzeugt den passenden Shortcode mit eigenen Widgetoptionen.
 
+## In Gambio integriert und gezielt deinstallierbar
+
+**Das Modul nutzt Gambio-eigene Funktionen so weit wie möglich und fügt sich in die vorhandene Shopstruktur ein.** Dazu gehören die native Admin-Anmeldung und Zugriffskontrolle, der Formularschutz, der Gambio-Editor, das Modul-Center und die Aufgabenverwaltung. Öffentliche Blogseiten werden über Gambios Shoplayout ausgegeben; Domain und Shop-Unterverzeichnis stammen aus der Shopkonfiguration. Installation und Deinstallation verwenden die nativen Modul- und Cacheabläufe.
+
+Der Modulcode liegt getrennt unter `GXModules/c1zz/StandaloneBlog/`. **Gambio-Kerndateien und fremde Module werden nicht verändert.** Blogartikel und Metadaten liegen in eigenen Tabellen, Bilder in einem eigenen Medienverzeichnis.
+
+**Der geführte Deinstallationsablauf nimmt den Blog wieder aus dem Betrieb:** Öffentliche Darstellung, Verwaltung und Zeitplanung werden deaktiviert. Standardmäßig bleiben Inhalte und Medien für eine Wiederinstallation erhalten. Ihre vollständige Löschung erfordert eine zusätzliche ausdrückliche Bestätigung. Die Moduldateien bleiben auch dann vorhanden. Selbst gesetzte Bloglinks und eingefügte Shortcodes in Shopinhalten solltest du anschließend entfernen. Einzelheiten stehen unter [Deinstallation](docs/INSTALLATION.md#deinstallation).
+
 ## So arbeitest du mit dem Blog
 
 **Artikel im Überblick:** Suche und Kategoriefilter helfen beim Finden. Die Statusspalte unterscheidet veröffentlichte Artikel und private Entwürfe; Bearbeitung, Freigabe und Termine sind direkt erreichbar.

@@ -1,5 +1,11 @@
 # Installation, Update und Deinstallation
 
+## Einbindung in die vorhandene Shopstruktur
+
+Das Blogmodul verwendet Gambio-eigene Funktionen so weit wie möglich: Admin-Anmeldung, native Rechte- und Formularprüfungen, Editor, Modul-Center und Aufgabenverwaltung. Die öffentlichen Seiten laufen im Gambio-Shoplayout; Domain und Shop-Unterverzeichnis werden aus der Shopkonfiguration abgeleitet. Der geführte Installations- und Deinstallationsablauf nutzt Gambios Modulverwaltung und die erforderlichen nativen Cacheabläufe.
+
+Der eigene Modulcode liegt unter `GXModules/c1zz/StandaloneBlog/`, Blogbilder unter `images/c1zz-blog/`. Artikel und Metadaten liegen in eigenen Modultabellen. Gambio-Kerndateien und fremde Module werden nicht verändert; die Shop-`.htaccess` wird nicht angepasst.
+
 ## Voraussetzungen
 
 - Ein eingerichteter Gambio-Shop mit funktionierendem Theme und Rewrite-Regeln.
@@ -62,6 +68,8 @@ Den neuen versionierten Installer hochladen, öffnen, Sicherung bestätigen und 
 **Deinstallation starten** öffnet den geführten Ablauf. Ohne zusätzlichen Löschhaken werden Darstellung, Verwaltung und Zeitplanung deaktiviert; Artikel, Entwürfe, Versionen, Kategorien, Einstellungen und Medien bleiben für eine Wiederinstallation erhalten.
 
 Die rote, zunächst ausgeschaltete Checkbox zur vollständigen Datenlöschung ist eine getrennte ausdrückliche Entscheidung. Mit ihr werden die eigenen Blogdaten und Bilder unwiderruflich entfernt. Datenbankstruktur- und Dateiänderungen sind nicht vollständig transaktional; deshalb vorher sichern. Der Modulcode bleibt für eine erneute Installation vorhanden.
+
+Nach der Deinstallation werden die öffentlichen Blogseiten auch bei erhaltenen Daten nicht mehr angezeigt. Selbst gesetzte Bloglinks in der Shopnavigation sowie eingefügte `[c1zz_blog]`-Shortcodes in CMS-Inhalten oder Produktbeschreibungen solltest du anschließend entfernen. Diese eigenen redaktionellen Einbindungen werden nicht automatisch aus Shopinhalten gelöscht. Bei einer Wiederinstallation vorhandene Veröffentlichungstermine bewusst neu planen.
 
 ## Unterstützung
 

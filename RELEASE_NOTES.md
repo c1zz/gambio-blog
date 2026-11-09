@@ -13,6 +13,14 @@ Erster öffentlicher **Release Candidate** unter MIT-Lizenz. Modulstand und Inst
 - Optionaler Beispielblog statt automatisch eingespielter Inhalte.
 - SHA-256-Prüfsumme und kryptografisch prüfbarer GitHub-Herkunftsnachweis für die komplette Installerdatei.
 
+## Einbindung in Gambio und Deinstallation
+
+**c1zz Blog nutzt Gambio-eigene Funktionen so weit wie möglich und fügt sich in die vorhandene Shopstruktur ein:** native Admin-Anmeldung, Rechte- und Formularprüfungen, Gambio-Editor, Modul-Center, Aufgabenverwaltung sowie Shoplayout und Shopkonfiguration. Installation und Deinstallation nutzen die nativen Modul- und Cacheabläufe.
+
+Der Code liegt im eigenen Verzeichnis `GXModules/c1zz/StandaloneBlog/`; Gambio-Kerndateien und fremde Module werden nicht verändert. Blogdaten und Medien haben eigene Ablagen.
+
+Über den geführten Deinstallationsablauf werden öffentliche Darstellung, Verwaltung und Zeitplanung deaktiviert. Inhalte und Medien bleiben standardmäßig für eine Wiederinstallation erhalten; ihre vollständige Löschung muss ausdrücklich zusätzlich bestätigt werden. Die Moduldateien bleiben vorhanden. Selbst gesetzte Bloglinks und eingefügte Shortcodes in Shopinhalten sind anschließend selbst zu entfernen.
+
 ## Download und Installation
 
 Den **PHP-Installer** und `SHA256SUMS` herunterladen, vor der Ausführung prüfen und nur die PHP-Datei in den Shopordner hochladen. Das GitHub-Source-Code-Archiv ist für die Installation nicht nötig.
