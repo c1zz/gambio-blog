@@ -45,6 +45,7 @@ jobs:
       - name: Verify exact committed installer
         run: python3 tools/verify_release.py
       - name: Attest complete installer from this release workflow
+        if: github.event.repository.private == false
         id: attest
         uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
         with:
@@ -56,10 +57,13 @@ jobs:
           RELEASE_TAG: ${{ github.ref_name }}
           ATTESTATION_BUNDLE: ${{ steps.attest.outputs.bundle-path }}
         run: |
-          cp -- "$ATTESTATION_BUNDLE" c1zz-blog-install-0.42.0.php.sigstore.json
+          assets=(c1zz-blog-install-0.42.0.php SHA256SUMS LICENSE)
+          if [ -n "$ATTESTATION_BUNDLE" ]; then
+            cp -- "$ATTESTATION_BUNDLE" c1zz-blog-install-0.42.0.php.sigstore.json
+            assets+=(c1zz-blog-install-0.42.0.php.sigstore.json)
+          fi
           gh release create "$RELEASE_TAG" \
             --verify-tag --prerelease \
-            --title "c1zz-blog für Gambio · 0.42.0-rc.1" \
+            --title "c1zz-blog für Gambio · 0.42.0-rc.2" \
             --notes-file RELEASE_NOTES.md \
-            c1zz-blog-install-0.42.0.php SHA256SUMS LICENSE \
-            c1zz-blog-install-0.42.0.php.sigstore.json
+            "${assets[@]}"

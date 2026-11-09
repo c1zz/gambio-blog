@@ -1,6 +1,6 @@
 # Kompatibilität und Teststand
 
-**Veröffentlichung:** `v0.42.0-rc.1` · **Modulstand:** `0.42.0` · **Stand:** 9. November 2026.
+**Veröffentlichung:** `v0.42.0-rc.2` · **Modulstand:** `0.42.0` · **Stand:** 9. November 2026.
 
 | Umgebung | Tatsächlicher Nachweis |
 |---|---|

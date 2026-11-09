@@ -20,15 +20,17 @@ Die Prüfsumme erkennt eine Veränderung gegenüber dem Vergleichswert. Werden D
 
 ### 2. Kryptografischer Herkunftsnachweis
 
-Der Release-Workflow attestiert die **gesamte unveränderte PHP-Datei**, einschließlich eingebettetem Archiv. Die Signatur verwendet die kurzlebige GitHub-Actions-/Sigstore-Identität; es liegt kein privater Signaturschlüssel im Repository.
+**Für 0.42.0-rc.2 ist kein kryptografischer Herkunftsnachweis verfügbar:** Das Repository ist privat; GitHub lehnt Artifact Attestations für diesen persönlichen privaten Repository-Typ ab. Der Release enthält Installer, Prüfsumme und Lizenz, aber kein Sigstore-Bundle. Prüfsummen ersetzen keinen Herkunftsnachweis.
 
-Mit der GitHub CLI:
+Bei öffentlichen Veröffentlichungen attestiert der Release-Workflow die **gesamte unveränderte PHP-Datei**, einschließlich eingebettetem Archiv. Die Signatur verwendet die kurzlebige GitHub-Actions-/Sigstore-Identität; es liegt kein privater Signaturschlüssel im Repository.
+
+Nur für einen tatsächlich attestierten Release mit der GitHub CLI:
 
 ```bash
 gh attestation verify c1zz-blog-install-0.42.0.php --repo c1zz/gambio-blog
 ```
 
-Der erwartete Workflow ist `c1zz/gambio-blog/.github/workflows/release.yml`. Der Nachweis gehört zum jeweiligen Release-Tag. Als zusätzliches Release-Asset wird die Sigstore-Bundle-Datei veröffentlicht; zur [Offline-Verifikation](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/verify-attestations-offline) gehören auch die passenden Vertrauensdaten.
+Bei solchen attestierten Releases ist der erwartete Workflow `c1zz/gambio-blog/.github/workflows/release.yml`. Der Nachweis gehört zum jeweiligen Release-Tag. Als zusätzliches Release-Asset wird die Sigstore-Bundle-Datei veröffentlicht; zur [Offline-Verifikation](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/verify-attestations-offline) gehören auch die passenden Vertrauensdaten.
 
 Dieser Nachweis bestätigt die Zuordnung der Datei zum GitHub-Release-Workflow. **Er ist kein unabhängiges Codeaudit, keine Identitätsprüfung einer natürlichen Person und keine Garantie für Fehlerfreiheit.** Der Workflow prüft einen bereitgestellten Installer; er behauptet keinen unabhängigen Neuaufbau aus einem separaten öffentlichen Entwicklungsrepository.
 
@@ -51,7 +53,7 @@ Die veröffentlichten Schutzmaßnahmen wurden gezielt getestet. Ein externer Pen
 
 ## Sicherheitslücke melden
 
-Bitte unter **Security → Report a vulnerability** in diesem Repository privat melden: https://github.com/c1zz/gambio-blog/security/advisories/new
+Sicherheitslücken vertraulich an den Repository-Betreiber melden. Falls **Security → Report a vulnerability** verfügbar ist, kann dieser private Meldeweg genutzt werden: https://github.com/c1zz/gambio-blog/security/advisories/new
 
 Reproduktionsschritte, betroffene Version und Auswirkung reichen zunächst aus. Keine produktiven Passwörter, Sitzungscookies oder Kundendaten übermitteln. Sicherheitsmeldungen gehören nicht in öffentliche Issues.
 

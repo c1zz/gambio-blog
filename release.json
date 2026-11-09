@@ -2,11 +2,12 @@
   "format": 1,
   "name": "c1zz-blog für Gambio",
   "module_version": "0.42.0",
-  "tag": "v0.42.0-rc.1",
+  "tag": "v0.42.0-rc.2",
   "status": "release-candidate",
   "repository": "c1zz/gambio-blog",
   "installer": "c1zz-blog-install-0.42.0.php",
   "sha256": "47cf6d0551c71199f36aa3695332f59529049700e1f1a26fd2beb3f6d67afedb",
   "bytes": 430411,
-  "package_files": 152
+  "package_files": 152,
+  "provenance": "unavailable-private-repository"
 }
