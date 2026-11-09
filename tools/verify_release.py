@@ -58,6 +58,12 @@ def inspect(root=ROOT):
             content = zipped.read(entry)
             require(hashlib.sha256(content).hexdigest() == info['sha256'], 'File checksum mismatch: ' + path)
             contents[path] = content
+    receipt = contents[PREFIX + 'version_info.php'].decode('utf-8')
+    native_version = re.search(r'^version:.*?(\d+\.\d+\.\d+)', receipt, re.M)
+    require(native_version and native_version[1] == release['module_version'], 'GX26 version receipt differs')
+    manifest = json.loads(contents[PREFIX + 'package-manifest.json'])
+    require(manifest['version'] == release['module_version'], 'Module manifest version differs')
+    require(manifest['files'] == [item for item in package['files'] if item['path'] != PREFIX + 'package-manifest.json'], 'Module manifest differs from installer files')
     return release, contents
 
 

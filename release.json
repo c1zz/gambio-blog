@@ -1,12 +1,12 @@
 {
   "format": 1,
-  "name": "c1zz Blog für Gambio",
-  "module_version": "0.40.2",
-  "tag": "v0.40.2-rc.1",
+  "name": "c1zz-blog für Gambio",
+  "module_version": "0.42.0",
+  "tag": "v0.42.0-rc.1",
   "status": "release-candidate",
   "repository": "c1zz/gambio-blog",
-  "installer": "c1zz-blog-install-0.40.2.php",
-  "sha256": "eeba46f6f40a5849ac4117a8dc82b7d30eb80a3cb03579247558bf3abb8539b4",
-  "bytes": 408838,
-  "package_files": 146
+  "installer": "c1zz-blog-install-0.42.0.php",
+  "sha256": "47cf6d0551c71199f36aa3695332f59529049700e1f1a26fd2beb3f6d67afedb",
+  "bytes": 430411,
+  "package_files": 152
 }

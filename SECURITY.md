@@ -14,7 +14,7 @@ Installer und `SHA256SUMS` aus demselben Release herunterladen:
 sha256sum --check SHA256SUMS
 ```
 
-Unter macOS: `shasum -a 256 -c SHA256SUMS`. Unter PowerShell: `Get-FileHash .\c1zz-blog-install-0.40.2.php -Algorithm SHA256` und den Wert mit `SHA256SUMS` vergleichen.
+Unter macOS: `shasum -a 256 -c SHA256SUMS`. Unter PowerShell: `Get-FileHash .\c1zz-blog-install-0.42.0.php -Algorithm SHA256` und den Wert mit `SHA256SUMS` vergleichen.
 
 Die Prüfsumme erkennt eine Veränderung gegenüber dem Vergleichswert. Werden Datei und Prüfsumme gemeinsam ausgetauscht, reicht sie als Herkunftsnachweis nicht aus.
 
@@ -25,7 +25,7 @@ Der Release-Workflow attestiert die **gesamte unveränderte PHP-Datei**, einschl
 Mit der GitHub CLI:
 
 ```bash
-gh attestation verify c1zz-blog-install-0.40.2.php --repo c1zz/gambio-blog
+gh attestation verify c1zz-blog-install-0.42.0.php --repo c1zz/gambio-blog
 ```
 
 Der erwartete Workflow ist `c1zz/gambio-blog/.github/workflows/release.yml`. Der Nachweis gehört zum jeweiligen Release-Tag. Als zusätzliches Release-Asset wird die Sigstore-Bundle-Datei veröffentlicht; zur [Offline-Verifikation](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/verify-attestations-offline) gehören auch die passenden Vertrauensdaten.

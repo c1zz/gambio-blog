@@ -1,36 +1,16 @@
-# c1zz Blog für Gambio · 0.40.2-rc.1
+# c1zz-blog für Gambio · 0.42.0-rc.1
 
-Erster öffentlicher **Release Candidate** unter MIT-Lizenz. Modulstand und Installerdateiname: `0.40.2`.
+Dieser Release Candidate ergänzt die Gestaltung direkt am Blogelement und macht frühere Blogadressen verwaltbar. Modulstand und Installerdateiname lauten **0.42.0**.
 
-## Für Shopbetreiber
+- **Eigenes CSS am Element:** Visuelle Regler, Farbauswahl und CSS-Code bearbeiten dieselben Regeln mit Vorschau. Gerätebereiche, Hover und Tastaturfokus sind getrennt wählbar. Ausgabe auf den Blog begrenzt; native Gambio-CodeMirror-Integration.
+- **Weiterleitungen bearbeiten oder löschen:** Beim Pfadwechsel ist die Aufbewahrung der bisherigen Adresse optional. Gespeicherte Quellen können geändert und gelöscht werden; das Ziel bleibt die aktuelle Blogadresse. Bereits zwischengespeicherte 301-Antworten können im Browser nachwirken.
+- **Hilfen sichtbar machen:** Gemeinsame blaue Hinweisfelder in der Verwaltung und an Eingaben.
+- **Ein Name:** c1zz-blog für Gambio in Verwaltung, Installer und beiden Modul-Centern. Technische Modulkennungen bleiben für Updates erhalten.
+- **Richtige GX26-Version:** Der Paketbau erzeugt den nativen Versionsbeleg aus der Modulversion. Dadurch zeigt GX26 0.42.0 statt des Fallbacks 1.0.0.
+- **Dokumentation und Bilderrundgang:** 13 aktuelle Ansichten erklären Bedienung und Einbindung.
 
-- Ein PHP-Installer mit eingebettetem, geprüftem Modularchiv.
-- Native Admin-Anmeldung mit automatischer Rückkehr zum Installer.
-- Geführte Installation, Updates und Deinstallation mit fester Fortschrittsanzeige.
-- Artikel, Entwürfe, Kategorien, Versionen, Medien, Veröffentlichungstermine und Export/Import.
-- Liste, Grid, Slider und Magazin; getrennte Geräteoptionen und grafischer Darstellungseditor.
-- Farben, Schriften, Navigation, Seitenleiste, SEO und Shortcode-Widgets.
-- Optionaler Beispielblog statt automatisch eingespielter Inhalte.
-- SHA-256-Prüfsumme und kryptografisch prüfbarer GitHub-Herkunftsnachweis für die komplette Installerdatei.
+Das Modul verwendet Gambio-eigene Anmeldung, Rechte, Formularschutz, Editor, Modul-Center, Aufgabenverwaltung und Shoplayout so weit wie möglich. Es verändert keine Kerndateien. Die geführte Deinstallation deaktiviert den Blog und erhält standardmäßig Inhalte und Medien; deren vollständige Löschung ist eine separate ausdrückliche Entscheidung.
 
-## Einbindung in Gambio und Deinstallation
+Nur `c1zz-blog-install-0.42.0.php` hochladen. Vor dem Update Datenbank, Moduldateien und Blogmedien sichern; nicht vorher deinstallieren. Prüfsummen und Herkunftsnachweis gehören zu dieser Veröffentlichung.
 
-**c1zz Blog nutzt Gambio-eigene Funktionen so weit wie möglich und fügt sich in die vorhandene Shopstruktur ein:** native Admin-Anmeldung, Rechte- und Formularprüfungen, Gambio-Editor, Modul-Center, Aufgabenverwaltung sowie Shoplayout und Shopkonfiguration. Installation und Deinstallation nutzen die nativen Modul- und Cacheabläufe.
-
-Der Code liegt im eigenen Verzeichnis `GXModules/c1zz/StandaloneBlog/`; Gambio-Kerndateien und fremde Module werden nicht verändert. Blogdaten und Medien haben eigene Ablagen.
-
-Über den geführten Deinstallationsablauf werden öffentliche Darstellung, Verwaltung und Zeitplanung deaktiviert. Inhalte und Medien bleiben standardmäßig für eine Wiederinstallation erhalten; ihre vollständige Löschung muss ausdrücklich zusätzlich bestätigt werden. Die Moduldateien bleiben vorhanden. Selbst gesetzte Bloglinks und eingefügte Shortcodes in Shopinhalten sind anschließend selbst zu entfernen.
-
-## Download und Installation
-
-Den **PHP-Installer** und `SHA256SUMS` herunterladen, vor der Ausführung prüfen und nur die PHP-Datei in den Shopordner hochladen. Das GitHub-Source-Code-Archiv ist für die Installation nicht nötig.
-
-Anleitung: https://github.com/c1zz/gambio-blog/blob/main/docs/INSTALLATION.md
-
-Echtheit prüfen: https://github.com/c1zz/gambio-blog/blob/main/SECURITY.md
-
-## Teststatus
-
-Aktueller lokaler Testfall: Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu. Anmelderückkehr in Firefox und Chromium geprüft. Frühere GX4-Nachweise und Grenzen sind in der Kompatibilitätsübersicht getrennt beschrieben. Zuerst im Testshop prüfen; vor dem Einsatz sichern.
-
-Das Modul entstand gemeinsam durch **c1zz und KI-Unterstützung**. Es ist kein offizielles Gambio-Produkt; ein unabhängiges Audit oder eine Gambio-Zertifizierung wird nicht behauptet.
+Gezielt geprüft im vorhandenen GX26.11.0/PHP8.2.31/MariaDB10.10/Malibu-Shop. Der [Teststand](docs/KOMPATIBILITAET.md) trennt aktuelle Ergebnisse von früheren vollständigen Abläufen. Kein neuer vollständiger Frischinstallations-/Deinstallationsnachweis und keine pauschale Freigabe für andere Versionen oder Themes.

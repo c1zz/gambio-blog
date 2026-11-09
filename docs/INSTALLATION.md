@@ -19,10 +19,10 @@ Nicht pauschal Verzeichnisse auf `777` setzen. Der Installer prüft Voraussetzun
 
 ## Datei prüfen und hochladen
 
-1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.40.2-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
+1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.42.0-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
 2. Vor dem Hochladen die [Prüfsumme und möglichst den Herkunftsnachweis prüfen](../SECURITY.md).
-3. Nur `c1zz-blog-install-0.40.2.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
-4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.40.2.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
+3. Nur `c1zz-blog-install-0.42.0.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
+4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.42.0.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
 
 Das enthaltene ZIP wird vor der Übernahme geprüft und nur vorübergehend privat geöffnet. Es soll kein separates Blog-ZIP im öffentlichen Shopordner liegen.
 
@@ -38,6 +38,8 @@ Nach erfolgreicher Abschlussprüfung entfernt sich die hochgeladene Installerdat
 
 ## Den Blog an deinen Shop anpassen
 
+Der sichtbare Modulname lautet **c1zz-blog für Gambio**, auch im GX26-Modul-Center. Die dort angezeigte Version stammt aus dem installierten Paket.
+
 In der Blogverwaltung führt **Einstieg** durch die ersten Schritte:
 
 1. Optional den Beispielblog mit drei Kategorien, neun öffentlichen Artikeln, einem privaten Entwurf und drei Illustrationen hinzufügen.
@@ -47,9 +49,15 @@ In der Blogverwaltung führt **Einstieg** durch die ersten Schritte:
 
 Unveränderte Beispielartikel lassen sich gesammelt in den Papierkorb verschieben. Bearbeitete oder eigene Inhalte werden davon nicht pauschal entfernt.
 
+## Eigenes CSS am Element
+
+Unter **Darstellung → Visuell** ein Blogelement wählen und **Eigenes CSS** öffnen. Eigenschaften, Regler, Farbauswahl und CSS-Code bearbeiten dieselben Deklarationen mit Vorschau. Eine Regel gilt für alle Blogelemente dieses Typs, beispielsweise alle Artikelkarten. Gerätebereiche und Normal-/Hover-/Fokuszustand sind getrennt wählbar. Deaktivieren behält den Code; Zurücksetzen ist rückgängig zu machen. Erst das Speichern der Darstellung verändert die öffentliche Ausgabe.
+
+Der Codeeditor nutzt die vorhandenen Gambio-CodeMirror-Dateien; ohne sie bleibt die Codeeingabe verfügbar. Erlaubt sind CSS-Deklarationen innerhalb der vorgegebenen Blogelemente. Eigene Selektoren, `@`-Regeln, externe URLs und CSS-Variablen werden nicht übernommen. Die Begrenzung auf den Blog schützt die umgebende Shopdarstellung.
+
 ## Blogadresse und Einbinden
 
-Unter **Blogadresse** lässt sich der URL-Pfad ändern. Vorherige Adressen bleiben als Weiterleitungen erhalten. Hosting- oder Coming-soon-Regeln werden nicht automatisch verändert.
+Unter **Blogadresse** lässt sich der URL-Pfad ändern. Beim Pfadwechsel legt die Checkbox **Bisherige Blogadresse als Weiterleitung behalten** fest, ob die alte Adresse erhalten bleibt. Gespeicherte Weiterleitungen lassen sich hier einzeln ändern oder löschen. Bearbeitet wird die frühere Adresse; Ziel ist stets der aktuelle Blogpfad, einschließlich Artikel-, Kategorie- und Seitenpfaden. Bereits im Browser gespeicherte 301-Weiterleitungen können nach dem Löschen noch wirken; bei der Kontrolle ein frisches Browserprofil verwenden. Hosting- oder Coming-soon-Regeln werden nicht automatisch verändert.
 
 Unter **Einbinden** erzeugt der Generator `[c1zz_blog]` für unterstützte CMS-Seiten und Produktbeschreibungen. Widgets besitzen eigene begrenzte Darstellungsoptionen. Nur öffentliche Artikel werden ausgegeben; private Entwürfe bleiben privat.
 

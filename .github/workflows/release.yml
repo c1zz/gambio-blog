@@ -19,7 +19,7 @@ jobs:
       - name: Verify installer and every embedded file without executing PHP
         run: python3 tools/verify_release.py
       - name: Check PHP syntax
-        run: php -l c1zz-blog-install-0.40.2.php
+        run: php -l c1zz-blog-install-0.42.0.php
       - name: Verify release metadata matches tag
         if: startsWith(github.ref, 'refs/tags/')
         env:
@@ -48,7 +48,7 @@ jobs:
         id: attest
         uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
         with:
-          subject-path: c1zz-blog-install-0.40.2.php
+          subject-path: c1zz-blog-install-0.42.0.php
       - name: Publish pre-release with checksum and provenance bundle
         env:
           GH_TOKEN: ${{ github.token }}
@@ -56,10 +56,10 @@ jobs:
           RELEASE_TAG: ${{ github.ref_name }}
           ATTESTATION_BUNDLE: ${{ steps.attest.outputs.bundle-path }}
         run: |
-          cp -- "$ATTESTATION_BUNDLE" c1zz-blog-install-0.40.2.php.sigstore.json
+          cp -- "$ATTESTATION_BUNDLE" c1zz-blog-install-0.42.0.php.sigstore.json
           gh release create "$RELEASE_TAG" \
             --verify-tag --prerelease \
-            --title "c1zz Blog für Gambio · 0.40.2-rc.1" \
+            --title "c1zz-blog für Gambio · 0.42.0-rc.1" \
             --notes-file RELEASE_NOTES.md \
-            c1zz-blog-install-0.40.2.php SHA256SUMS LICENSE \
-            c1zz-blog-install-0.40.2.php.sigstore.json
+            c1zz-blog-install-0.42.0.php SHA256SUMS LICENSE \
+            c1zz-blog-install-0.42.0.php.sigstore.json

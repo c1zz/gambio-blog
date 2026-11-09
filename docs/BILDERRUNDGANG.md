@@ -1,8 +1,8 @@
-# c1zz Blog in Bildern
+# c1zz-blog für Gambio in Bildern
 
-Zehn echte Ansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
+Dreizehn echte Ansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
 
-**Aufgenommen am 09.11.2026:** Modul 0.40.2 im lokalen Gambio 26.11.0 mit Malibu und optionalen Beispielinhalten. Die Detailaufnahmen von Schreibeditor, Freigabe und Darstellung zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Shoptheme und den Einstellungen ab. Die Bilder ergänzen den [dokumentierten Teststand](KOMPATIBILITAET.md).
+**Aufgenommen am 09.11.2026:** Modul 0.42.0 im lokalen Gambio 26.11.0 mit Malibu und optionalen Beispielinhalten. Die Detailaufnahmen von Schreibeditor, Freigabe und Darstellung zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Shoptheme und den Einstellungen ab. Die Bilder ergänzen den [dokumentierten Teststand](KOMPATIBILITAET.md).
 
 [Zur Projektübersicht](../README.md) · [Zur Installation](INSTALLATION.md)
 
@@ -15,9 +15,12 @@ Zehn echte Ansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalt
 | [5. Kategorien verwalten](#ansicht-5) | Kategorieformular mit SEO-Feldern und Liste bestehender Kategorien |
 | [6. Freigabe, Termine und Versionen](#ansicht-6) | Freigabe eines privaten Entwurfs, Terminplanung, Aufgabenhinweis und gespeicherte Version |
 | [7. Darstellung mit Vorschau](#ansicht-7) | Grafischer Editor mit Grid-Vorschau und Layoutoptionen für Desktop |
-| [8. Öffentlicher Blog auf Desktop](#ansicht-8) | Öffentliche Blogliste im vollständigen Malibu-Shoplayout |
+| [8. Öffentlicher Blog auf Desktop](#ansicht-8) | Öffentliches Bloggrid im vollständigen Malibu-Shoplayout |
 | [9. Öffentliche Artikelseite](#ansicht-9) | Öffentlicher Ratgeber mit Titelbild, gegliedertem Text und Shopumgebung |
 | [10. Öffentlicher Blog auf Mobilgeräten](#ansicht-10) | Mobile Blogansicht mit Kategorieauswahl und Artikelslider |
+| [11. Eigenes CSS](#ansicht-11) | Vorschau, visuelle Regler und Code pro Elementtyp |
+| [12. Hilfetexte](#ansicht-12) | Hervorgehobene Hinweise in der Verwaltung |
+| [13. Modul-Center](#ansicht-13) | Einheitlicher Produktname und tatsächlicher Modulstand |
 
 <a id="ansicht-1"></a>
 
@@ -71,7 +74,7 @@ Der Ausschnitt zeigt die Freigabe eines gespeicherten Entwurfs, die Terminplanun
 
 ## 7. Darstellung mit Vorschau
 
-Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **ungespeicherte Grid-Vorschau** mit zwei Spalten und den passenden Layoutoptionen. Die gespeicherten Einstellungen wurden für die Aufnahme nicht verändert.
+Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **ungespeicherte Grid-Vorschau** mit drei Spalten und den passenden Layoutoptionen. Die gespeicherten Einstellungen wurden für die Aufnahme nicht verändert.
 
 [![Grafischer Editor mit Grid-Vorschau und Layoutoptionen für Desktop](images/darstellung.png)](images/darstellung.png)
 
@@ -79,9 +82,9 @@ Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout,
 
 ## 8. Öffentlicher Blog auf Desktop
 
-Die gespeicherte Desktopansicht verwendet eine Liste. Shopkopf und Seitenleiste zeigen die Einbindung in Malibu; innerhalb des Blogs führen Kategorien und Seitennavigation durch die Artikel. Die Aufnahme erfolgt als Gast.
+Die gespeicherte Desktopansicht verwendet ein Grid mit drei Spalten. Shopkopf und Seitenleiste zeigen die Einbindung in Malibu; innerhalb des Blogs führen Kategorien und Seitennavigation durch die Artikel. Die Aufnahme erfolgt als Gast.
 
-[![Öffentliche Blogliste im vollständigen Malibu-Shoplayout](images/blog-desktop.png)](images/blog-desktop.png)
+[![Öffentliches Bloggrid im vollständigen Malibu-Shoplayout](images/blog-desktop.png)](images/blog-desktop.png)
 
 <a id="ansicht-9"></a>
 
@@ -100,3 +103,27 @@ Bei 390 Pixeln Breite verwendet dieser Beispielshop einen Slider mit Pfeilen, Pu
 <a href="images/blog-mobil.png"><img src="images/blog-mobil.png" alt="Mobile Blogansicht mit Kategorieauswahl und Artikelslider" width="390"></a>
 
 [Zur Projektübersicht](../README.md) · [Installation](INSTALLATION.md)
+
+<a id="ansicht-11"></a>
+
+## 11. Eigenes CSS am Element
+
+Regler und Farbauswahl bearbeiten dieselben Deklarationen wie der Reiter **CSS-Code**. Hier zeigen die Artikelkarten eine ungespeicherte Anpassung von Rundung, Rahmen und Hintergrund; die öffentliche Darstellung wurde für die Aufnahme nicht verändert.
+
+[![Element-CSS mit Vorschau, Regler und Farbauswahl](images/element-css.png)](images/element-css.png)
+
+<a id="ansicht-12"></a>
+
+## 12. Sichtbare Hilfetexte
+
+Blaue Hinweisfelder heben die Erläuterungen zur Darstellung hervor. Auch Hilfen an einzelnen Eingabefeldern verwenden die gemeinsame Gestaltung.
+
+[![Darstellung mit hervorgehobenen Hilfetexten](images/hilfetexte.png)](images/hilfetexte.png)
+
+<a id="ansicht-13"></a>
+
+## 13. Name und Version im GX26-Modul-Center
+
+**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.42.0** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
+
+[![GX26-Modul-Center mit einheitlichem Namen und Version 0.42.0](images/modul-center.png)](images/modul-center.png)
