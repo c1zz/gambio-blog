@@ -124,6 +124,6 @@ Blaue Hinweisfelder heben die Erläuterungen zur Darstellung hervor. Auch Hilfen
 
 ## 13. Name und Version im GX26-Modul-Center
 
-**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.42.0** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
+**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.42.0** angezeigt. Die Kennzeichnung **rc.2** gehört zur GitHub-Veröffentlichung.
 
 [![GX26-Modul-Center mit einheitlichem Namen und Version 0.42.0](images/modul-center.png)](images/modul-center.png)

@@ -8,7 +8,7 @@ Artikel schreiben, Kategorien pflegen und die Darstellung direkt im Shop gestalt
 
 **[Bilderrundgang mit 13 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.42.0-rc.2/c1zz-blog-install-0.42.0.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.42.0-rc.2)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
 
-> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.42.0`; `rc.1` kennzeichnet diese Veröffentlichung.
+> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.42.0`; `rc.2` kennzeichnet diese Veröffentlichung.
 
 **So sehen Besucher den Blog:** Die Desktopansicht zeigt Artikel, Kategorien und Seitennavigation im Malibu-Shoplayout – einschließlich Shopkopf und Seitenleiste.
 
