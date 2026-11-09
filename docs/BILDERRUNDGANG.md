@@ -2,7 +2,7 @@
 
 Dreizehn echte Ansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
 
-**Aufgenommen am 09.11.2026:** Modul 0.43.0 im frischen, anschließend entfernten Gambio 26.11.0 mit Malibu und optionalen Beispielinhalten. Die Detailaufnahmen von Schreibeditor, Freigabe und Darstellung zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Shoptheme und den Einstellungen ab. Die Bilder ergänzen den [dokumentierten Teststand](KOMPATIBILITAET.md).
+**Aufnahmen vom 09.11.2026:** Artikelverwaltung und Modul-Center wurden mit 0.44.0 im lokalen GX26-Testshop erneuert; die Liste zeigt ausschließlich optionale Beispielartikel. Die übrigen Ansichten stammen aus 0.43.0 im damals frischen, anschließend entfernten GX26-Shop und zeigen die unveränderten Funktionen. Ältere Aufnahmen enthalten noch den früheren separaten Navigationspunkt „Neuer Artikel“. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
 
 [Zur Projektübersicht](../README.md) · [Zur Installation](INSTALLATION.md)
 
@@ -124,6 +124,6 @@ Blaue Hinweisfelder heben die Erläuterungen zur Darstellung hervor. Auch Hilfen
 
 ## 13. Name und Version im GX26-Modul-Center
 
-**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.43.0** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
+**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.44.0** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
 
-[![GX26-Modul-Center mit einheitlichem Namen und Version 0.43.0](images/modul-center.png)](images/modul-center.png)
+[![GX26-Modul-Center mit einheitlichem Namen und Version 0.44.0](images/modul-center.png)](images/modul-center.png)

@@ -1,14 +1,13 @@
-# c1zz-blog für Gambio · 0.43.0-rc.1
+# c1zz-blog für Gambio · 0.44.0-rc.1
 
-Dieser Release Candidate macht die Verwaltung einheitlicher und ergänzt die sichtbare Paketversion. Interner Modulstand und Installerdateiname: **0.43.0**.
+Die Artikelverwaltung ist kompakter und passt zum gemeinsamen c1zz-Stil.
 
-- Gemeinsamer c1zz-systems-Stil für Hinweise, Buttons und aufklappbare Bereiche.
-- Entfernen, Löschen, Verwerfen und Zurücksetzen eigener Gestaltungswerte sind rot markiert.
-- Tatsächliche Modulversion neben dem Namen, automatisch aus dem Paket gelesen.
-- Eindeutigere Kennzeichnung eigener Tablet-/Mobilwerte und vererbter Desktopwerte.
-- Weiterhin enthalten: eigene Kategorien, Entwürfe, native Gambio-Bearbeitung, Veröffentlichung und Termine, Medien, SEO, Export/Import, verwaltbare Blogadressen und CSS pro Element.
-- Optionales [KI-Modul](https://github.com/c1zz/gambio-ki) mit eigenem Installer und eigener Deinstallation.
+- Klare Tabellenzeilen, dezente grüne Trennlinien und erkennbare Statusmarkierungen.
+- „Artikel“ bündelt Übersicht und Bearbeitung in der oberen Navigation.
+- „Neuer Artikel“ steht links über der Suche: grüner Button mit Plus-Symbol und hervorgehobener Beschriftung.
+- Artikel, Kategorien, Medien und Einstellungen bleiben beim Update erhalten.
+- Das separate [KI-Modul 0.9.0](https://github.com/c1zz/gambio-ki/releases) ergänzt eine Bildbeschreibung zum Kopieren nach ChatGPT oder Gemini.
 
-Gambio-eigene Anmeldung, Rechte, Formularschutz, Editor, Modul-Center und Aufgabenverwaltung werden weiterverwendet. Keine Änderungen an Gambio-Kerndateien. Normale Deinstallation deaktiviert den Blog und erhält Inhalte; vollständige Datenlöschung erfordert eine gesonderte Bestätigung.
+Gambio-eigene Anmeldung, Rechte, Formularschutz, Editor, Modul-Center und Aufgabenverwaltung bleiben die Grundlage. Keine Änderungen an Gambio-Kerndateien. Die normale Deinstallation deaktiviert das Modul und erhält Bloginhalte; vollständige Datenlöschung erfordert eine gesonderte Bestätigung.
 
-Nur `c1zz-blog-install-0.43.0.php` hochladen. Vor einem Update sichern. Der Installer entfernt sich nach erfolgreichem Abschluss selbst. Aktuelle Prüfungen und Grenzen: [Kompatibilität](docs/KOMPATIBILITAET.md). Die [13 neuen Ansichten](docs/BILDERRUNDGANG.md) zeigen das Modul im GX26-Testshop.
+Modulstand und Installer: **0.44.0**. Nur `c1zz-blog-install-0.44.0.php` hochladen, vorher sichern und den geführten Updateablauf ausführen. Der Installer entfernt sich nach erfolgreichem Abschluss. [Installation](docs/INSTALLATION.md) · [Teststand](docs/KOMPATIBILITAET.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md).

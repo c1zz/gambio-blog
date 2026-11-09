@@ -1,6 +1,6 @@
 {
   "success": true,
-  "module": "0.43.0",
+  "module": "mixed: 0.44.0 and unchanged 0.43.0 views",
   "gambio": "26.11.0",
   "theme": "Malibu",
   "nativeChromium": true,
@@ -8,55 +8,68 @@
   "screenshots": [
     {
       "file": "artikelverwaltung.png",
-      "feature": "Artikel, Kategorien, veröffentlichte Inhalte und privater Entwurf"
+      "feature": "Artikel, Kategorien, veröffentlichte Inhalte und privater Entwurf",
+      "module_version": "0.44.0"
     },
     {
       "file": "einstieg.png",
-      "feature": "Geführter Einstieg und Beispielblog"
+      "feature": "Geführter Einstieg und Beispielblog",
+      "module_version": "0.43.0"
     },
     {
       "file": "kategorien.png",
-      "feature": "Kategorien unabhängig von Artikeln verwalten"
+      "feature": "Kategorien unabhängig von Artikeln verwalten",
+      "module_version": "0.43.0"
     },
     {
       "file": "artikel-angaben.png",
-      "feature": "Titel, Kategorie, Teaser, Schlagwörter und SEO"
+      "feature": "Titel, Kategorie, Teaser, Schlagwörter und SEO",
+      "module_version": "0.43.0"
     },
     {
       "file": "editor.png",
-      "feature": "Nativer Gambio-Editor, Quellcode, Entwurf speichern und Vorschau"
+      "feature": "Nativer Gambio-Editor, Quellcode, Entwurf speichern und Vorschau",
+      "module_version": "0.43.0"
     },
     {
       "file": "freigabe-termine.png",
-      "feature": "Private Vorschau, ausdrückliche Freigabe und Veröffentlichungstermin"
+      "feature": "Private Vorschau, ausdrückliche Freigabe und Veröffentlichungstermin",
+      "module_version": "0.43.0"
     },
     {
       "file": "darstellung.png",
-      "feature": "Ungespeicherte Grid-Vorschau mit Gerätewahl und Layoutoptionen"
+      "feature": "Ungespeicherte Grid-Vorschau mit Gerätewahl und Layoutoptionen",
+      "module_version": "0.43.0"
     },
     {
       "file": "hilfetexte.png",
-      "feature": "Einheitliche c1zz-Hinweise und kompakte Einstellungen"
+      "feature": "Einheitliche c1zz-Hinweise und kompakte Einstellungen",
+      "module_version": "0.43.0"
     },
     {
       "file": "element-css.png",
-      "feature": "Eigene CSS-Regel mit visuellen Reglern und Codeansicht"
+      "feature": "Eigene CSS-Regel mit visuellen Reglern und Codeansicht",
+      "module_version": "0.43.0"
     },
     {
       "file": "modul-center.png",
-      "feature": "Native GX26-Modulverwaltung mit tatsaechlicher Version"
+      "feature": "Native GX26-Modulverwaltung mit tatsaechlicher Version",
+      "module_version": "0.44.0"
     },
     {
       "file": "blog-desktop.png",
-      "feature": "Öffentliche Übersicht mit Shopkopf, Seitenleiste, Kategorien und Seitennavigation"
+      "feature": "Öffentliche Übersicht mit Shopkopf, Seitenleiste, Kategorien und Seitennavigation",
+      "module_version": "0.43.0"
     },
     {
       "file": "artikel.png",
-      "feature": "Öffentlicher Ratgeber im Shoplayout"
+      "feature": "Öffentlicher Ratgeber im Shoplayout",
+      "module_version": "0.43.0"
     },
     {
       "file": "blog-mobil.png",
-      "feature": "Mobile öffentliche Blogübersicht mit Shopnavigation"
+      "feature": "Mobile öffentliche Blogübersicht mit Shopnavigation",
+      "module_version": "0.43.0"
     }
   ]
 }
