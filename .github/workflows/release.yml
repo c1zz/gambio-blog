@@ -58,12 +58,24 @@ jobs:
           ATTESTATION_BUNDLE: ${{ steps.attest.outputs.bundle-path }}
         run: |
           assets=(c1zz-blog-install-0.42.0.php SHA256SUMS LICENSE)
+          release_title=$(python3 -c 'import json; r=json.load(open("release.json")); print(r["name"] + " · " + r["tag"].removeprefix("v"))')
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            # Documentation corrections must never replace published installer bytes.
+            existing=$(mktemp -d)
+            trap 'rm -rf -- "$existing"' EXIT
+            for asset in "${assets[@]}"; do
+              gh release download "$RELEASE_TAG" --pattern "$asset" --dir "$existing"
+              cmp -- "$asset" "$existing/$asset"
+            done
+            gh release edit "$RELEASE_TAG" --title "$release_title" --notes-file RELEASE_NOTES.md
+            exit 0
+          fi
           if [ -n "$ATTESTATION_BUNDLE" ]; then
             cp -- "$ATTESTATION_BUNDLE" c1zz-blog-install-0.42.0.php.sigstore.json
             assets+=(c1zz-blog-install-0.42.0.php.sigstore.json)
           fi
           gh release create "$RELEASE_TAG" \
             --verify-tag --prerelease \
-            --title "c1zz-blog für Gambio · 0.42.0-rc.2" \
+            --title "$release_title" \
             --notes-file RELEASE_NOTES.md \
             "${assets[@]}"

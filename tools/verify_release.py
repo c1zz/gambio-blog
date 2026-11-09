@@ -19,8 +19,18 @@ def require(condition, message):
         raise ValueError(message)
 
 
+def verify_labels(root, release):
+    tag = re.fullmatch(r'v(\d+\.\d+\.\d+)-(rc\.\d+)', release['tag'])
+    require(tag and tag[1] == release['module_version'], 'Release tag/version mismatch')
+    for name in ('README.md', 'RELEASE_NOTES.md', 'docs/BILDERRUNDGANG.md'):
+        labels = re.findall(r'(?<![\w.])(?:v?\d+\.\d+\.\d+-)?rc\.\d+\b', (root / name).read_text())
+        expected = {tag[2], tag[0], tag[0][1:]}
+        require(labels and set(labels) <= expected, 'Release candidate labels differ: ' + name)
+
+
 def inspect(root=ROOT):
     release = json.loads((root / 'release.json').read_text())
+    verify_labels(root, release)
     name = release['installer']
     require(re.fullmatch(r'c1zz-blog-install-\d+\.\d+\.\d+\.php', name), 'Invalid installer filename')
     file = root / name
