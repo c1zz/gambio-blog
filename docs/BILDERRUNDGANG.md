@@ -2,7 +2,7 @@
 
 Dreizehn echte Ansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
 
-**Aufgenommen am 09.11.2026:** Modul 0.42.0 im lokalen Gambio 26.11.0 mit Malibu und optionalen Beispielinhalten. Die Detailaufnahmen von Schreibeditor, Freigabe und Darstellung zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Shoptheme und den Einstellungen ab. Die Bilder ergänzen den [dokumentierten Teststand](KOMPATIBILITAET.md).
+**Aufgenommen am 09.11.2026:** Modul 0.43.0 im frischen, anschließend entfernten Gambio 26.11.0 mit Malibu und optionalen Beispielinhalten. Die Detailaufnahmen von Schreibeditor, Freigabe und Darstellung zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Shoptheme und den Einstellungen ab. Die Bilder ergänzen den [dokumentierten Teststand](KOMPATIBILITAET.md).
 
 [Zur Projektübersicht](../README.md) · [Zur Installation](INSTALLATION.md)
 
@@ -74,7 +74,7 @@ Der Ausschnitt zeigt die Freigabe eines gespeicherten Entwurfs, die Terminplanun
 
 ## 7. Darstellung mit Vorschau
 
-Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **ungespeicherte Grid-Vorschau** mit drei Spalten und den passenden Layoutoptionen. Die gespeicherten Einstellungen wurden für die Aufnahme nicht verändert.
+Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **ungespeicherte Grid-Vorschau** mit drei Spalten und den passenden Layoutoptionen. Die Grid-/Slider-Einstellungen wurden ausschließlich im kurzlebigen Screenshot-Testshop gesetzt. Die gezeigte Vorschau wurde nicht gespeichert.
 
 [![Grafischer Editor mit Grid-Vorschau und Layoutoptionen für Desktop](images/darstellung.png)](images/darstellung.png)
 
@@ -124,6 +124,6 @@ Blaue Hinweisfelder heben die Erläuterungen zur Darstellung hervor. Auch Hilfen
 
 ## 13. Name und Version im GX26-Modul-Center
 
-**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.42.0** angezeigt. Die Kennzeichnung **rc.2** gehört zur GitHub-Veröffentlichung.
+**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.43.0** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
 
-[![GX26-Modul-Center mit einheitlichem Namen und Version 0.42.0](images/modul-center.png)](images/modul-center.png)
+[![GX26-Modul-Center mit einheitlichem Namen und Version 0.43.0](images/modul-center.png)](images/modul-center.png)

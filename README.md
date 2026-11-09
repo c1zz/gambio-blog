@@ -1,18 +1,24 @@
 <p align="center"><img src="docs/images/header.svg" alt="c1zz-blog für Gambio – Inhalte gestalten. Direkt im Shop." width="100%"></p>
 
-<p align="center"><strong>Release Candidate · 0.42.0-rc.2 · MIT-Lizenz · Entwickelt von Mensch und KI</strong></p>
+<p align="center"><strong>Release Candidate · 0.43.0-rc.1 · MIT-Lizenz · Entwickelt von Mensch und KI</strong></p>
 
 # Ein Blog, der zu deinem Gambio-Shop passt
 
 Artikel schreiben, Kategorien pflegen und die Darstellung direkt im Shop gestalten: **c1zz-blog für Gambio** ist ein eigenständig installierbares Blogmodul für Gambio. Du brauchst keinen vorbereiteten Blog und keine SSH-Nacharbeiten.
 
-**[Bilderrundgang mit 13 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.42.0-rc.2/c1zz-blog-install-0.42.0.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.42.0-rc.2)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
+**[Bilderrundgang mit 13 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.43.0-rc.1/c1zz-blog-install-0.43.0.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.43.0-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
 
-> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.42.0`; `rc.2` kennzeichnet diese Veröffentlichung.
+> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.43.0`; `rc.1` kennzeichnet diese Veröffentlichung.
 
 **So sehen Besucher den Blog:** Die Desktopansicht zeigt Artikel, Kategorien und Seitennavigation im Malibu-Shoplayout – einschließlich Shopkopf und Seitenleiste.
 
 [![Öffentliche Blogübersicht mit Shopkopf, Seitenleiste und Beispielartikeln](docs/images/blog-desktop.png)](docs/images/blog-desktop.png)
+
+## Neu in diesem Release
+
+Ein gemeinsamer **c1zz-systems-Stil** verbindet Blog und optionales KI-Modul: einheitliche Hinweisfelder, grüne Akzente, klare Aufklappbereiche und rote Entfernen-Aktionen. Die tatsächliche Blogversion steht neben dem Modulnamen. Eigene Tablet-/Mobilwerte sind deutlicher als Abweichungen von Desktop gekennzeichnet.
+
+**Optional:** [c1zz-ki für Gambio](https://github.com/c1zz/gambio-ki) ergänzt Entwürfe und Themenideen direkt beim Artikel. Es hat einen eigenen Installer; der Blog funktioniert auch ohne KI-Modul.
 
 ## Was du damit machen kannst
 
@@ -48,8 +54,8 @@ Der Modulcode liegt getrennt unter `GXModules/c1zz/StandaloneBlog/`. **Gambio-Ke
 
 ## In wenigen Schritten loslegen
 
-1. Den PHP-Installer und `SHA256SUMS` aus demselben [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.42.0-rc.2) herunterladen und **vor der Ausführung prüfen**.
-2. Nur `c1zz-blog-install-0.42.0.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Dateinamen beibehalten.
+1. Den PHP-Installer und `SHA256SUMS` aus demselben [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.43.0-rc.1) herunterladen und **vor der Ausführung prüfen**.
+2. Nur `c1zz-blog-install-0.43.0.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Dateinamen beibehalten.
 3. Die Datei im Browser öffnen. Falls nötig, **Admin-Anmeldung öffnen** wählen. Gambio verarbeitet die Anmeldung in seinem eigenen Fenster; danach kehrt der Installer automatisch zurück.
 4. Voraussetzungen und Paketprüfung kontrollieren, bei vorhandenen Daten die Sicherung bestätigen und die Einrichtung ausdrücklich starten.
 5. Nach erfolgreichem Abschluss entfernt sich die hochgeladene Installationsdatei selbst. In der Blogverwaltung hilft **Einstieg** beim Anpassen an deinen Shop.
@@ -68,13 +74,13 @@ Die grafische Darstellung und **Alle Einstellungen** bearbeiten dieselben Werte.
 
 [![Eigenes CSS an Artikelkarten mit Regler, Farbauswahl und unmittelbarer Vorschau](docs/images/element-css.png)](docs/images/element-css.png)
 
-**Blogadressen bleiben steuerbar:** Beim Pfadwechsel entscheidest du, ob die bisherige Adresse weiterleiten soll. Gespeicherte Weiterleitungen kannst du unter **Blogadresse** ändern oder löschen. Hilfetexte sind als blaue Hinweisfelder hervorgehoben.
+**Blogadressen bleiben steuerbar:** Beim Pfadwechsel entscheidest du, ob die bisherige Adresse weiterleiten soll. Gespeicherte Weiterleitungen kannst du unter **Blogadresse** ändern oder löschen. Hilfetexte sind im gemeinsamen c1zz-systems-Stil hervorgehoben. Entfernen, Löschen und Zurücksetzen eigener Werte sind rot markiert.
 
-Die Screenshots stammen aus dem lokalen GX26-Testshop mit Malibu und den optionalen Beispielinhalten (Modul 0.42.0, Aufnahme vom 09.11.2026). Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch den **mobilen Slider**. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
+Die Screenshots stammen aus dem lokalen GX26-Testshop mit Malibu und den optionalen Beispielinhalten (Modul 0.43.0, Aufnahme vom 09.11.2026). Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch den **mobilen Slider**. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
 
 ## Was ist tatsächlich geprüft?
 
-Der aktuelle Kandidat wurde lokal mit **Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu** geprüft. Aktuell geprüft wurden Paketübernahme, Weiterleitungsverwaltung, Hilfetexte, Produktname und Versionsanzeige sowie der Element-CSS-Editor. Die Anmelderückkehr in Firefox und Chromium wurde bereits mit 0.40.2 geprüft. Die GX4-Grundlage wurde zuvor mit **4.8.0.3 und 4.9.6.1** geprüft; das ersetzt keine erneute vollständige Abnahme des aktuellen Kandidaten auf diesen Versionen.
+Der aktuelle Kandidat wurde lokal mit **Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu** geprüft. Der neue Stand vereinheitlicht die Verwaltung, ergänzt die sichtbare Modulversion und macht vererbte Gerätewerte eindeutiger. Die aktuelle Frischinstallation und der Datenerhalt bei De-/Wiederinstallation werden im verlinkten Teststand dokumentiert. Die Anmelderückkehr in Firefox und Chromium wurde bereits mit 0.40.2 geprüft. Die GX4-Grundlage wurde zuvor mit **4.8.0.3 und 4.9.6.1** geprüft; das ersetzt keine erneute vollständige Abnahme des aktuellen Kandidaten auf diesen Versionen.
 
 Die genaue Einordnung und offene Prüfungen stehen in [Kompatibilität & Teststand](docs/KOMPATIBILITAET.md). Es gibt keine pauschale Zusage für jedes Gambio-Release, jede PHP-Version oder jedes Theme.
 

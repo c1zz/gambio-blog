@@ -1,0 +1,62 @@
+{
+  "success": true,
+  "module": "0.43.0",
+  "gambio": "26.11.0",
+  "theme": "Malibu",
+  "nativeChromium": true,
+  "savedSettingsUnchanged": true,
+  "screenshots": [
+    {
+      "file": "artikelverwaltung.png",
+      "feature": "Artikel, Kategorien, veröffentlichte Inhalte und privater Entwurf"
+    },
+    {
+      "file": "einstieg.png",
+      "feature": "Geführter Einstieg und Beispielblog"
+    },
+    {
+      "file": "kategorien.png",
+      "feature": "Kategorien unabhängig von Artikeln verwalten"
+    },
+    {
+      "file": "artikel-angaben.png",
+      "feature": "Titel, Kategorie, Teaser, Schlagwörter und SEO"
+    },
+    {
+      "file": "editor.png",
+      "feature": "Nativer Gambio-Editor, Quellcode, Entwurf speichern und Vorschau"
+    },
+    {
+      "file": "freigabe-termine.png",
+      "feature": "Private Vorschau, ausdrückliche Freigabe und Veröffentlichungstermin"
+    },
+    {
+      "file": "darstellung.png",
+      "feature": "Ungespeicherte Grid-Vorschau mit Gerätewahl und Layoutoptionen"
+    },
+    {
+      "file": "hilfetexte.png",
+      "feature": "Einheitliche c1zz-Hinweise und kompakte Einstellungen"
+    },
+    {
+      "file": "element-css.png",
+      "feature": "Eigene CSS-Regel mit visuellen Reglern und Codeansicht"
+    },
+    {
+      "file": "modul-center.png",
+      "feature": "Native GX26-Modulverwaltung mit tatsaechlicher Version"
+    },
+    {
+      "file": "blog-desktop.png",
+      "feature": "Öffentliche Übersicht mit Shopkopf, Seitenleiste, Kategorien und Seitennavigation"
+    },
+    {
+      "file": "artikel.png",
+      "feature": "Öffentlicher Ratgeber im Shoplayout"
+    },
+    {
+      "file": "blog-mobil.png",
+      "feature": "Mobile öffentliche Blogübersicht mit Shopnavigation"
+    }
+  ]
+}
