@@ -6,11 +6,13 @@
 
 Artikel schreiben, Kategorien pflegen und die Darstellung direkt im Shop gestalten: **c1zz Blog** ist ein eigenständig installierbares Blogmodul für Gambio. Du brauchst keinen vorbereiteten Blog und keine SSH-Nacharbeiten.
 
-**[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.40.2-rc.1/c1zz-blog-install-0.40.2.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.40.2-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
+**[Bilderrundgang mit 10 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.40.2-rc.1/c1zz-blog-install-0.40.2.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.40.2-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
 
 > Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.40.2`; `rc.1` kennzeichnet diese Veröffentlichung.
 
-![Blog mit Beispielartikeln im lokalen Testshop](docs/images/blog-desktop.png)
+**So sehen Besucher den Blog:** Die Desktopansicht zeigt Artikel, Kategorien und Seitennavigation im Malibu-Shoplayout – einschließlich Shopkopf und Seitenleiste.
+
+[![Öffentliche Blogübersicht mit Shopkopf, Seitenleiste und Beispielartikeln](docs/images/blog-desktop.png)](docs/images/blog-desktop.png)
 
 ## Was du damit machen kannst
 
@@ -23,6 +25,18 @@ Artikel schreiben, Kategorien pflegen und die Darstellung direkt im Shop gestalt
 | Übersicht und einzelne Artikelseiten | Konfigurierbare Shop-Seitenleiste | Daten behalten oder ausdrücklich löschen |
 
 Du kannst Blogkarten auch über **`[c1zz_blog]`** in unterstützte CMS-Inhalte und Produktbeschreibungen einbinden. Der Bereich **Einbinden** erzeugt den passenden Shortcode mit eigenen Widgetoptionen.
+
+## So arbeitest du mit dem Blog
+
+**Artikel im Überblick:** Suche und Kategoriefilter helfen beim Finden. Die Statusspalte unterscheidet veröffentlichte Artikel und private Entwürfe; Bearbeitung, Freigabe und Termine sind direkt erreichbar.
+
+[![Artikelverwaltung mit zehn Beispielartikeln, Kategorien, Status und Aktionen](docs/images/artikelverwaltung.png)](docs/images/artikelverwaltung.png)
+
+**Inhalte schreiben:** Der native Gambio-Editor bietet Formatierung, Bilder und HTML-Ansicht. Darunter liegen **Entwurf speichern**, **Vorschau** und der Zugang zu **Veröffentlichung, Terminen und Versionen**. Der Ausschnitt zeigt den Inhaltsbereich; Titel, Kategorie und SEO stehen weiter oben im Formular.
+
+[![Inhaltsbereich des nativen Gambio-Editors mit Formatierung und Entwurfsaktionen](docs/images/editor.png)](docs/images/editor.png)
+
+**[Zum vollständigen Bilderrundgang →](docs/BILDERRUNDGANG.md)** Dort siehst du auch Einstieg, Kategorien, Artikeldaten und SEO, Freigabe und Termine, die öffentliche Artikelseite und die mobile Ansicht. Alle Bilder lassen sich in Originalgröße öffnen.
 
 ## In wenigen Schritten loslegen
 
@@ -40,11 +54,11 @@ Die vollständigen Schritte, Voraussetzungen und Hinweise zu Updates stehen in d
 
 Die grafische Darstellung und **Alle Einstellungen** bearbeiten dieselben Werte. Du kannst etwa auf Desktop ein Grid und auf Mobil einen Slider verwenden, Bildplatzierung und Textabstände einstellen oder Farben und Schriftgrößen je Gerät anpassen.
 
-![Grafischer Darstellungseditor im lokalen Gambio-Testshop](docs/images/darstellung.png)
+**Vorschau und Einstellungen nebeneinander:** Hier ist im grafischen Editor eine **ungespeicherte Grid-Vorschau** geöffnet. Gerätewahl, Spaltenzahl und Artikelzahl sind direkt neben der Vorschau sichtbar. Die öffentliche Desktopaufnahme weiter oben zeigt die gespeicherte Listenansicht.
 
-<p align="center"><img src="docs/images/blog-mobil.png" alt="Mobile Blogansicht mit Beispielinhalten" width="340"></p>
+[![Grafischer Darstellungseditor mit Grid-Vorschau, Gerätewahl und Layoutoptionen](docs/images/darstellung.png)](docs/images/darstellung.png)
 
-Die Screenshots zeigen echte lokale Testansichten mit Beispielinhalten. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
+Die Screenshots stammen aus dem lokalen GX26-Testshop mit Malibu und den optionalen Beispielinhalten (Modul 0.40.2, Aufnahme vom 09.11.2026). Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch den **mobilen Slider**. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
 
 ## Was ist tatsächlich geprüft?
 
