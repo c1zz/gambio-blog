@@ -19,10 +19,10 @@ Nicht pauschal Verzeichnisse auf `777` setzen. Der Installer prüft Voraussetzun
 
 ## Datei prüfen und hochladen
 
-1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.46.1-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
+1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.0-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
 2. Vor dem Hochladen die [Prüfsumme prüfen](../SECURITY.md). Für öffentliche Releases zusätzlich den Herkunftsnachweis gemäß SECURITY.md prüfen.
-3. Nur `c1zz-blog-install-0.46.1.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
-4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.46.1.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
+3. Nur `c1zz-blog-install-0.47.0.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
+4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.47.0.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
 
 Das enthaltene ZIP wird vor der Übernahme geprüft und nur vorübergehend privat geöffnet. Es soll kein separates Blog-ZIP im öffentlichen Shopordner liegen.
 
@@ -67,7 +67,7 @@ Die Aufgabe erscheint in Gambios Aufgabenverwaltung. Ein aktiver Eintrag allein 
 
 ## Updates direkt in der Modulverwaltung
 
-Nach der Erstinstallation unter **Update / Aktualisieren → Nach Updates suchen** die neue Version und ihre Hinweise prüfen, eine aktuelle Sicherung bestätigen und **Jetzt aktualisieren** wählen. Ein erneuter Root-Upload entfällt. Release Candidates erscheinen nur, wenn **Auch Testversionen anzeigen** ausgewählt ist. Es gibt keine automatischen Hintergrundabfragen oder unbeaufsichtigten Updates.
+Nach der Erstinstallation unter **Update / Aktualisieren → Nach Updates suchen** die neue Version und ihre Hinweise prüfen, eine aktuelle Sicherung bestätigen und **Jetzt aktualisieren** wählen. Ein erneuter Root-Upload entfällt. Release Candidates erscheinen nur, wenn **Auch Testversionen anzeigen** ausgewählt ist. Ab diesem Stand ist die automatische Versionsprüfung nach der Adminanmeldung standardmäßig aktiv. Sie verwendet Gambios Menü-Erweiterungspunkte und einen gemeinsamen Cache je Modul: sechs Stunden bei Erfolg, 15 Minuten bei Fehlern. Unter **Update / Aktualisieren** lässt sie sich abschalten. Die Auswahl für Testversionen wird ebenfalls gespeichert; standardmäßig sind sie ausgeblendet. Ein Badge führt zu den Updatehinweisen; ein Ausrufezeichen kennzeichnet eine nicht bestätigte Prüfung. GitHub erhält die Server-IP und Abrufdaten, keine Artikel, Kunden- oder Zugangsdaten. Installationen starten ausschließlich nach deiner Bestätigung.
 
 **Einmaliger Wechsel:** Ältere Blogstände bis 0.45.0 und KI-Stände bis 0.10.0 haben diesen Einstieg noch nicht. Einmal den neuen Root-Installer verwenden, um ihn einzurichten. Bei später gelöschten Modulordnern oder nicht erreichbarer Verwaltung bleibt der Root-Installer der Wiederherstellungsweg.
 

@@ -133,6 +133,6 @@ Hinweisfelder mit grünem Rand heben die Erläuterungen zur Darstellung hervor. 
 
 ## 14. Update / Aktualisieren
 
-Die Modulverwaltung zeigt die installierte Version, das Ergebnis der letzten Updateprüfung und den gewählten Updatekanal. Der sichtbare Fortschritt stammt vom abgeschlossenen Update auf 0.46.1. Für die Aufnahme wurde nur erneut nach Updates gesucht, kein Update gestartet. „Blog ansehen“ bleibt in der Navigation; die Deinstallation steht separat am Seitenende.
+Die neue Aufnahme mit Blog **0.47.0** zeigt die automatische Prüfung nach der Adminanmeldung, die gespeicherte Kanalauswahl und die inaktive Speichertaste bei unveränderten Einstellungen. Der reproduzierbar gesetzte Cachezustand zeigt „aktuell“; es wurde kein Update gestartet. „Blog ansehen“ bleibt in der Navigation; die Deinstallation steht mit Abstand am Seitenende. Abgeschlossene Updates werden kompakt mit aufklappbaren Details angezeigt.
 
 [![Aktueller Versionsstatus und abgeschlossener Updateablauf](images/aktualisieren.png)](images/aktualisieren.png)
