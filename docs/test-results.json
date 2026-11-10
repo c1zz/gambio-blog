@@ -1,8 +1,8 @@
 {
   "date": "2026-11-10",
   "versions": {
-    "blog": "0.47.2",
-    "ki": "0.12.1"
+    "blog": "0.47.3",
+    "companion_ki": "0.12.1"
   },
   "environment": {
     "gambio": "26.11.0",
@@ -13,213 +13,71 @@
   },
   "native": {
     "completed": true,
-    "all_tables_compared": true,
-    "checkpoints": {
-      "installed": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 273,
-        "added_tables": {
-          "c1zz_ai_credentials": 1,
-          "c1zz_ai_features": 1,
-          "c1zz_ai_generations": 1,
-          "c1zz_ai_ideas": 1,
-          "c1zz_blog_articles": 10,
-          "c1zz_blog_categories": 3,
-          "c1zz_blog_category_routes": 3,
-          "c1zz_blog_drafts": 10,
-          "c1zz_blog_imports": 0,
-          "c1zz_blog_meta": 5,
-          "c1zz_blog_revisions": 10,
-          "c1zz_blog_routes": 9,
-          "c1zz_blog_schedules": 0,
-          "c1zz_blog_trash": 0
-        },
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 800,
-            "added_rows": 7,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      },
-      "ai_uninstalled": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 270,
-        "added_tables": {
-          "c1zz_ai_ideas": 1,
-          "c1zz_blog_articles": 10,
-          "c1zz_blog_categories": 3,
-          "c1zz_blog_category_routes": 3,
-          "c1zz_blog_drafts": 10,
-          "c1zz_blog_imports": 0,
-          "c1zz_blog_meta": 5,
-          "c1zz_blog_revisions": 10,
-          "c1zz_blog_routes": 9,
-          "c1zz_blog_schedules": 0,
-          "c1zz_blog_trash": 0
-        },
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 800,
-            "added_rows": 7,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      },
-      "normal_uninstall": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 270,
-        "added_tables": {
-          "c1zz_ai_ideas": 1,
-          "c1zz_blog_articles": 10,
-          "c1zz_blog_categories": 3,
-          "c1zz_blog_category_routes": 3,
-          "c1zz_blog_drafts": 10,
-          "c1zz_blog_imports": 0,
-          "c1zz_blog_meta": 5,
-          "c1zz_blog_revisions": 10,
-          "c1zz_blog_routes": 9,
-          "c1zz_blog_schedules": 0,
-          "c1zz_blog_trash": 0
-        },
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 800,
-            "added_rows": 7,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      },
-      "reinstalled": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 273,
-        "added_tables": {
-          "c1zz_ai_credentials": 0,
-          "c1zz_ai_features": 1,
-          "c1zz_ai_generations": 1,
-          "c1zz_ai_ideas": 1,
-          "c1zz_blog_articles": 10,
-          "c1zz_blog_categories": 3,
-          "c1zz_blog_category_routes": 3,
-          "c1zz_blog_drafts": 10,
-          "c1zz_blog_imports": 0,
-          "c1zz_blog_meta": 5,
-          "c1zz_blog_revisions": 10,
-          "c1zz_blog_routes": 9,
-          "c1zz_blog_schedules": 0,
-          "c1zz_blog_trash": 0
-        },
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 800,
-            "added_rows": 7,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      },
-      "blog_full_purge": {
-        "strict_equal": false,
-        "tables_before": 259,
-        "tables_after": 259,
-        "added_tables": {},
-        "removed_tables": [],
-        "changed_tables": {
-          "gx_configurations": {
-            "before_rows": 793,
-            "after_rows": 795,
-            "added_rows": 2,
-            "removed_rows": 0,
-            "definition_changed": false,
-            "schema_or_counter_changed": true
-          },
-          "language_phrases_cache": {
-            "before_rows": 29892,
-            "after_rows": 31546,
-            "added_rows": 31546,
-            "removed_rows": 29892,
-            "definition_changed": false,
-            "schema_or_counter_changed": false
-          }
-        }
-      }
-    },
     "checks": [
       "fresh native GX26 installation into dedicated DB before either module installation",
-      "KI credential file removed",
-      "normal uninstall preserves all seeded articles, versions, categories, routes and images",
-      "confirmed blog purge removes all blog tables/media and preserves foreign media",
-      "confirmed full AI purge removes history and all own tables; both update preferences removed"
+      "installed version visible in native admin",
+      "native settings form renders from exact package",
+      "fresh defaults preserve theme and newest article date",
+      "theme default emits no page override",
+      "native settings form renders from exact package",
+      "native settings POST completes",
+      "custom padding rendered on /blog/",
+      "custom padding rendered on /shop/blog/beispiel-1-5c6ec6b362/",
+      "custom padding rendered on /shop/blog/kategorie/beispiel-1-5c6ec6b362/",
+      "home page receives no theme override",
+      "native settings form renders from exact package",
+      "native save/read persists spacing",
+      "native settings form renders from exact package",
+      "native settings POST completes",
+      "native settings form renders from exact package",
+      "invalid spacing rejected without changing stored setting",
+      "native settings form renders from exact package",
+      "native settings POST completes",
+      "spacing boundary saved and rendered: 0",
+      "native settings form renders from exact package",
+      "native settings POST completes",
+      "spacing boundary saved and rendered: 240",
+      "native settings form renders from exact package",
+      "native settings POST completes",
+      "theme selection removes override",
+      "native settings form renders from exact package",
+      "native settings POST completes",
+      "presentation saves preserve c1zz_blog_articles",
+      "presentation saves preserve c1zz_blog_drafts",
+      "presentation saves preserve c1zz_blog_revisions",
+      "presentation saves preserve c1zz_blog_categories",
+      "presentation saves preserve c1zz_blog_routes",
+      "presentation saves preserve c1zz_blog_category_routes",
+      "presentation saves preserve media"
     ]
   },
   "browser": {
     "success": true,
     "checks": [
-      "full deletion defaults to unchecked",
-      "destructive option and action visibly red",
-      "deletion scope explained",
-      "confirmed AJAX deletion completes all native steps",
-      "confirmation locked after first accepted step",
-      "cleanup remains accessible after deactivation"
+      "native saved spacing visible",
+      "newest article date remains selected",
+      "keyboard slider updates numeric form value",
+      "slider change enables native save button",
+      "number input synchronizes slider",
+      "theme selection hides slider but retains submitted value",
+      "reset restores saved value and mode",
+      "shared select style in native admin/390",
+      "select fits native form/390",
+      "shared select style in native admin/768",
+      "select fits native form/768",
+      "shared select style in native admin/1440",
+      "select fits native form/1440",
+      "saved padding applies in native Malibu layout",
+      "native minimum height unchanged"
     ],
     "blocked_external_origins": []
   },
   "isolated": {
     "php_suite": true,
-    "ai_purge_checks": 18,
-    "blog_purge_route_checks": 30,
-    "builder_checks": 2
+    "presentation_checks": 215,
+    "builder_checks": 2,
+    "dom_editor_checks": 79,
+    "previous_fixture_control_checks": 15
   },
   "preservation": {
     "original_database_unchanged": true,
@@ -228,12 +86,12 @@
     "main_shop_files_unchanged": true,
     "audit_database_removed": true
   },
-  "scope": "Exact embedded package files; native module installation/deinstallation/reinstallation. No new root installer or live GitHub update test in this run.",
+  "scope": "Fresh native installation and focused presentation regression of exact embedded package files. No repeated full deinstallation or GitHub update test.",
   "package": {
-    "module_version": "0.47.2",
-    "installer": "c1zz-blog-install-0.47.2.php",
-    "sha256": "64ba7407a88bf3655a49710e108f2d72b2d51ddb2f2d5528b7b830a9eaca5199",
-    "bytes": 477016,
-    "package_files": 166
+    "module_version": "0.47.3",
+    "installer": "c1zz-blog-install-0.47.3.php",
+    "sha256": "eee7572a8eb5233c4e2463bcc204e4ad114298bfb0c85e47b6797c137c51a03c",
+    "bytes": 479852,
+    "package_files": 167
   }
 }

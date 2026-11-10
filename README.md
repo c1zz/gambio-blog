@@ -1,16 +1,16 @@
 <p align="center"><img src="docs/images/header.svg" alt="c1zz-blog für Gambio – Inhalte gestalten. Direkt im Shop." width="100%"></p>
 
-Aktuell: Vollständige Blog-Datenlöschung ergänzt und mit einem Vergleich aller Datenbanktabellen geprüft. Details stehen in den [Release Notes](RELEASE_NOTES.md).
+Aktuell: Deutlichere Sortierauswahl im c1zz-Stil und ein einstellbarer Abstand unter dem Blog. Details stehen in den [Release Notes](RELEASE_NOTES.md).
 
-<p align="center"><strong>Release Candidate · 0.47.2-rc.1 · MIT-Lizenz · Entwickelt von Mensch und KI</strong></p>
+<p align="center"><strong>Release Candidate · 0.47.3-rc.1 · MIT-Lizenz · Entwickelt von Mensch und KI</strong></p>
 
 # Ein Blog, der zu deinem Gambio-Shop passt
 
 Artikel schreiben, Kategorien pflegen und die Darstellung direkt im Shop gestalten: **c1zz-blog für Gambio** ist ein eigenständig installierbares Blogmodul für Gambio. Du brauchst keinen vorbereiteten Blog und keine SSH-Nacharbeiten.
 
-**[Bilderrundgang mit 14 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.47.2-rc.1/c1zz-blog-install-0.47.2.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.2-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
+**[Bilderrundgang mit 14 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.47.3-rc.1/c1zz-blog-install-0.47.3.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.3-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
 
-> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.47.2`; `rc.1` kennzeichnet diese Veröffentlichung.
+> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.47.3`; `rc.1` kennzeichnet diese Veröffentlichung.
 
 **So sehen Besucher den Blog:** Die Desktopansicht zeigt Artikel, Kategorien und Seitennavigation im Malibu-Shoplayout – einschließlich Shopkopf und Seitenleiste.
 
@@ -26,7 +26,9 @@ Ein Shop kann ohne Blog betrieben werden. Mit einem Blog bekommst du Raum, Produ
 
 ## Neu in diesem Release
 
-**Vollständige Datenlöschung:** Der bestätigte Löschlauf entfernt auch die Einstellungen für Update-Hinweise. Der Prüfbericht unterscheidet entfernte Moduldaten von Gambios verbleibenden inaktiven Modulmarkern und Cacheeinträgen.
+**Abstand unter dem Blog:** Unter **Darstellung** kannst du den Theme-Standard beibehalten oder einen eigenen unteren Innenabstand von 0–240 px einstellen. Schieberegler und Zahleneingabe bearbeiten denselben Wert. 24 px sind ein möglicher Ausgangswert; weitere Theme-Abstände und die Mindesthöhe bleiben bestehen. Der Wert gilt für Blogübersicht, Kategorien und Artikel. Prüfe das Ergebnis nach dem Speichern auf der Blogseite; die interne Vorschau zeigt diesen Theme-Abstand nicht.
+
+**Deutlichere Sortierauswahl:** Grüner Rahmen, größere Bedienfläche und klare Beschriftung im gemeinsamen c1zz-Stil. Der Standard bleibt „Artikeldatum: neueste zuerst“.
 
 **Reihenfolge der Artikel:** Unter **Darstellung** wählst du „Artikeldatum: neueste zuerst“ (Standard), „Artikeldatum: älteste zuerst“ oder „Zuletzt veröffentlicht zuerst“. Übersicht, Kategorien, Einbindungen und Vor-/Zurück-Navigation verwenden dieselbe Reihenfolge. Dadurch bestimmt nach einem Import nicht mehr dessen technische Einfügereihenfolge die Anzeige.
 
@@ -68,8 +70,8 @@ Der Modulcode liegt getrennt unter `GXModules/c1zz/c1zzblog/`. **Gambio-Kerndate
 
 ## In wenigen Schritten loslegen
 
-1. Den PHP-Installer und `SHA256SUMS` aus demselben [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.2-rc.1) herunterladen und **vor der Ausführung prüfen**.
-2. Nur `c1zz-blog-install-0.47.2.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Dateinamen beibehalten.
+1. Den PHP-Installer und `SHA256SUMS` aus demselben [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.3-rc.1) herunterladen und **vor der Ausführung prüfen**.
+2. Nur `c1zz-blog-install-0.47.3.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Dateinamen beibehalten.
 3. Die Datei im Browser öffnen. Falls nötig, **Admin-Anmeldung öffnen** wählen. Gambio verarbeitet die Anmeldung in seinem eigenen Fenster; danach kehrt der Installer automatisch zurück.
 4. Voraussetzungen und Paketprüfung kontrollieren, bei vorhandenen Daten die Sicherung bestätigen und die Einrichtung ausdrücklich starten.
 5. Nach erfolgreichem Abschluss entfernt sich die hochgeladene Installationsdatei selbst. In der Blogverwaltung hilft **Einstieg** beim Anpassen an deinen Shop.
@@ -94,7 +96,7 @@ Die bisherigen Funktionsansichten wurden am 10.11.2026 mit **Blog 0.46.1 und KI 
 
 ## Was ist tatsächlich geprüft?
 
-Der aktuelle Kandidat wurde mit **Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu** frisch installiert und über die native Modulverwaltung aktualisiert. Dabei wurden auch eine neue Anmeldung während des Updates, wiederholte POST-Aufrufe, Datenerhalt und Wiederherstellung geprüft. Die GitHub-Antworten waren in dieser isolierten Umgebung simuliert; das übernommene Zielpaket entspricht exakt der Auslieferung.
+Das exakte Paket wurde mit **Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu** in einer frischen, getrennten Testdatenbank installiert. Geprüft wurden native Speicherung, Grenzwerte, Rückkehr zum Theme-Standard, öffentliche Blogseiten und die Bedienung im Browser. Die isolierten Regressionen bestehen ebenfalls. Der vollständige GitHub-Updateablauf und die Deinstallation wurden für diese kleine Darstellungsänderung nicht erneut durchlaufen; frühere Nachweise bleiben versionsbezogen.
 
 Die genaue Einordnung und offene Prüfungen stehen in [Kompatibilität & Teststand](docs/KOMPATIBILITAET.md). Es gibt keine pauschale Zusage für jedes Gambio-Release, jede PHP-Version oder jedes Theme.
 
