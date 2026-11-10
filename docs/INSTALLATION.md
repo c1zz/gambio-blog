@@ -19,10 +19,10 @@ Nicht pauschal Verzeichnisse auf `777` setzen. Der Installer prüft Voraussetzun
 
 ## Datei prüfen und hochladen
 
-1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.45.0-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
-2. Vor dem Hochladen die [Prüfsumme prüfen](../SECURITY.md). Für diesen privaten Kandidaten ist kein kryptografischer Herkunftsnachweis verfügbar.
-3. Nur `c1zz-blog-install-0.45.0.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
-4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.45.0.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
+1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.46.0-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
+2. Vor dem Hochladen die [Prüfsumme prüfen](../SECURITY.md). Für öffentliche Releases zusätzlich den Herkunftsnachweis gemäß SECURITY.md prüfen.
+3. Nur `c1zz-blog-install-0.46.0.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
+4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.46.0.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
 
 Das enthaltene ZIP wird vor der Übernahme geprüft und nur vorübergehend privat geöffnet. Es soll kein separates Blog-ZIP im öffentlichen Shopordner liegen.
 
@@ -34,7 +34,7 @@ Bereits angemeldete Admins gelangen direkt zur Prüfung. Ohne JavaScript oder be
 
 Bei einer Neuinstallation den freien Blogpfad wählen, beispielsweise `blog` oder `magazin`. Die Einrichtung beginnt erst nach der ausdrücklichen Startbestätigung. Die fünf Schritte laufen automatisch in einer festen Fortschrittsanzeige; Fehler stoppen den Ablauf. Ursache beheben und **Erneut versuchen** wählen. Erfolgreiche Schritte sind wiederholungssicher.
 
-Nach erfolgreicher Abschlussprüfung entfernt sich die hochgeladene Installerdatei. Für ein Update wird später der neue Installer erneut hochgeladen.
+Nach erfolgreicher Abschlussprüfung entfernt sich die hochgeladene Installerdatei. Spätere Updates starten unter Update / Aktualisieren im Modul.
 
 ## Den Blog an deinen Shop anpassen
 
@@ -65,11 +65,19 @@ Unter **Einbinden** erzeugt der Generator `[c1zz_blog]` für unterstützte CMS-S
 
 Die Aufgabe erscheint in Gambios Aufgabenverwaltung. Ein aktiver Eintrag allein richtet keinen Server-Cronjob ein: Der regelmäßige native Gambio-Aufruf muss beim Hosting tatsächlich laufen. Fremde Cronjobs werden nicht verändert.
 
-## Updates
+## Updates direkt in der Modulverwaltung
 
-Vorher Datenbank, vorhandenen Modulcode und Blogmedien zusammen sichern. Ein Blogexport ist eine zusätzliche portable Sicherung und ersetzt keine vollständige Shopsicherung.
+Nach der Erstinstallation unter **Update / Aktualisieren → Nach Updates suchen** die neue Version und ihre Hinweise prüfen, eine aktuelle Sicherung bestätigen und **Jetzt aktualisieren** wählen. Ein erneuter Root-Upload entfällt. Release Candidates erscheinen nur, wenn **Auch Testversionen anzeigen** ausgewählt ist. Es gibt keine automatischen Hintergrundabfragen oder unbeaufsichtigten Updates.
 
-Den neuen versionierten Installer hochladen, öffnen, Sicherung bestätigen und die geprüfte Aktualisierung starten. Nicht vorher deinstallieren. Inhalte und Medien bleiben erhalten. Unbekannte oder veränderte alte Installer-/Paketdateien können den Start blockieren; sie werden nicht blind entfernt.
+**Einmaliger Wechsel:** Ältere Blogstände bis 0.45.0 und KI-Stände bis 0.10.0 haben diesen Einstieg noch nicht. Einmal den neuen Root-Installer verwenden, um ihn einzurichten. Bei später gelöschten Modulordnern oder nicht erreichbarer Verwaltung bleibt der Root-Installer der Wiederherstellungsweg.
+
+Jeder Schritt prüft native Admin-/Modul-Center-Rechte und Formularschutz. Downloads werden außerhalb des Webroots zwischengespeichert. Der heruntergeladene Installer wird als Datencontainer gelesen und niemals ausgeführt oder in den Shop-Root kopiert. HTTPS, feste GitHub-Quelle, Asset-Prüfsumme, Paketpfade und Dateihashes werden geprüft. **Eine kryptografische Herkunftssignatur wird im Shop noch nicht geprüft.** Der gesonderte [Herkunftsnachweis](../SECURITY.md) lässt sich außerhalb des Shops verifizieren.
+
+Bei Fehlern stoppt die feste Fortschrittsanzeige. Nach erneutem Anmelden kann derselbe Lauf fortgesetzt werden. Vor der Dateiübernahme lässt sich die Vorbereitung verwerfen; danach ist die Wiederaufnahme vorgesehen. Es gibt kein automatisches Zurückrollen von Datenbankänderungen. Eine erfolgreiche native Wiederherstellung über den Root-Installer schließt einen passenden unterbrochenen Lauf ab.
+
+Artikel, Medien, Einstellungen und KI-Zugänge bleiben beim Update erhalten. Lokale Änderungen, zusätzliche Dateien oder Symlinks im Modulordner blockieren die Übernahme. Beide Module teilen eine Updatesperre; zuerst den laufenden Vorgang abschließen. Das kleine, gegen HTTP-Zugriff geschützte Journal liegt unter `GXModules/c1zz/.c1zz-updates/`; erfolgreiche Downloads werden entfernt.
+
+Für den Abruf braucht das Hosting PHP cURL und ZIP, ein privates PHP-Tempverzeichnis und ausgehendes HTTPS zu `api.github.com` und `release-assets.githubusercontent.com`. Es werden keine GitHub-Zugangsdaten benötigt. GitHub erhält die Server-IP und normale Abrufdaten, keine Artikel, Kunden- oder API-Zugangsdaten. Aktuell ist der neue Updateweg mit Gambio 26.11.0 geprüft.
 
 ## Deinstallation
 
