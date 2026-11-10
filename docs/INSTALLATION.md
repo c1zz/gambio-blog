@@ -19,10 +19,10 @@ Nicht pauschal Verzeichnisse auf `777` setzen. Der Installer prüft Voraussetzun
 
 ## Datei prüfen und hochladen
 
-1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.46.0-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
+1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.46.1-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
 2. Vor dem Hochladen die [Prüfsumme prüfen](../SECURITY.md). Für öffentliche Releases zusätzlich den Herkunftsnachweis gemäß SECURITY.md prüfen.
-3. Nur `c1zz-blog-install-0.46.0.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
-4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.46.0.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
+3. Nur `c1zz-blog-install-0.46.1.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
+4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.46.1.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
 
 Das enthaltene ZIP wird vor der Übernahme geprüft und nur vorübergehend privat geöffnet. Es soll kein separates Blog-ZIP im öffentlichen Shopordner liegen.
 
