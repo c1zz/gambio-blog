@@ -1,8 +1,8 @@
 # c1zz-blog für Gambio in Bildern
 
-Dreizehn echte Ansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
+Vierzehn aktuelle Ansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
 
-**Aufnahmen vom 09.11.2026:** Artikelverwaltung und Modul-Center wurden mit 0.44.0 im lokalen GX26-Testshop erneuert; die Liste zeigt ausschließlich optionale Beispielartikel. Die übrigen Ansichten stammen aus 0.43.0 im damals frischen, anschließend entfernten GX26-Shop und zeigen die unveränderten Funktionen. Ältere Aufnahmen enthalten noch den früheren separaten Navigationspunkt „Neuer Artikel“. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
+**Aufnahmen vom 10.11.2026, Blog 0.46.1 / KI 0.11.1:** Alle Ansichten wurden im lokalen Gambio-26.11.0-Shop mit Malibu neu aufgenommen. Die Artikelverwaltung ist auf die optionalen Beispielartikel gefiltert; öffentliche Ansichten zeigen Beispiel- und Testinhalte. Für die Aufnahmen wurden weder Artikel noch Einstellungen gespeichert, keine Veröffentlichung gestartet und keine KI-Anfrage ausgelöst. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
 
 [Zur Projektübersicht](../README.md) · [Zur Installation](INSTALLATION.md)
 
@@ -21,6 +21,7 @@ Dreizehn echte Ansichten zeigen den Weg vom Einstieg über das Schreiben und Ges
 | [11. Eigenes CSS](#ansicht-11) | Vorschau, visuelle Regler und Code pro Elementtyp |
 | [12. Hilfetexte](#ansicht-12) | Hervorgehobene Hinweise in der Verwaltung |
 | [13. Modul-Center](#ansicht-13) | Einheitlicher Produktname und tatsächlicher Modulstand |
+| [14. Update / Aktualisieren](#ansicht-14) | Versionsstatus, Prüfzeit und abgeschlossener Updateablauf |
 
 <a id="ansicht-1"></a>
 
@@ -74,7 +75,7 @@ Der Ausschnitt zeigt die Freigabe eines gespeicherten Entwurfs, die Terminplanun
 
 ## 7. Darstellung mit Vorschau
 
-Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **ungespeicherte Grid-Vorschau** mit drei Spalten und den passenden Layoutoptionen. Die Grid-/Slider-Einstellungen wurden ausschließlich im kurzlebigen Screenshot-Testshop gesetzt. Die gezeigte Vorschau wurde nicht gespeichert.
+Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **Grid-Vorschau** mit drei Spalten und den passenden Layoutoptionen. Die Vorschau wurde für die Aufnahme geöffnet; gespeicherte Shop-Einstellungen wurden dabei nicht verändert.
 
 [![Grafischer Editor mit Grid-Vorschau und Layoutoptionen für Desktop](images/darstellung.png)](images/darstellung.png)
 
@@ -108,15 +109,15 @@ Bei 390 Pixeln Breite verwendet dieser Beispielshop einen Slider mit Pfeilen, Pu
 
 ## 11. Eigenes CSS am Element
 
-Regler und Farbauswahl bearbeiten dieselben Deklarationen wie der Reiter **CSS-Code**. Hier zeigen die Artikelkarten eine ungespeicherte Anpassung von Rundung, Rahmen und Hintergrund; die öffentliche Darstellung wurde für die Aufnahme nicht verändert.
+Regler und Farbauswahl bearbeiten dieselben Deklarationen wie der Reiter **CSS-Code**. Der Ausschnitt zeigt die aktuellen CSS-Werkzeuge für Artikelkarten; die öffentliche Darstellung wurde für die Aufnahme nicht verändert.
 
-[![Element-CSS mit Vorschau, Regler und Farbauswahl](images/element-css.png)](images/element-css.png)
+[![Element-CSS mit Vorschau, Gerätebereich und Eigenschaften](images/element-css.png)](images/element-css.png)
 
 <a id="ansicht-12"></a>
 
 ## 12. Sichtbare Hilfetexte
 
-Blaue Hinweisfelder heben die Erläuterungen zur Darstellung hervor. Auch Hilfen an einzelnen Eingabefeldern verwenden die gemeinsame Gestaltung.
+Hinweisfelder mit grünem Rand heben die Erläuterungen zur Darstellung hervor. Auch Hilfen an einzelnen Eingabefeldern verwenden die gemeinsame Gestaltung.
 
 [![Darstellung mit hervorgehobenen Hilfetexten](images/hilfetexte.png)](images/hilfetexte.png)
 
@@ -124,6 +125,14 @@ Blaue Hinweisfelder heben die Erläuterungen zur Darstellung hervor. Auch Hilfen
 
 ## 13. Name und Version im GX26-Modul-Center
 
-**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.45.0** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
+**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.46.1** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
 
-[![GX26-Modul-Center mit einheitlichem Namen und Version 0.45.0](images/modul-center.png)](images/modul-center.png)
+[![GX26-Modul-Center mit einheitlichem Namen und Version 0.46.1](images/modul-center.png)](images/modul-center.png)
+
+<a id="ansicht-14"></a>
+
+## 14. Update / Aktualisieren
+
+Die Modulverwaltung zeigt die installierte Version, das Ergebnis der letzten Updateprüfung und den gewählten Updatekanal. Der sichtbare Fortschritt stammt vom abgeschlossenen Update auf 0.46.1. Für die Aufnahme wurde nur erneut nach Updates gesucht, kein Update gestartet. „Blog ansehen“ bleibt in der Navigation; die Deinstallation steht separat am Seitenende.
+
+[![Aktueller Versionsstatus und abgeschlossener Updateablauf](images/aktualisieren.png)](images/aktualisieren.png)

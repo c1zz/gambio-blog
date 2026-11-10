@@ -8,7 +8,7 @@ Aktuell: Deutlicher Versionsstatus unter **Update / Aktualisieren** und vollstä
 
 Artikel schreiben, Kategorien pflegen und die Darstellung direkt im Shop gestalten: **c1zz-blog für Gambio** ist ein eigenständig installierbares Blogmodul für Gambio. Du brauchst keinen vorbereiteten Blog und keine SSH-Nacharbeiten.
 
-**[Bilderrundgang mit 13 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.46.1-rc.1/c1zz-blog-install-0.46.1.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.46.1-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
+**[Bilderrundgang mit 14 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.46.1-rc.1/c1zz-blog-install-0.46.1.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.46.1-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
 
 > Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.46.1`; `rc.1` kennzeichnet diese Veröffentlichung.
 
@@ -82,11 +82,11 @@ Die grafische Darstellung und **Alle Einstellungen** bearbeiten dieselben Werte.
 
 [![Grafischer Darstellungseditor mit Grid-Vorschau, Gerätewahl und Layoutoptionen](docs/images/darstellung.png)](docs/images/darstellung.png)
 
-[![Eigenes CSS an Artikelkarten mit Regler, Farbauswahl und unmittelbarer Vorschau](docs/images/element-css.png)](docs/images/element-css.png)
+[![Eigenes CSS an Artikelkarten mit Gerätebereich, Eigenschaften und unmittelbarer Vorschau](docs/images/element-css.png)](docs/images/element-css.png)
 
 **Blogadressen bleiben steuerbar:** Beim Pfadwechsel entscheidest du, ob die bisherige Adresse weiterleiten soll. Gespeicherte Weiterleitungen kannst du unter **Blogadresse** ändern oder löschen. Hilfetexte sind im gemeinsamen c1zz-systems-Stil hervorgehoben. Entfernen, Löschen und Zurücksetzen eigener Werte sind rot markiert.
 
-Die Screenshots stammen aus dem lokalen GX26-Testshop mit Malibu und optionalen Beispielinhalten. Artikelverwaltung und Modul-Center zeigen den früheren Stand 0.44.0; die übrigen Funktionsansichten stammen aus 0.43.0 (09.11.2026). Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch den **mobilen Slider**. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
+Alle Screenshots wurden am 10.11.2026 mit **Blog 0.46.1 und KI 0.11.1** im lokalen GX26-Testshop mit Malibu erneuert. Sie zeigen Beispiel- und Testinhalte sowie die aktuelle Navigation, Speicherleisten und Updateverwaltung. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch den **mobilen Slider**. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
 
 ## Was ist tatsächlich geprüft?
 
