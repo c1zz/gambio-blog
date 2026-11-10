@@ -1,13 +1,14 @@
-# c1zz-blog für Gambio · 0.44.0-rc.1
+# c1zz-blog für Gambio · 0.45.0-rc.1
 
-Die Artikelverwaltung ist kompakter und passt zum gemeinsamen c1zz-Stil.
+Dieses Update behebt die Befunde des lokalen Audits und vereinheitlicht die Verwaltung.
 
-- Klare Tabellenzeilen, dezente grüne Trennlinien und erkennbare Statusmarkierungen.
-- „Artikel“ bündelt Übersicht und Bearbeitung in der oberen Navigation.
-- „Neuer Artikel“ steht links über der Suche: grüner Button mit Plus-Symbol und hervorgehobener Beschriftung.
-- Artikel, Kategorien, Medien und Einstellungen bleiben beim Update erhalten.
-- Das separate [KI-Modul 0.9.0](https://github.com/c1zz/gambio-ki/releases) ergänzt eine Bildbeschreibung zum Kopieren nach ChatGPT oder Gemini.
+- Blogaktionen prüfen jetzt native Schreibrechte zusätzlich zu Anmeldung und CSRF. Das Entfernen von Artikeln, Kategorien, Beispielinhalten und Medien benötigt zusätzlich Löschrechte.
+- Darstellungsänderungen bleiben bei Speicherfehlern erhalten. Der ursprüngliche Versionsvergleich schützt weiterhin vor dem Überschreiben paralleler Änderungen.
+- Speicherbuttons werden nur bei Änderungen aktiv. Der Vorschauhinweis zeigt ungespeicherte Änderungen nur dann an, wenn welche vorhanden sind.
+- Kompakte, gut sichtbare Speicherleisten, gestaltete Dateiauswahl, deutlicher Shortcode und hervorgehobene Sperrhinweise.
+- Mobil erscheint das Kategorienmenü aufklappbar oberhalb. Die Vorschau lässt sich per Klick und Tastatur öffnen; Tablet und Desktop unterstützen weiterhin die seitliche Darstellung.
+- Der Modulordner heißt jetzt `GXModules/c1zz/c1zzblog`. Der Installer übernimmt den bisherigen Ordner `StandaloneBlog`; unbekannte Dateien, Symlinks und doppelte Ordner blockieren die Übernahme.
 
-Gambio-eigene Anmeldung, Rechte, Formularschutz, Editor, Modul-Center und Aufgabenverwaltung bleiben die Grundlage. Keine Änderungen an Gambio-Kerndateien. Die normale Deinstallation deaktiviert das Modul und erhält Bloginhalte; vollständige Datenlöschung erfordert eine gesonderte Bestätigung.
+Bei installiertem KI-Modul **zuerst Blog 0.45.0, anschließend KI 0.10.0** aktualisieren. Während dieses gemeinsamen Updates die KI-Verwaltung nicht verwenden. Interne Tabellen- und Controllerkennungen bleiben für vorhandene Daten erhalten. Keine Änderungen an Gambio-Kerndateien.
 
-Modulstand und Installer: **0.44.0**. Nur `c1zz-blog-install-0.44.0.php` hochladen, vorher sichern und den geführten Updateablauf ausführen. Der Installer entfernt sich nach erfolgreichem Abschluss. [Installation](docs/INSTALLATION.md) · [Teststand](docs/KOMPATIBILITAET.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md).
+Vor dem Update Datenbank, Medien und Module zusammen sichern. Nur `c1zz-blog-install-0.45.0.php` in den Shopordner hochladen und den geführten Ablauf starten. Der Installer entfernt sich nach erfolgreichem Abschluss. [Installation](docs/INSTALLATION.md) · [Teststand und Grenzen](docs/KOMPATIBILITAET.md).
