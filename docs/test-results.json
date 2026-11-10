@@ -1,8 +1,8 @@
 {
   "date": "2026-11-10",
   "versions": {
-    "blog": "0.47.1",
-    "ki": "0.12.0"
+    "blog": "0.47.2",
+    "ki": "0.12.1"
   },
   "environment": {
     "gambio": "26.11.0",
@@ -12,165 +12,228 @@
     "base": "/shop/"
   },
   "native": {
-    "success": true,
-    "version": "0.47.1",
-    "installer": {
-      "path": "c1zz-blog-install-0.47.1.php",
-      "bytes": 476840,
-      "sha256": "25f14a1c948bf9af92d7a1bb29ab345cc56aedd990fd50bda66441bc8bd1423c"
+    "completed": true,
+    "all_tables_compared": true,
+    "checkpoints": {
+      "installed": {
+        "strict_equal": false,
+        "tables_before": 259,
+        "tables_after": 273,
+        "added_tables": {
+          "c1zz_ai_credentials": 1,
+          "c1zz_ai_features": 1,
+          "c1zz_ai_generations": 1,
+          "c1zz_ai_ideas": 1,
+          "c1zz_blog_articles": 10,
+          "c1zz_blog_categories": 3,
+          "c1zz_blog_category_routes": 3,
+          "c1zz_blog_drafts": 10,
+          "c1zz_blog_imports": 0,
+          "c1zz_blog_meta": 5,
+          "c1zz_blog_revisions": 10,
+          "c1zz_blog_routes": 9,
+          "c1zz_blog_schedules": 0,
+          "c1zz_blog_trash": 0
+        },
+        "removed_tables": [],
+        "changed_tables": {
+          "gx_configurations": {
+            "before_rows": 793,
+            "after_rows": 800,
+            "added_rows": 7,
+            "removed_rows": 0,
+            "definition_changed": false,
+            "schema_or_counter_changed": true
+          },
+          "language_phrases_cache": {
+            "before_rows": 29892,
+            "after_rows": 31546,
+            "added_rows": 31546,
+            "removed_rows": 29892,
+            "definition_changed": false,
+            "schema_or_counter_changed": false
+          }
+        }
+      },
+      "ai_uninstalled": {
+        "strict_equal": false,
+        "tables_before": 259,
+        "tables_after": 270,
+        "added_tables": {
+          "c1zz_ai_ideas": 1,
+          "c1zz_blog_articles": 10,
+          "c1zz_blog_categories": 3,
+          "c1zz_blog_category_routes": 3,
+          "c1zz_blog_drafts": 10,
+          "c1zz_blog_imports": 0,
+          "c1zz_blog_meta": 5,
+          "c1zz_blog_revisions": 10,
+          "c1zz_blog_routes": 9,
+          "c1zz_blog_schedules": 0,
+          "c1zz_blog_trash": 0
+        },
+        "removed_tables": [],
+        "changed_tables": {
+          "gx_configurations": {
+            "before_rows": 793,
+            "after_rows": 800,
+            "added_rows": 7,
+            "removed_rows": 0,
+            "definition_changed": false,
+            "schema_or_counter_changed": true
+          },
+          "language_phrases_cache": {
+            "before_rows": 29892,
+            "after_rows": 31546,
+            "added_rows": 31546,
+            "removed_rows": 29892,
+            "definition_changed": false,
+            "schema_or_counter_changed": false
+          }
+        }
+      },
+      "normal_uninstall": {
+        "strict_equal": false,
+        "tables_before": 259,
+        "tables_after": 270,
+        "added_tables": {
+          "c1zz_ai_ideas": 1,
+          "c1zz_blog_articles": 10,
+          "c1zz_blog_categories": 3,
+          "c1zz_blog_category_routes": 3,
+          "c1zz_blog_drafts": 10,
+          "c1zz_blog_imports": 0,
+          "c1zz_blog_meta": 5,
+          "c1zz_blog_revisions": 10,
+          "c1zz_blog_routes": 9,
+          "c1zz_blog_schedules": 0,
+          "c1zz_blog_trash": 0
+        },
+        "removed_tables": [],
+        "changed_tables": {
+          "gx_configurations": {
+            "before_rows": 793,
+            "after_rows": 800,
+            "added_rows": 7,
+            "removed_rows": 0,
+            "definition_changed": false,
+            "schema_or_counter_changed": true
+          },
+          "language_phrases_cache": {
+            "before_rows": 29892,
+            "after_rows": 31546,
+            "added_rows": 31546,
+            "removed_rows": 29892,
+            "definition_changed": false,
+            "schema_or_counter_changed": false
+          }
+        }
+      },
+      "reinstalled": {
+        "strict_equal": false,
+        "tables_before": 259,
+        "tables_after": 273,
+        "added_tables": {
+          "c1zz_ai_credentials": 0,
+          "c1zz_ai_features": 1,
+          "c1zz_ai_generations": 1,
+          "c1zz_ai_ideas": 1,
+          "c1zz_blog_articles": 10,
+          "c1zz_blog_categories": 3,
+          "c1zz_blog_category_routes": 3,
+          "c1zz_blog_drafts": 10,
+          "c1zz_blog_imports": 0,
+          "c1zz_blog_meta": 5,
+          "c1zz_blog_revisions": 10,
+          "c1zz_blog_routes": 9,
+          "c1zz_blog_schedules": 0,
+          "c1zz_blog_trash": 0
+        },
+        "removed_tables": [],
+        "changed_tables": {
+          "gx_configurations": {
+            "before_rows": 793,
+            "after_rows": 800,
+            "added_rows": 7,
+            "removed_rows": 0,
+            "definition_changed": false,
+            "schema_or_counter_changed": true
+          },
+          "language_phrases_cache": {
+            "before_rows": 29892,
+            "after_rows": 31546,
+            "added_rows": 31546,
+            "removed_rows": 29892,
+            "definition_changed": false,
+            "schema_or_counter_changed": false
+          }
+        }
+      },
+      "blog_full_purge": {
+        "strict_equal": false,
+        "tables_before": 259,
+        "tables_after": 259,
+        "added_tables": {},
+        "removed_tables": [],
+        "changed_tables": {
+          "gx_configurations": {
+            "before_rows": 793,
+            "after_rows": 795,
+            "added_rows": 2,
+            "removed_rows": 0,
+            "definition_changed": false,
+            "schema_or_counter_changed": true
+          },
+          "language_phrases_cache": {
+            "before_rows": 29892,
+            "after_rows": 31546,
+            "added_rows": 31546,
+            "removed_rows": 29892,
+            "definition_changed": false,
+            "schema_or_counter_changed": false
+          }
+        }
+      }
     },
     "checks": [
-      "exact new installer checksum",
-      "native installed version is 0.47.1",
-      "all installed files match exact package",
-      "update preserves every article/draft/revision/media/category table",
-      "native settings form available",
-      "native order save succeeds: date_desc",
-      "order choice persists: date_desc",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "all pages use expected order without gaps/duplicates: date_desc",
-      "category follows same ordering: date_desc",
-      "category follows same ordering: date_desc",
-      "category follows same ordering: date_desc",
-      "category follows same ordering: date_desc",
-      "category follows same ordering: date_desc",
-      "category follows same ordering: date_desc",
-      "category follows same ordering: date_desc",
-      "article neighbour matches overview: date_desc/0/previous",
-      "article neighbour matches overview: date_desc/0/next",
-      "article neighbour matches overview: date_desc/1/previous",
-      "article neighbour matches overview: date_desc/1/next",
-      "article neighbour matches overview: date_desc/32/previous",
-      "article neighbour matches overview: date_desc/32/next",
-      "article neighbour matches overview: date_desc/64/previous",
-      "article neighbour matches overview: date_desc/64/next",
-      "native settings form available",
-      "native order save succeeds: date_asc",
-      "order choice persists: date_asc",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "all pages use expected order without gaps/duplicates: date_asc",
-      "category follows same ordering: date_asc",
-      "category follows same ordering: date_asc",
-      "category follows same ordering: date_asc",
-      "category follows same ordering: date_asc",
-      "category follows same ordering: date_asc",
-      "category follows same ordering: date_asc",
-      "category follows same ordering: date_asc",
-      "article neighbour matches overview: date_asc/0/previous",
-      "article neighbour matches overview: date_asc/0/next",
-      "article neighbour matches overview: date_asc/1/previous",
-      "article neighbour matches overview: date_asc/1/next",
-      "article neighbour matches overview: date_asc/32/previous",
-      "article neighbour matches overview: date_asc/32/next",
-      "article neighbour matches overview: date_asc/64/previous",
-      "article neighbour matches overview: date_asc/64/next",
-      "native settings form available",
-      "native order save succeeds: published_desc",
-      "order choice persists: published_desc",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "overview page available",
-      "all pages use expected order without gaps/duplicates: published_desc",
-      "category follows same ordering: published_desc",
-      "category follows same ordering: published_desc",
-      "category follows same ordering: published_desc",
-      "category follows same ordering: published_desc",
-      "category follows same ordering: published_desc",
-      "category follows same ordering: published_desc",
-      "category follows same ordering: published_desc",
-      "article neighbour matches overview: published_desc/0/previous",
-      "article neighbour matches overview: published_desc/0/next",
-      "article neighbour matches overview: published_desc/1/previous",
-      "article neighbour matches overview: published_desc/1/next",
-      "article neighbour matches overview: published_desc/32/previous",
-      "article neighbour matches overview: published_desc/32/next",
-      "article neighbour matches overview: published_desc/64/previous",
-      "article neighbour matches overview: published_desc/64/next",
-      "unknown sort is rejected without saving",
-      "invalid native CSRF cannot change order",
-      "native settings form available",
-      "native order save succeeds: date_desc",
-      "order choice persists: date_desc",
-      "all content preserved after all sort selections",
-      "other test shop files unchanged"
-    ],
-    "checks_count": 101,
-    "default": "date_desc",
-    "articles": 78,
-    "public_articles": 65,
-    "private_articles": 13,
-    "scope": "GX26 migration lab /shop; native package update and HTTP sorting/settings; no live changes"
+      "fresh native GX26 installation into dedicated DB before either module installation",
+      "KI credential file removed",
+      "normal uninstall preserves all seeded articles, versions, categories, routes and images",
+      "confirmed blog purge removes all blog tables/media and preserves foreign media",
+      "confirmed full AI purge removes history and all own tables; both update preferences removed"
+    ]
   },
-  "isolated": {
-    "suite_passed": true,
-    "article_order_checks": 13,
-    "device_checks": 83,
-    "presentation_checks": 189,
-    "builder_checks": 2,
-    "php_syntax_files": 88
-  },
-  "fresh_shop_retested": false,
-  "live_changes": false,
-  "main_shop_updated_by_agent": false,
   "browser": {
     "success": true,
     "checks": [
-      "source viewer renders marked local source",
-      "old image path renders",
-      "imported public overview renders article cards",
-      "browser overview starts with newest article dates",
-      "new article renders: hoffest",
-      "article images render: hoffest",
-      "new article renders: recipe",
-      "article images render: recipe",
-      "recipe cover and article fit mobile viewport",
-      "native login stays under /shop/",
-      "native administration renders: C1zzBlogAdmin",
-      "admin shows 78 articles and removes the empty-blog prompt",
-      "native administration renders: C1zzBlogTransfer",
-      "native administration renders: C1zzBlogAI",
-      "C1zzBlogSetup: automatic external update check disabled",
-      "C1zzBlogAI: automatic external update check disabled",
-      "native admin displays saved newest-date default",
-      "three translated order choices available"
+      "full deletion defaults to unchecked",
+      "destructive option and action visibly red",
+      "deletion scope explained",
+      "confirmed AJAX deletion completes all native steps",
+      "confirmation locked after first accepted step",
+      "cleanup remains accessible after deactivation"
     ],
-    "blocked_external_origins": [],
-    "scope": "Automated Chromium checks of local imported content; no manual acceptance or live migration.",
-    "checks_count": 18
+    "blocked_external_origins": []
   },
-  "native_update": {
-    "from": "0.47.0",
-    "to": "0.47.1",
-    "installer_removed": true,
-    "all_package_files_verified": true,
-    "content_preserved": true
+  "isolated": {
+    "php_suite": true,
+    "ai_purge_checks": 18,
+    "blog_purge_route_checks": 30,
+    "builder_checks": 2
+  },
+  "preservation": {
+    "original_database_unchanged": true,
+    "original_media_unchanged": true,
+    "original_configuration_unchanged": true,
+    "main_shop_files_unchanged": true,
+    "audit_database_removed": true
+  },
+  "scope": "Exact embedded package files; native module installation/deinstallation/reinstallation. No new root installer or live GitHub update test in this run.",
+  "package": {
+    "module_version": "0.47.2",
+    "installer": "c1zz-blog-install-0.47.2.php",
+    "sha256": "64ba7407a88bf3655a49710e108f2d72b2d51ddb2f2d5528b7b830a9eaca5199",
+    "bytes": 477016,
+    "package_files": 166
   }
 }

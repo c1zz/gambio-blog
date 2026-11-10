@@ -19,10 +19,10 @@ Nicht pauschal Verzeichnisse auf `777` setzen. Der Installer prüft Voraussetzun
 
 ## Datei prüfen und hochladen
 
-1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.1-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
+1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.2-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
 2. Vor dem Hochladen die [Prüfsumme prüfen](../SECURITY.md). Für öffentliche Releases zusätzlich den Herkunftsnachweis gemäß SECURITY.md prüfen.
-3. Nur `c1zz-blog-install-0.47.1.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
-4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.47.1.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
+3. Nur `c1zz-blog-install-0.47.2.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
+4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.47.2.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
 
 Das enthaltene ZIP wird vor der Übernahme geprüft und nur vorübergehend privat geöffnet. Es soll kein separates Blog-ZIP im öffentlichen Shopordner liegen.
 
@@ -94,3 +94,9 @@ Bei Problemen Gambio-, PHP- und Theme-Version sowie den betroffenen Schritt ange
 ## Übernahme der bisherigen Modulordner
 
 Ab Blog 0.45.0 / KI 0.10.0 lauten die Ordner `GXModules/c1zz/c1zzblog` und `GXModules/c1zz/c1zzki`. Die Root-Installer übernehmen `StandaloneBlog` beziehungsweise `BlogAI`. Nicht manuell eine zweite Kopie daneben entpacken. Unbekannte Dateien, Symlinks und gleichzeitig vorhandene alte und neue Ordner blockieren den Vorgang. Zuerst Blog 0.45.0, danach KI 0.10.0 aktualisieren; währenddessen den KI-Assistenten nicht verwenden. Datenbanktabellen und Medien bleiben an ihren bisherigen Orten.
+
+## Vollständige Datenlöschung und Datenbankzustand
+
+Blog und KI haben jeweils eine eigene, standardmäßig ausgeschaltete Löschbestätigung. Beim KI-Modul entfernt sie auch gespeicherte Themenvorschläge; beim Blog entfernt sie Bloginhalte und Medien. Beide entfernen ihre Update-Hinweiseinstellungen. Bereits in den Blog übernommene KI-Inhalte gehören zum Blog und werden durch die KI-Löschung erhalten. Ohne Löschhaken gilt weiterhin Datenerhalt, ausgenommen KI-Zugänge.
+
+Auch nach vollständiger Datenlöschung ist die Shopdatenbank nicht bytegleich mit dem Zustand vor der Installation: Native inaktive Modulmarker, Cacheaufbau und fortgeschrittene Zähler bleiben. Modulcode und eigene redaktionelle Shopverknüpfungen werden nicht automatisch entfernt.

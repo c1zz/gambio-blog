@@ -1,17 +1,11 @@
 # Teststand und Grenzen
 
-**Blog 0.47.1-rc.1**, 10. November 2026. KI unverändert 0.12.0.
+**Blog 0.47.2-rc.1 / KI 0.12.1-rc.1**, 10. November 2026.
 
-Gezielter Sortierungsfix im vorhandenen **Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10, Malibu**, Shop-Unterverzeichnis `/shop/`:
+Im frischen **Gambio 26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** unter `/shop/` wurden die exakten eingebetteten Moduldateien beider Installer geprüft: Installation, normale Deinstallation, Wiederinstallation und vollständige Datenlöschung. Dabei wurden Struktur und Inhalt aller Datenbanktabellen verglichen. Der neue KI-Löschablauf wurde zusätzlich mit Chromium und echten Ajax-Schritten geprüft. Isolierte PHP-Regressionen, 18 KI-Löschschutzprüfungen, 30 Blog-Lösch-/Routingprüfungen und zwei Builderprüfungen bestanden.
 
-- Exaktes neues Paket über den nativen Root-Installer von 0.47.0 aktualisiert; Installer entfernt, alle installierten Dateien gegen das Paket geprüft.
-- 78 Artikel (65 öffentlich, 13 privat), 81 Fassungen und 100 Bilder erhalten.
-- 101 native HTTP-/Datenprüfungen: alle drei Sortierungen, elf Übersichtsseiten ohne Lücken/Duplikate, sieben Kategorien, erste/mittlere/letzte Nachbarartikel, Speicherung der Auswahl, ungültige Werte und native CSRF-Ablehnung ohne Schreibwirkung.
-- Isolierte PHP-Suite einschließlich 13 neuer Sortierungsfälle, 83 Geräte-/Seitenfensterprüfungen und 189 Darstellungsprüfungen bestanden. Zwei Builderprüfungen und Syntax von 88 PHP-Dateien bestanden.
-- 18 automatisierte Chromiumprüfungen bestanden: tatsächliche Datumssortierung, übersetzte Auswahl und gespeicherter Standard, native Verwaltung sowie Artikelbilder auf Desktop/Mobil. Sortierauswahl zusätzlich visuell kontrolliert.
+Nach vollständiger Löschung sind wieder alle **259 ursprünglichen Tabellen** vorhanden, ohne eigene Blog-/KI-Tabellen und ohne deren Update-Einstellungen. **Kein bytegleicher Datenbankzustand:** Gambios zwei inaktive Modulmarker, der neu aufgebaute Sprachcache und ein fortgeschrittener AUTO_INCREMENT-Zähler bleiben. Modulcode bleibt vorhanden. Keine ursprüngliche Tabellenstruktur oder sonstigen fachlichen Shopdaten wurden verändert.
 
-Die Sortierung liest veröffentlichte Metadaten und sortiert vor der Seitenauswahl in PHP. Dadurch werden keine datenbankspezifischen JSON-Funktionen oder Schemaänderungen benötigt. Der Speicherbedarf wächst mit der Anzahl öffentlicher Metadatensätze; ein neuer Lasttest mit sehr großen Blogs wurde nicht ausgeführt. Artikeltexte/Entwürfe werden für die Übersicht nicht geladen.
+Die normale Deinstallation erhält Blogdaten, Bilder und KI-Ideen weiterhin; KI-Zugänge werden dabei entfernt. Die Löschtests verwenden ausschließlich künstliche Daten in einer getrennten Prüfdatenbank. Originaler Migrationsbestand und Haupttestshop bleiben unverändert. Prüfdatenbank, Prüfbenutzer und temporäre Dateikopien wurden entfernt.
 
-Kein weiterer vollständiger Shop-Neuaufbau und kein neuer nativer Erstinstallationstest für diesen gezielten Fix. Der frische GX26-Ausgangstest des Vorgängers bleibt im [Teststand von 0.47.0](https://github.com/c1zz/gambio-blog/blob/v0.47.0-rc.1/docs/KOMPATIBILITAET.md) dokumentiert. Die temporäre Migrationstestumgebung bleibt auf ausdrücklichen Nutzerauftrag für die laufende Migration verfügbar. Haupttestshop und Live-Shop wurden nicht verändert.
-
-Keine Erweiterung der Freigabe auf GX5, Honeygrid, PHP 8.3, MySQL 8.4 oder weitere Versionen. Kein unabhängiger Penetrationstest. Die Herkunftssignatur wird im Shop nicht kryptografisch geprüft. [Maschinelle Ergebnisse und Paketprüfsumme](test-results.json).
+Geprüft wurden native Modulabläufe und die exakten Paketdateien. Kein neuer vollständiger GitHub-Updatetest im Shop und kein erneuter Root-Installer-Test in diesem Lauf. Vorherige Nachweise bleiben versionsbezogen. Keine zusätzliche Freigabe für andere Gambio-/PHP-/Theme-Versionen, kein unabhängiges Codeaudit. Der Shop prüft Paketintegrität, weiterhin keine kryptografische Herkunftssignatur. [Maschineller Prüfbericht](test-results.json).

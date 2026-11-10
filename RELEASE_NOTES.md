@@ -1,19 +1,9 @@
-# c1zz-blog 0.47.1-rc.1
+# c1zz-blog 0.47.2-rc.1
 
-Die Blogübersicht sortiert jetzt standardmäßig nach **Artikeldatum, neueste zuerst**. Bisher entschied der technische Veröffentlichungszeitpunkt; bei gemeinsam importierten Artikeln führte das zu einer unerwarteten Reihenfolge.
+Die ausdrücklich bestätigte vollständige Blog-Datenlöschung entfernt jetzt auch die gespeicherten Einstellungen für Update-Hinweise. Normale Deinstallation und Updates erhalten die Blogdaten weiterhin. Die Auswahl der Artikelreihenfolge aus 0.47.1 bleibt enthalten; Standard ist **Artikeldatum: neueste zuerst**.
 
-Unter **Darstellung → Reihenfolge der Artikel** stehen drei Einstellungen zur Wahl:
+Der vollständige Datenbankvergleich wurde mit dem begleitenden KI-Testrelease **0.12.1** durchgeführt. Nach vollständiger Löschung beider Module bleiben keine eigenen Modultabellen oder Update-Einstellungen zurück. Gambios inaktive Modulmarker, Sprachcache und fortgeschrittene Datenbankzähler bleiben ausdrücklich bestehen. Modulcode wird nicht entfernt. [Prüfumfang und Grenzen](docs/KOMPATIBILITAET.md).
 
-- Artikeldatum: neueste zuerst (neuer Standard, auch beim Update)
-- Artikeldatum: älteste zuerst
-- Zuletzt veröffentlicht zuerst (bisheriges Verhalten)
+Zum Testen **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** öffnen. Nach einer Sicherung **Jetzt aktualisieren** wählen. Ein Update löscht keine Inhalte und startet keine Deinstallation.
 
-Übersicht, Kategorien, Einbindungen, responsive Seiten und Vor-/Zurück-Navigation verwenden die gleiche Reihenfolge. Bei gleichem Artikeldatum entscheidet eine stabile interne ID. Nur veröffentlichte Fassungen werden berücksichtigt; private Entwürfe ändern die öffentliche Reihenfolge nicht. Artikel, Bilder, Kategorien und Fassungen bleiben erhalten. Keine Datenbankschemaänderung. Die KI-Erweiterung bleibt unverändert auf 0.12.0.
-
-## Im Testshop aktualisieren
-
-**Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen.** Nach einer Sicherung **Jetzt aktualisieren** wählen. Kein erneuter Root-Upload nötig. Nach dem Update findest du die Auswahl direkt oben unter **Darstellung**.
-
-Das exakte Paket wurde im bestehenden GX26.11.0-Migrationstestshop unter `/shop/` von 0.47.0 auf 0.47.1 aktualisiert und mit 78 Artikeln geprüft. Geprüft wurden alle drei Sortierungen über die gesamte öffentliche Seitennavigation, Kategorien, Nachbarartikel, Speichern und Formularschutz sowie der Datenerhalt. Isolierte PHP-Regressionsprüfungen und Builderprüfungen bestanden. [Genauer Teststand und Grenzen](docs/KOMPATIBILITAET.md).
-
-Dies bleibt ein Release Candidate. Kein neuer vollständiger Shop-Neuaufbau, kein unabhängiges Codeaudit und keine zusätzliche Versions-/Theme-Freigabe. Der Shop prüft Paketintegrität; eine kryptografische Herkunftssignatur wird dort weiterhin nicht verifiziert.
+Dies bleibt ein Release Candidate. Keine neue Kompatibilitätszusage und kein unabhängiges Codeaudit. Die kryptografische Herkunftssignatur wird im Shop weiterhin nicht geprüft.
