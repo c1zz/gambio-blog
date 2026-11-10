@@ -1,13 +1,19 @@
-# c1zz-blog 0.47.0-rc.1
+# c1zz-blog 0.47.1-rc.1
 
-Nach der Adminanmeldung prüft das Modul im Hintergrund auf neue Versionen und zeigt einen kleinen Hinweis direkt am Gambio-Menülink. Ein bestätigtes Update erhält eine „1“, eine fehlgeschlagene Prüfung ein „!“. Der Badge öffnet **Update / Aktualisieren**; ein Update startet weiterhin ausschließlich nach deiner Bestätigung.
+Die Blogübersicht sortiert jetzt standardmäßig nach **Artikeldatum, neueste zuerst**. Bisher entschied der technische Veröffentlichungszeitpunkt; bei gemeinsam importierten Artikeln führte das zu einer unerwarteten Reihenfolge.
 
-Die automatische Prüfung ist standardmäßig aktiv und abschaltbar. Ergebnisse werden je Modul und installiertem Stand für sechs Stunden zwischengespeichert; bei Fehlern erfolgt frühestens nach 15 Minuten ein neuer Versuch. Die Auswahl für Testversionen wird gespeichert und ist standardmäßig ausgeschaltet. „Nach Updates suchen“ prüft sofort. GitHub erhält die Server-IP und Abrufdaten, keine Artikel, Kundendaten oder Zugangsschlüssel.
+Unter **Darstellung → Reihenfolge der Artikel** stehen drei Einstellungen zur Wahl:
 
-Abgeschlossene Updates erscheinen kompakt mit aufklappbaren Details. Laufende oder fehlgeschlagene Abläufe bleiben deutlich sichtbar. Der Deinstallationsbereich hat einen klaren Abstand zu den normalen Aktionen.
+- Artikeldatum: neueste zuerst (neuer Standard, auch beim Update)
+- Artikeldatum: älteste zuerst
+- Zuletzt veröffentlicht zuerst (bisheriges Verhalten)
 
-## Selbst aktualisieren
+Übersicht, Kategorien, Einbindungen, responsive Seiten und Vor-/Zurück-Navigation verwenden die gleiche Reihenfolge. Bei gleichem Artikeldatum entscheidet eine stabile interne ID. Nur veröffentlichte Fassungen werden berücksichtigt; private Entwürfe ändern die öffentliche Reihenfolge nicht. Artikel, Bilder, Kategorien und Fassungen bleiben erhalten. Keine Datenbankschemaänderung. Die KI-Erweiterung bleibt unverändert auf 0.12.0.
 
-Von 0.46.1 aus **Update / Aktualisieren** öffnen, **Auch Testversionen anzeigen** aktivieren und **Nach Updates suchen** wählen. Nach einer Sicherung **Jetzt aktualisieren** starten. Kein erneuter Root-Upload erforderlich. Erstinstallation und Wiederherstellung bleiben über den Root-Installer möglich. Die neuen automatischen Hinweise stehen nach Installation dieses Updates zur Verfügung.
+## Im Testshop aktualisieren
 
-Prüfumfang und Grenzen: [Teststand](docs/KOMPATIBILITAET.md). Keine neue Zusage für weitere Gambio-/PHP-/Theme-Versionen. Der Shop prüft HTTPS und Paketintegrität; die kryptografische Herkunftssignatur wird dort weiterhin nicht lokal verifiziert.
+**Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen.** Nach einer Sicherung **Jetzt aktualisieren** wählen. Kein erneuter Root-Upload nötig. Nach dem Update findest du die Auswahl direkt oben unter **Darstellung**.
+
+Das exakte Paket wurde im bestehenden GX26.11.0-Migrationstestshop unter `/shop/` von 0.47.0 auf 0.47.1 aktualisiert und mit 78 Artikeln geprüft. Geprüft wurden alle drei Sortierungen über die gesamte öffentliche Seitennavigation, Kategorien, Nachbarartikel, Speichern und Formularschutz sowie der Datenerhalt. Isolierte PHP-Regressionsprüfungen und Builderprüfungen bestanden. [Genauer Teststand und Grenzen](docs/KOMPATIBILITAET.md).
+
+Dies bleibt ein Release Candidate. Kein neuer vollständiger Shop-Neuaufbau, kein unabhängiges Codeaudit und keine zusätzliche Versions-/Theme-Freigabe. Der Shop prüft Paketintegrität; eine kryptografische Herkunftssignatur wird dort weiterhin nicht verifiziert.

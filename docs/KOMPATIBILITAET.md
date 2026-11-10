@@ -1,18 +1,17 @@
 # Teststand und Grenzen
 
-**Blog 0.47.0-rc.1 / KI 0.12.0-rc.1**, 10. November 2026.
+**Blog 0.47.1-rc.1**, 10. November 2026. KI unverändert 0.12.0.
 
-Die exakten Installer wurden in einem frisch installierten **Gambio 26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu** geprüft. Danach wurden Testcontainer, Datenbank-Volume, Netzwerke und Shopkopie entfernt. Der Haupttestshop war zu Beginn auf 0.46.1 / 0.11.1; dessen Updates führt der Betreiber selbst aus.
+Gezielter Sortierungsfix im vorhandenen **Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10, Malibu**, Shop-Unterverzeichnis `/shop/`:
 
-- 19 native Prüfungen: frischer Shop, beide Root-Installer und ihre Entfernung, sämtliche ausgelieferten Dateiprüfsummen, echte automatische GitHub-Abfragen, erneuter Cacheabruf und verweigerter anonymer Zugriff.
-- 29 native Chromiumprüfungen: modernes und älteres Adminlayout, beide Menübadges, keine Dopplungen, lesbare Darstellung, gespeicherte Einstellungen, Abschalten, Testversionsauswahl, Fehlerstatus und fehlender Fortschrittsblock ohne Updatelauf.
-- 38 isolierte Fälle zur automatischen Versionsprüfung, 58 Rechte-/CSRF-/Statusprüfungen und 89 Updaterprüfungen. Die bestehenden isolierten Modulprüfungen, zwei Builderprüfungen und 79 Chromium-DOM-/Editorprüfungen bestanden ebenfalls.
-- 22 Prüfungen der kompakten Erfolgsanzeige mit aufklappbaren Details, laufenden Schritten und Fehlerfortsetzung; zusätzlich 36 zuvor durchgeführte Abstandsprüfungen der Deinstallation. Diese UI-Prüfungen verwendeten temporäre Browserdarstellungen ohne Änderungen am Hauptshop.
+- Exaktes neues Paket über den nativen Root-Installer von 0.47.0 aktualisiert; Installer entfernt, alle installierten Dateien gegen das Paket geprüft.
+- 78 Artikel (65 öffentlich, 13 privat), 81 Fassungen und 100 Bilder erhalten.
+- 101 native HTTP-/Datenprüfungen: alle drei Sortierungen, elf Übersichtsseiten ohne Lücken/Duplikate, sieben Kategorien, erste/mittlere/letzte Nachbarartikel, Speicherung der Auswahl, ungültige Werte und native CSRF-Ablehnung ohne Schreibwirkung.
+- Isolierte PHP-Suite einschließlich 13 neuer Sortierungsfälle, 83 Geräte-/Seitenfensterprüfungen und 189 Darstellungsprüfungen bestanden. Zwei Builderprüfungen und Syntax von 88 PHP-Dateien bestanden.
+- 18 automatisierte Chromiumprüfungen bestanden: tatsächliche Datumssortierung, übersetzte Auswahl und gespeicherter Standard, native Verwaltung sowie Artikelbilder auf Desktop/Mobil. Sortierauswahl zusätzlich visuell kontrolliert.
 
-Die erfolgreichen automatischen GitHub-Abfragen waren echt. Für reproduzierbare Browserprüfungen wurden anschließend ausschließlich die Cachezustände „Update verfügbar“, „Fehler“ und „aktuell“ im Wegwerfshop vorgegeben. Das belegt keine damalige Veröffentlichung einer zukünftigen Testversion. Paketdateien enthalten keine Testtransportlogik. Die zwei neuen Bilder der Updateverwaltung zeigen den abschließenden Cachezustand; die übrigen Funktionsbilder stammen vom Stand 0.46.1 / 0.11.1.
+Die Sortierung liest veröffentlichte Metadaten und sortiert vor der Seitenauswahl in PHP. Dadurch werden keine datenbankspezifischen JSON-Funktionen oder Schemaänderungen benötigt. Der Speicherbedarf wächst mit der Anzahl öffentlicher Metadatensätze; ein neuer Lasttest mit sehr großen Blogs wurde nicht ausgeführt. Artikeltexte/Entwürfe werden für die Übersicht nicht geladen.
 
-Keine erneute vollständige historische Update-/Wiederherstellungsmatrix und keine Erweiterung der Freigabe auf GX5, Honeygrid, PHP 8.3, MySQL 8.4 oder weitere Shopversionen. Unterverzeichnisse werden aus der Shopkonfiguration abgeleitet, waren in diesem Durchlauf aber kein neuer nativer Testfall. Kein unabhängiger Penetrationstest. Die Herkunftssignatur wird im Shop noch nicht kryptografisch geprüft.
+Kein weiterer vollständiger Shop-Neuaufbau und kein neuer nativer Erstinstallationstest für diesen gezielten Fix. Der frische GX26-Ausgangstest des Vorgängers bleibt im [Teststand von 0.47.0](https://github.com/c1zz/gambio-blog/blob/v0.47.0-rc.1/docs/KOMPATIBILITAET.md) dokumentiert. Die temporäre Migrationstestumgebung bleibt auf ausdrücklichen Nutzerauftrag für die laufende Migration verfügbar. Haupttestshop und Live-Shop wurden nicht verändert.
 
-[Maschinelle Ergebnisse und exakte Paketprüfsummen](test-results.json).
-
-Nach Veröffentlichung: Beide Release-Downloads stimmen bytegenau mit den geprüften Paketen überein. Die Herkunftsnachweise wurden gegen Repository, Workflow, Tag und exakten Commit verifiziert; Vorgängerassets sind unverändert. Ein zusätzlicher Download über den echten Updater validierte beide Pakete, beim Blog nach Wiederholung eines vorübergehenden Netzwerkfehlers. Währenddessen hat der Betreiber beide Module selbst im Haupttestshop aktualisiert. Die anschließende rein lesende Prüfung bestätigt sämtliche Manifestprüfsummen sowie 9/9 Blog- und 7/7 KI-Updateschritte ohne gespeicherten Fehler.
+Keine Erweiterung der Freigabe auf GX5, Honeygrid, PHP 8.3, MySQL 8.4 oder weitere Versionen. Kein unabhängiger Penetrationstest. Die Herkunftssignatur wird im Shop nicht kryptografisch geprüft. [Maschinelle Ergebnisse und Paketprüfsumme](test-results.json).
