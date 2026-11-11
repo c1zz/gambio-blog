@@ -1,6 +1,6 @@
 # c1zz-blog für Gambio in Bildern
 
-Vierzehn aktuelle Ansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
+Vierzehn Funktionsansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
 
 **Aufnahmen vom 10.11.2026, Blog 0.46.1 / KI 0.11.1:** Alle Ansichten wurden im lokalen Gambio-26.11.0-Shop mit Malibu neu aufgenommen. Die Artikelverwaltung ist auf die optionalen Beispielartikel gefiltert; öffentliche Ansichten zeigen Beispiel- und Testinhalte. Für die Aufnahmen wurden weder Artikel noch Einstellungen gespeichert, keine Veröffentlichung gestartet und keine KI-Anfrage ausgelöst. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
 
@@ -136,3 +136,5 @@ Hinweisfelder mit grünem Rand heben die Erläuterungen zur Darstellung hervor. 
 Die neue Aufnahme mit Blog **0.47.0** zeigt die automatische Prüfung nach der Adminanmeldung, die gespeicherte Kanalauswahl und die inaktive Speichertaste bei unveränderten Einstellungen. Der reproduzierbar gesetzte Cachezustand zeigt „aktuell“; es wurde kein Update gestartet. „Blog ansehen“ bleibt in der Navigation; die Deinstallation steht mit Abstand am Seitenende. Abgeschlossene Updates werden kompakt mit aufklappbaren Details angezeigt.
 
 [![Aktueller Versionsstatus und abgeschlossener Updateablauf](images/aktualisieren.png)](images/aktualisieren.png)
+
+Die Aufnahmen zeigen den ausdrücklich genannten älteren Modulstand. Neue Logo-, Eingabe- und Layoutoptionen dieses Releases sind in den [Release Notes](../RELEASE_NOTES.md) beschrieben.

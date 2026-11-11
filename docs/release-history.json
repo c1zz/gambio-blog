@@ -2,10 +2,43 @@
   "repository": "c1zz/gambio-blog",
   "retired_on": "2026-11-11",
   "reason": "Only the current tested release is offered during this test phase; not all older releases had severe defects.",
-  "current_release": "v0.48.4-rc.1",
+  "current_release": "v0.48.15-rc.1",
   "tags_and_commits_preserved": true,
   "historical_notes_not_current_installation_instructions": true,
   "retired_releases": [
+    {
+      "tag": "v0.48.4-rc.1",
+      "title": "c1zz-blog für Gambio · 0.48.4-rc.1",
+      "published_at": "2026-11-11T12:57:20Z",
+      "body": "# c1zz-blog 0.48.4-rc.1\n\n**Kategorien, Bilderverwaltung, gespeicherte Fassungen und Importvorschau verwenden jetzt denselben c1zz-Stil wie die Artikelliste.** Helle grüne Kopfzeilen, feine Linien und einheitliche Abstände ersetzen die verbliebenen nativen Tabellenstile. Kategorien bearbeiten und Fassungen ansehen erhalten passende Buttons; die Versionsnavigation erhält beschriftete Schaltflächen. Breite Listen bleiben auf schmalen Adminansichten horizontal scrollbar.\n\nDie Regeln gelten gezielt für die Modultabellen. Artikeldaten und öffentliche Blogdarstellung werden dadurch nicht geändert. Das KI-Modul erhält mit **0.12.3** den synchronisierten gemeinsamen Admin-Stil.\n\nGeprüft auf **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu**: 15 fokussierte native Prüfungen nach frischer Installation, 35 Update-/Datenerhaltprüfungen und 34 Browserprüfungen nach dem Update des lokalen Migrationstestshops. Zuvor 32 Browserprüfungen der Tabellenfragmente, fünf Smarty-Kompilierungen; zusätzlich zwei Buildertests und Installer-Syntaxprüfung. [Prüfumfang und Grenzen](docs/KOMPATIBILITAET.md).\n\nUnter **Update / Aktualisieren → Testversionen berücksichtigen → Nach Updates suchen** das Update nach einer Sicherung selbst starten. Kein erneuter vollständiger GitHub-Update- oder Deinstallationslauf. Die Shopfunktion prüft Paketintegrität, keine kryptografische Herkunftssignatur. [Herkunft und Integrität](SECURITY.md); kein unabhängiges Codeaudit.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.48.4.php",
+          "bytes": 504952,
+          "digest": "sha256:5857755eaa2099ac60520b2e743a68f2f265654a2ef9c9324513bedfff4822d1"
+        },
+        {
+          "name": "c1zz-blog-install-0.48.4.php.sigstore.json",
+          "bytes": 10981,
+          "digest": "sha256:bf372497ca9c2fdb75871d426b76a6aa424b4f6beb519974a4512b57142ffbaa"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:fb5c87fc8bd7efe17037f128badb13017c60cc41ab48d6f941df9e6ab76242e4"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:0742c13d3bcc59f30d63d589ee722bc394059241ba1dadcdbfd8e45854112ffe"
+        }
+      ]
+    },
     {
       "tag": "v0.48.3-rc.1",
       "title": "c1zz-blog für Gambio · 0.48.3-rc.1",

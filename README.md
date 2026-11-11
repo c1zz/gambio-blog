@@ -2,17 +2,17 @@
 
 **Release-Angebot:** Nur die aktuelle geprüfte Testversion wird zum Download angeboten. [Ältere Versionen und dokumentierte Korrekturen](docs/HISTORIE.md).
 
-Aktuell: Einheitlicher c1zz-Stil für Kategorien, Bilderverwaltung, gespeicherte Fassungen und Importvorschau. Details stehen in den [Release Notes](RELEASE_NOTES.md).
+Aktuell: Gesamtbreite des Blogs, Bild- und Suchpositionen je Gerät, Suchoverlay sowie eigene Artikel- und Suchgestaltung. Details stehen in den [Release Notes](RELEASE_NOTES.md).
 
-<p align="center"><strong>Release Candidate · 0.48.4-rc.1 · MIT-Lizenz · Entwickelt von Mensch und KI</strong></p>
+<p align="center"><strong>Release Candidate · 0.48.15-rc.1 · MIT-Lizenz · Entwickelt von Mensch und KI</strong></p>
 
 # Ein Blog, der zu deinem Gambio-Shop passt
 
 Artikel schreiben, Kategorien pflegen und die Darstellung direkt im Shop gestalten: **c1zz-blog für Gambio** ist ein eigenständig installierbares Blogmodul für Gambio. Du brauchst keinen vorbereiteten Blog und keine SSH-Nacharbeiten.
 
-**[Bilderrundgang mit 14 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.48.4-rc.1/c1zz-blog-install-0.48.4.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.4-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
+**[Bilderrundgang mit 14 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.48.15-rc.1/c1zz-blog-install-0.48.15.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.15-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
 
-> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.48.4`; `rc.1` kennzeichnet diese Veröffentlichung.
+> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.48.15`; `rc.1` kennzeichnet diese Veröffentlichung.
 
 **So sehen Besucher den Blog:** Die Desktopansicht zeigt Artikel, Kategorien und Seitennavigation im Malibu-Shoplayout – einschließlich Shopkopf und Seitenleiste.
 
@@ -28,13 +28,11 @@ Ein Shop kann ohne Blog betrieben werden. Mit einem Blog bekommst du Raum, Produ
 
 ## Neu in diesem Release
 
-**Blogsuche:** Die Lupe oben im Blog öffnet eine zusammenhängende Suchleiste. Geöffnet bleibt nur die integrierte Lupe zum Absenden sichtbar; Escape oder ein Klick außerhalb schließen die Leiste wieder. Die eigene Blog-Ergebnisseite zeigt Vorschaubilder neben den Titeln. Unter **Darstellung → Visuell → Suche** kannst du Blogkopf und Beispieltreffer für Desktop, Tablet und Mobil prüfen und einstellen. Die vorhandene Shopsuche samt Live-Vorschlägen bleibt ebenfalls angebunden.
+**Gesamtbreite und Artikelgestaltung:** Die Breite des gesamten Blogs lässt sich je Gerät einstellen, einschließlich Liste, Grid, Slider und Magazin. Volle Breite bleibt wählbar. Artikelbilder erhalten eigene Position und Ausrichtung; Artikeltext erhält eine wählbare Zeilenlänge und eigene Farben.
 
-**Artikel pro Seite:** Für Liste und Grid stehen jetzt **2, 3, 4, 6, 8, 9, 10, 12, 16, 18, 20 und 24** zur Auswahl. Die neuen Werte 2, 4, 8, 16 und 20 gelten für Desktop, Tablet und Mobil. Bestehende Einstellungen und die Übernahme des Desktopwerts bleiben erhalten. Du findest die Auswahl unter **Darstellung → Alle Einstellungen → Navigation**.
+**Suche ohne Layoutverschiebung:** Die Lupe öffnet ein Overlay. Sie kann sich direkt vor oder hinter den Kategorien einreihen. Positionen, Suchfarben, Schrift und eigenes begrenztes CSS lassen sich in der visuellen Vorschau einstellen.
 
-**Reihenfolge der Artikel:** Unter **Darstellung** wählst du „Artikeldatum: neueste zuerst“ (Standard), „Artikeldatum: älteste zuerst“ oder „Zuletzt veröffentlicht zuerst“. Übersicht, Kategorien, Einbindungen und Vor-/Zurück-Navigation verwenden dieselbe Reihenfolge. Dadurch bestimmt nach einem Import nicht mehr dessen technische Einfügereihenfolge die Anzeige.
-
-**Update / Aktualisieren** lädt neue Versionen nach deiner Bestätigung direkt aus unserem GitHub-Repository. Fortschritt und Fehler bleiben sichtbar; ein unterbrochener Lauf kann fortgesetzt werden. Artikel, Medien und Einstellungen bleiben erhalten. Der gemeinsame c1zz-systems-Stil gilt auch für diese Oberfläche.
+**Einheitlicher Admin:** Logo, Dropdowns und Eingabefelder verwenden den c1zz-systems-Stil. Alle Einstellungen und die visuelle Bearbeitung verwenden dieselben Gerätewerte. [Änderungen und Updatehinweise](RELEASE_NOTES.md).
 
 **Optional:** [c1zz-ki für Gambio](https://github.com/c1zz/gambio-ki) ergänzt Entwürfe, Themenideen und eine Bildhilfe für die Anbieter-Webseiten direkt beim Artikel. Es hat einen eigenen Installer; der Blog funktioniert auch ohne KI-Modul.
 
@@ -72,8 +70,8 @@ Der Modulcode liegt getrennt unter `GXModules/c1zz/c1zzblog/`. **Gambio-Kerndate
 
 ## In wenigen Schritten loslegen
 
-1. Den PHP-Installer und `SHA256SUMS` aus demselben [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.4-rc.1) herunterladen und **vor der Ausführung prüfen**.
-2. Nur `c1zz-blog-install-0.48.4.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Dateinamen beibehalten.
+1. Den PHP-Installer und `SHA256SUMS` aus demselben [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.15-rc.1) herunterladen und **vor der Ausführung prüfen**.
+2. Nur `c1zz-blog-install-0.48.15.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Dateinamen beibehalten.
 3. Die Datei im Browser öffnen. Falls nötig, **Admin-Anmeldung öffnen** wählen. Gambio verarbeitet die Anmeldung in seinem eigenen Fenster; danach kehrt der Installer automatisch zurück.
 4. Voraussetzungen und Paketprüfung kontrollieren, bei vorhandenen Daten die Sicherung bestätigen und die Einrichtung ausdrücklich starten.
 5. Nach erfolgreichem Abschluss entfernt sich die hochgeladene Installationsdatei selbst. In der Blogverwaltung hilft **Einstieg** beim Anpassen an deinen Shop.
