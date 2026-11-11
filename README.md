@@ -1,5 +1,7 @@
 <p align="center"><img src="docs/images/header.svg" alt="c1zz-blog für Gambio – Inhalte gestalten. Direkt im Shop." width="100%"></p>
 
+**Release-Angebot:** Nur die aktuelle geprüfte Testversion wird zum Download angeboten. [Ältere Versionen und dokumentierte Korrekturen](docs/HISTORIE.md).
+
 Aktuell: Einheitlicher c1zz-Stil für Kategorien, Bilderverwaltung, gespeicherte Fassungen und Importvorschau. Details stehen in den [Release Notes](RELEASE_NOTES.md).
 
 <p align="center"><strong>Release Candidate · 0.48.4-rc.1 · MIT-Lizenz · Entwickelt von Mensch und KI</strong></p>

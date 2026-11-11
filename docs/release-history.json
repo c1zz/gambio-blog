@@ -1,0 +1,427 @@
+{
+  "repository": "c1zz/gambio-blog",
+  "retired_on": "2026-11-11",
+  "reason": "Only the current tested release is offered during this test phase; not all older releases had severe defects.",
+  "current_release": "v0.48.4-rc.1",
+  "tags_and_commits_preserved": true,
+  "historical_notes_not_current_installation_instructions": true,
+  "retired_releases": [
+    {
+      "tag": "v0.48.3-rc.1",
+      "title": "c1zz-blog für Gambio · 0.48.3-rc.1",
+      "published_at": "2026-11-11T10:47:19Z",
+      "body": "# c1zz-blog 0.48.3-rc.1\n\nDie Blogsuche öffnet jetzt eine zusammenhängende Suchleiste mit **einer integrierten Lupe zum Absenden**. Der separate Öffner verschwindet beim Öffnen; Escape oder ein Klick außerhalb schließen das Feld, ohne den Suchtext zu löschen. Ohne JavaScript bleibt das Formular nutzbar. Die eigene Blog-Ergebnisseite zeigt auf Wunsch **kleine Vorschaubilder neben den Titeln**.\n\nUnter **Darstellung → Visuell → Suche** lassen sich Blogkopf und Beispieltreffer für Desktop, Tablet und Mobil ansehen und einstellen. Lupe oder dauerhaftes Suchfeld, Trefferanzahl, Liste/Grid, Bilder und Kurztexte verwenden dieselben Einstellungen wie „Alle Einstellungen“. Die Vorschau speichert nichts. Schrift und Farben folgen den gemeinsamen Blogeinstellungen; Live-Vorschläge im Shopkopf bleiben beim Theme. Die eingestellte Seitentitelschrift greift auch im neuen Suchkopf.\n\nDie vorhandene Gambio-Shopsuche bleibt angebunden. Bei ausschließlich Blogtreffern erscheint keine widersprüchliche rote Produktfehlermeldung. Nur aktuelle veröffentlichte Fassungen werden durchsucht; Suchseiten behalten Suchwort und Seitennavigation und sind mit `noindex` versehen.\n\nDas genaue Paket wurde frisch auf **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** unter `/shop/` installiert: **129 native HTTP-/Datenprüfungen und 39 Browserprüfungen** bestanden. Anschließend wurde der lokale Migrationstestshop von 0.48.2 auf 0.48.3 aktualisiert: **35 Update- und Datenerhaltprüfungen** bestanden. Weitere 30 lesende Browserprüfungen im aktualisierten Migrationsshop bestätigen die integrierte Suchleiste und Thumbnails bei 320/390/1440 px. Zusätzlich bestanden 53 isolierte Chromiumprüfungen, die isolierte PHP-Suite, zwei Buildertests und die Installer-Syntaxprüfung. [Prüfumfang und Grenzen](docs/KOMPATIBILITAET.md).\n\nZum Aktualisieren **Update / Aktualisieren → Testversionen berücksichtigen → Nach Updates suchen** öffnen und das Update nach einer Sicherung selbst starten. Das KI-Modul bleibt unverändert. Kein erneuter vollständiger GitHub-Update- oder Deinstallationslauf; andere Suchanbieter, Themes und große Artikelbestände wurden nicht geprüft. Der Shop prüft Paketintegrität, keine kryptografische Herkunftssignatur. [Herkunft und Integrität](SECURITY.md); kein unabhängiges Codeaudit.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.48.3.php",
+          "bytes": 504584,
+          "digest": "sha256:605e2ba20047eecf42ecbed2732e0854bb8c0c68024d78bda0338364408b539a"
+        },
+        {
+          "name": "c1zz-blog-install-0.48.3.php.sigstore.json",
+          "bytes": 11118,
+          "digest": "sha256:5dd9c0e1424d1bb350852b95362a1ae63d7ec2270c4e0da59f0812c0dcb59a91"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:c8f3fe6fa147994cea37c65c4dc2699ac2520ed27c5407c5db2bc681f6b5c00e"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:9f5755c4993111b273d2f645fc1754b93a4aa0a7c7f79beac008b0d91dc2b2ab"
+        }
+      ]
+    },
+    {
+      "tag": "v0.48.0-rc.1",
+      "title": "c1zz-blog für Gambio · 0.48.0-rc.1",
+      "published_at": "2026-11-11T09:58:06Z",
+      "body": "# c1zz-blog 0.48.0-rc.1\n\nDie vorhandene **Gambio-Shopsuche findet jetzt auch veröffentlichte Blogartikel**. Auf dem Desktop erscheinen Blogtreffer als eigene Gruppe in den Live-Vorschlägen; Produkte bleiben erhalten. Auf Mobilgeräten genügt das vorhandene Suchfeld: Enter öffnet die gemeinsame Ergebnisseite. Malibu blendet Live-Vorschläge mobil weiterhin nativ aus.\n\nUnter **Darstellung → Alle Einstellungen → Suche** lassen sich Blogsuche und Live-Vorschläge einschalten sowie Liste/Grid, Trefferanzahl, Bilder und Kurztexte einstellen. Trefferkarten übernehmen Farben, Schrift und Abstände der Blogdarstellung; mobil erscheinen sie als Liste. Der Menülink heißt jetzt **c1zz-blog**.\n\nGesucht wird in Titel, Schlagwörtern, Kurztext und veröffentlichtem Artikeltext. Alle Wörter müssen vorkommen (3–120 Zeichen, höchstens acht Wörter). Treffer werden nach Relevanz, dann Artikeldatum sortiert. Entwürfe, alte Fassungen und Papierkorbinhalte bleiben ausgeschlossen. Produktfilter betreffen weiterhin nur Produkte.\n\nDie exakten eingebetteten Pakete Blog 0.48.0 / KI 0.12.2 wurden frisch auf **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** unter `/shop/` installiert: 68 native HTTP-/Datenchecks und 19 Chromiumchecks bestanden. Danach wurden beide exakten Root-Installer im bestehenden lokalen Migrationstestshop ausgeführt: 31 Update- und Datenerhaltprüfungen bestanden. [Prüfumfang und Grenzen](docs/KOMPATIBILITAET.md).\n\nZum Aktualisieren **Update / Aktualisieren → Testversionen berücksichtigen → Nach Updates suchen** öffnen und das Update nach einer Sicherung selbst starten. Kein erneuter vollständiger GitHub-Updatetest oder Deinstallationslauf. Andere Suchanbieter, Themes und große Artikelbestände wurden nicht geprüft. Der Shop prüft Paketintegrität, keine kryptografische Herkunftssignatur. [Herkunft und Integrität](SECURITY.md); kein unabhängiges Codeaudit.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.48.0.php",
+          "bytes": 494624,
+          "digest": "sha256:5bb282e80b25b9eda9f92555458fb07142ac6bdbfd4340f2762290262a508921"
+        },
+        {
+          "name": "c1zz-blog-install-0.48.0.php.sigstore.json",
+          "bytes": 10977,
+          "digest": "sha256:33d3da02bbdfe9a9aab6c407828b89762b459e700f4e32e441f67acdcf3c804d"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:7f53dd8fdb23b45f6c744a432f773e3cf99f971c2e26ce1ea20b1a9ae9b25ba0"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:d9e249e121016ad659939ab6af858ea9324571757300afab0d456460f26d35bd"
+        }
+      ]
+    },
+    {
+      "tag": "v0.47.4-rc.1",
+      "title": "c1zz-blog für Gambio · 0.47.4-rc.1",
+      "published_at": "2026-11-11T09:13:55Z",
+      "body": "# c1zz-blog 0.47.4-rc.1\n\nUnter Darstellung sind für „Artikel pro Seite (Liste / Grid)“ jetzt **2, 3, 4, 6, 8, 9, 10, 12, 16, 18, 20 und 24** auswählbar. Die zusätzlichen Werte gelten für Desktop, Tablet und Mobil; bestehende Einstellungen bleiben erhalten.\n\nDas exakte Paket wurde in einem frischen **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** unter `/shop/` nativ installiert. Geprüft wurden Dropdowns, Speicherung, Seitennavigation und ungültige Werte. Zusätzlich wurde der bestehende lokale Migrationstestshop von 0.47.3 auf 0.47.4 aktualisiert und auf Datenerhalt geprüft. [Prüfumfang und Grenzen](https://github.com/c1zz/gambio-blog/blob/v0.47.4-rc.1/docs/KOMPATIBILITAET.md).\n\nBestehende Installationen können unter **Update / Aktualisieren** nach neuen Versionen suchen. Für diesen Release Candidate muss **Testversionen berücksichtigen** aktiviert sein. Der Betreiber startet das Update selbst. Die Erstinstallation erfolgt mit dem einzelnen PHP-Installer; nach erfolgreichem Abschluss wird er entfernt.\n\nNur das Blogmodul erhält ein neues Paket; das KI-Modul bleibt bei 0.12.1. Kein erneuter vollständiger GitHub-Updatetest oder Deinstallationslauf für diese Auswahländerung. Die Shopfunktion prüft Integrität, keine kryptografische Herkunftssignatur. [Herkunft und Integrität prüfen](https://github.com/c1zz/gambio-blog/blob/v0.47.4-rc.1/SECURITY.md); kein unabhängiges Codeaudit.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.47.4.php",
+          "bytes": 480000,
+          "digest": "sha256:5a3dc7cad8027e54b977c1d10efa7e51468c2df6b9f33056d6e230d2a2b62bfe"
+        },
+        {
+          "name": "c1zz-blog-install-0.47.4.php.sigstore.json",
+          "bytes": 10867,
+          "digest": "sha256:3fd16b3172364a4aba849bcad98700ffdfa409fd8481be24decc5a6468f215ac"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:0797cfad4bba0b7496a67cb8a421e550cd3060327ae595e4cf18c50acb55d9e5"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:9b89c9903aab6dda86deb1dac76ed0b9f88d82dfe147d9c0760c70a75b9ab4a2"
+        }
+      ]
+    },
+    {
+      "tag": "v0.47.3-rc.1",
+      "title": "c1zz-blog für Gambio · 0.47.3-rc.1",
+      "published_at": "2026-11-10T18:24:49Z",
+      "body": "# c1zz-blog 0.47.3-rc.1\n\nUnter **Darstellung** ist die **Reihenfolge der Artikel** jetzt im gemeinsamen c1zz-Stil hervorgehoben: grüner Rahmen, größere Bedienfläche und klare Beschriftung. Der Standard bleibt **Artikeldatum: neueste zuerst**.\n\nNeu ist **Abstand unter dem Blog**: Theme-Standard oder eigener Wert von **0–240 px**, einstellbar mit Schieberegler und Zahleneingabe. Bestehende Einstellungen behalten den Theme-Standard. Zum Ausprobieren „Eigenen Abstand einstellen“ wählen, beispielsweise **24 px**, speichern und die Blogseite öffnen. Die interne Vorschau zeigt diesen Theme-Abstand nicht.\n\nDer eigene Wert ersetzt ausschließlich den unteren Theme-Innenabstand auf Blogübersicht, Kategorien und Artikelseiten. Andere Shopseiten, Einbindungen, Theme-Dateien und die Footer-Reserve bleiben unverändert. Zusätzliche Abstände und die Mindesthöhe des Themes können weiterhin Leerraum erzeugen.\n\nDas exakte Paket wurde frisch in **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** installiert und gezielt auf Speicherung, Grenzwerte, öffentliche Ausgabe und Browserbedienung geprüft. Die isolierten Regressionen bestehen. Kein erneuter vollständiger GitHub-Updatetest oder Deinstallationslauf für diese Darstellungsänderung. [Prüfumfang und Grenzen](https://github.com/c1zz/gambio-blog/blob/v0.47.3-rc.1/docs/KOMPATIBILITAET.md).\n\nZum Aktualisieren: **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen → Jetzt aktualisieren**. Vorher den Shop sichern. Dieses Release enthält nur das Blogmodul; kein KI-Update erforderlich.\n\nDies bleibt ein Release Candidate. Keine neue Kompatibilitätszusage und kein unabhängiges Codeaudit. Die kryptografische Herkunftssignatur wird im Shop weiterhin nicht geprüft.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.47.3.php",
+          "bytes": 479852,
+          "digest": "sha256:eee7572a8eb5233c4e2463bcc204e4ad114298bfb0c85e47b6797c137c51a03c"
+        },
+        {
+          "name": "c1zz-blog-install-0.47.3.php.sigstore.json",
+          "bytes": 10965,
+          "digest": "sha256:51020436978a99e48cab01852d9bb55a236542e7585cdaaf6903129b89737e9a"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:e73024231d4926b2559b797312f6041bb37c2fa02d493792e328b47bb81747ed"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:ba4bc1f3cf659b81cbc4d5ddcb41b436a6d5a86578cb42beff235834aa026e0b"
+        }
+      ]
+    },
+    {
+      "tag": "v0.47.2-rc.1",
+      "title": "c1zz-blog für Gambio · 0.47.2-rc.1",
+      "published_at": "2026-11-10T17:50:24Z",
+      "body": "# c1zz-blog 0.47.2-rc.1\n\nDie ausdrücklich bestätigte vollständige Blog-Datenlöschung entfernt jetzt auch die gespeicherten Einstellungen für Update-Hinweise. Normale Deinstallation und Updates erhalten die Blogdaten weiterhin. Die Auswahl der Artikelreihenfolge aus 0.47.1 bleibt enthalten; Standard ist **Artikeldatum: neueste zuerst**.\n\nDer vollständige Datenbankvergleich wurde mit dem begleitenden KI-Testrelease **0.12.1** durchgeführt. Nach vollständiger Löschung beider Module bleiben keine eigenen Modultabellen oder Update-Einstellungen zurück. Gambios inaktive Modulmarker, Sprachcache und fortgeschrittene Datenbankzähler bleiben ausdrücklich bestehen. Modulcode wird nicht entfernt. [Prüfumfang und Grenzen](docs/KOMPATIBILITAET.md).\n\nZum Testen **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** öffnen. Nach einer Sicherung **Jetzt aktualisieren** wählen. Ein Update löscht keine Inhalte und startet keine Deinstallation.\n\nDies bleibt ein Release Candidate. Keine neue Kompatibilitätszusage und kein unabhängiges Codeaudit. Die kryptografische Herkunftssignatur wird im Shop weiterhin nicht geprüft.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.47.2.php",
+          "bytes": 477016,
+          "digest": "sha256:64ba7407a88bf3655a49710e108f2d72b2d51ddb2f2d5528b7b830a9eaca5199"
+        },
+        {
+          "name": "c1zz-blog-install-0.47.2.php.sigstore.json",
+          "bytes": 10632,
+          "digest": "sha256:aaa231ed8e5424636c7afa92cebd4e4d69e2e312aa298946ad05b79968a4d042"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:989b3b9f0d57b99aa5c8ef98f2b98d96f970964f85f0ce04e43cd708dea3bebe"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:9fee4f738c822b04703cc521e06e798e2e2cacf2d046e644b664e10ada0e383b"
+        }
+      ]
+    },
+    {
+      "tag": "v0.47.1-rc.1",
+      "title": "c1zz-blog für Gambio · 0.47.1-rc.1",
+      "published_at": "2026-11-10T17:18:56Z",
+      "body": "# c1zz-blog 0.47.1-rc.1\n\nDie Blogübersicht sortiert jetzt standardmäßig nach **Artikeldatum, neueste zuerst**. Bisher entschied der technische Veröffentlichungszeitpunkt; bei gemeinsam importierten Artikeln führte das zu einer unerwarteten Reihenfolge.\n\nUnter **Darstellung → Reihenfolge der Artikel** stehen drei Einstellungen zur Wahl:\n\n- Artikeldatum: neueste zuerst (neuer Standard, auch beim Update)\n- Artikeldatum: älteste zuerst\n- Zuletzt veröffentlicht zuerst (bisheriges Verhalten)\n\nÜbersicht, Kategorien, Einbindungen, responsive Seiten und Vor-/Zurück-Navigation verwenden die gleiche Reihenfolge. Bei gleichem Artikeldatum entscheidet eine stabile interne ID. Nur veröffentlichte Fassungen werden berücksichtigt; private Entwürfe ändern die öffentliche Reihenfolge nicht. Artikel, Bilder, Kategorien und Fassungen bleiben erhalten. Keine Datenbankschemaänderung. Die KI-Erweiterung bleibt unverändert auf 0.12.0.\n\n## Im Testshop aktualisieren\n\n**Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen.** Nach einer Sicherung **Jetzt aktualisieren** wählen. Kein erneuter Root-Upload nötig. Nach dem Update findest du die Auswahl direkt oben unter **Darstellung**.\n\nDas exakte Paket wurde im bestehenden GX26.11.0-Migrationstestshop unter `/shop/` von 0.47.0 auf 0.47.1 aktualisiert und mit 78 Artikeln geprüft. Geprüft wurden alle drei Sortierungen über die gesamte öffentliche Seitennavigation, Kategorien, Nachbarartikel, Speichern und Formularschutz sowie der Datenerhalt. Isolierte PHP-Regressionsprüfungen und Builderprüfungen bestanden. [Genauer Teststand und Grenzen](docs/KOMPATIBILITAET.md).\n\nDies bleibt ein Release Candidate. Kein neuer vollständiger Shop-Neuaufbau, kein unabhängiges Codeaudit und keine zusätzliche Versions-/Theme-Freigabe. Der Shop prüft Paketintegrität; eine kryptografische Herkunftssignatur wird dort weiterhin nicht verifiziert.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.47.1.php",
+          "bytes": 476840,
+          "digest": "sha256:25f14a1c948bf9af92d7a1bb29ab345cc56aedd990fd50bda66441bc8bd1423c"
+        },
+        {
+          "name": "c1zz-blog-install-0.47.1.php.sigstore.json",
+          "bytes": 10726,
+          "digest": "sha256:bf10897e9b91e67d500cb06077f8bd0081a40a58f936606359dd270ade2dcf60"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:282fdca91f574dbe64f0e63cbf903d660e74aaad4f759cfe43cf41200da9ff5b"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:fe81a05c682d50c09b9ceb54de6abdb04ddd5848f84465858e0adc6ce258f227"
+        }
+      ]
+    },
+    {
+      "tag": "v0.47.0-rc.1",
+      "title": "c1zz-blog für Gambio · 0.47.0-rc.1",
+      "published_at": "2026-11-10T12:05:34Z",
+      "body": "# c1zz-blog 0.47.0-rc.1\n\nNach der Adminanmeldung prüft das Modul im Hintergrund auf neue Versionen und zeigt einen kleinen Hinweis direkt am Gambio-Menülink. Ein bestätigtes Update erhält eine „1“, eine fehlgeschlagene Prüfung ein „!“. Der Badge öffnet **Update / Aktualisieren**; ein Update startet weiterhin ausschließlich nach deiner Bestätigung.\n\nDie automatische Prüfung ist standardmäßig aktiv und abschaltbar. Ergebnisse werden je Modul und installiertem Stand für sechs Stunden zwischengespeichert; bei Fehlern erfolgt frühestens nach 15 Minuten ein neuer Versuch. Die Auswahl für Testversionen wird gespeichert und ist standardmäßig ausgeschaltet. „Nach Updates suchen“ prüft sofort. GitHub erhält die Server-IP und Abrufdaten, keine Artikel, Kundendaten oder Zugangsschlüssel.\n\nAbgeschlossene Updates erscheinen kompakt mit aufklappbaren Details. Laufende oder fehlgeschlagene Abläufe bleiben deutlich sichtbar. Der Deinstallationsbereich hat einen klaren Abstand zu den normalen Aktionen.\n\n## Selbst aktualisieren\n\nVon 0.46.1 aus **Update / Aktualisieren** öffnen, **Auch Testversionen anzeigen** aktivieren und **Nach Updates suchen** wählen. Nach einer Sicherung **Jetzt aktualisieren** starten. Kein erneuter Root-Upload erforderlich. Erstinstallation und Wiederherstellung bleiben über den Root-Installer möglich. Die neuen automatischen Hinweise stehen nach Installation dieses Updates zur Verfügung.\n\nPrüfumfang und Grenzen: [Teststand](docs/KOMPATIBILITAET.md). Keine neue Zusage für weitere Gambio-/PHP-/Theme-Versionen. Der Shop prüft HTTPS und Paketintegrität; die kryptografische Herkunftssignatur wird dort weiterhin nicht lokal verifiziert.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.47.0.php",
+          "bytes": 475268,
+          "digest": "sha256:8448d8552c65cdca1eccb03dd45cf885040ac031d3021ffbead71488ba0da234"
+        },
+        {
+          "name": "c1zz-blog-install-0.47.0.php.sigstore.json",
+          "bytes": 10930,
+          "digest": "sha256:f14a062dfba2785482d06f976a35d695728783f82debc44cd4b9f5316f584d7e"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:6a4a54536e088b484665851f7057fa187b4b13fdfa7ff36197010da717a94bd1"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:3d5feb034696ec97f3faf1c8c81bbb4554ffa6d0b0e520e5d28f70b86e87498d"
+        }
+      ]
+    },
+    {
+      "tag": "v0.46.1-rc.1",
+      "title": "c1zz-blog für Gambio · 0.46.1-rc.1",
+      "published_at": "2026-11-10T11:08:33Z",
+      "body": "# c1zz-blog 0.46.1-rc.1\n\nDie Update-Seite zeigt jetzt die installierte Version und einen deutlichen Versionsstatus: noch nicht geprüft, aktuell für die geprüfte Auswahl, Update verfügbar oder Prüfung nicht bestätigt. Die letzte erfolgreiche Prüfung und die Berücksichtigung von Testversionen bleiben nachvollziehbar. Ergebnisse gelten höchstens 30 Minuten und für den geprüften Paketstand; bloßes Öffnen der Seite fragt GitHub weiterhin nicht ab.\n\n„Blog ansehen“ bleibt auch unter **Update / Aktualisieren** in der gemeinsamen Navigation sichtbar. Der rote Zugang zur Deinstallation steht separat am Seitenende, wie beim KI-Modul.\n\n## Selbst über die Modulverwaltung aktualisieren\n\nVon Blog 0.46.0 aus **Update / Aktualisieren** öffnen, **Auch Testversionen anzeigen** aktivieren und **Nach Updates suchen** wählen. Nach einer Sicherung **Jetzt aktualisieren** starten. Kein erneuter Root-Upload erforderlich. Der Root-Installer bleibt für Erstinstallation und Wiederherstellung verfügbar.\n\nPrüfung mit Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu: siehe [Teststand](docs/KOMPATIBILITAET.md). Keine neue Zusage für weitere Gambio-/PHP-/Theme-Versionen. Der Shop prüft HTTPS und Paketintegrität; die kryptografische Herkunftssignatur wird dort weiterhin nicht lokal verifiziert.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.46.1.php",
+          "bytes": 466136,
+          "digest": "sha256:9f85924e6c07696c46b65d285d448b6526cd2d3190d80bf1999cf87909621b1c"
+        },
+        {
+          "name": "c1zz-blog-install-0.46.1.php.sigstore.json",
+          "bytes": 10789,
+          "digest": "sha256:4654849b25cb5bf0fbdf3a61dba82eb8f5969cde4165ae668ba5eff509fec35e"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:0b152935a32c67a0d14d41c6dc8d6967c57b9bcb572d45bd57425e35a056f354"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:3c2a58eb95663ce0feaaeb33a2b2f49c5be9ad69dc4af8e61408fc5f0daf8ced"
+        }
+      ]
+    },
+    {
+      "tag": "v0.46.0-rc.1",
+      "title": "c1zz-blog für Gambio · 0.46.0-rc.1",
+      "published_at": "2026-11-10T10:47:45Z",
+      "body": "# c1zz-blog 0.46.0-rc.1\n\nNach der Erstinstallation können neue Modulversionen direkt unter **Update / Aktualisieren** aus GitHub bezogen werden. Das erneute Kopieren einer PHP-Datei in den Shop-Root entfällt. Für den einmaligen Wechsel von älteren Ständen ohne Updatefunktion wird weiterhin der neue Root-Installer benötigt.\n\n- Nach Updates suchen, Änderungen lesen, Sicherung bestätigen und ausdrücklich starten. Testversionen erscheinen nur nach bewusster Auswahl.\n- HTTPS, feste GitHub-Quelle, GitHub-Asset-Prüfsumme, Paketinhalt und installierte Dateien prüfen. Heruntergeladene Installer werden nur als Datencontainer gelesen, nicht ausgeführt.\n- Fortschritt bleibt bei Fehlern erhalten; eine neue Anmeldung kann den Lauf fortsetzen. Wiederholte erfolgreiche Schritte werden nicht erneut ausgeführt.\n- Artikel, Medien, Einstellungen und KI-Zugänge erhalten. Lokale Moduländerungen und gleichzeitige c1zz-Updates blockieren die Übernahme.\n- Erfolgreiche Wiederherstellung über den Root-Installer schließt unterbrochene Updatejournale ab. Kein automatisches Zurückrollen von Datenbankänderungen.\n- Vertrauen vor Installation und hilfreiche Inhalte zur Unterstützung von Kaufentscheidungen als Produktleitlinien dokumentiert.\n\nGeprüft in einem frischen **Gambio 26.11.0 mit PHP 8.2.31, MariaDB 10.10 und Malibu**: 39 native Ablaufprüfungen und 6 Chromiumprüfungen; 89 isolierte Updaterfälle und 42 isolierte Rechte-/CSRF-Prüfungen. Die vorhandenen isolierten Modul-, Builder- und Chromiumregressionen bestehen ebenfalls. GitHub-Antworten im frischen Shop waren simuliert; das Zielpaket entspricht exakt diesem Installer. Details: [Teststand](docs/KOMPATIBILITAET.md).\n\nDer öffentliche Release-Workflow erstellt einen Herkunftsnachweis für die vollständige Installerdatei. **Im Shop wird diese Signatur noch nicht kryptografisch geprüft**; dort gelten HTTPS-Quellen- und Integritätsprüfungen. Ein unabhängiger Penetrationstest liegt nicht vor. Keine neue Freigabe für weitere Gambio-, PHP- oder Theme-Versionen.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.46.0.php",
+          "bytes": 463936,
+          "digest": "sha256:2ebbc2e22ffb2757c551173b9e4650411b76823c629ab35de22e34eb66aab236"
+        },
+        {
+          "name": "c1zz-blog-install-0.46.0.php.sigstore.json",
+          "bytes": 10793,
+          "digest": "sha256:903043eb71ecfaafc143ef1477fa3fddc207940c443b06fe9ff52f3a6e2279c4"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 526,
+          "digest": "sha256:02668fa97064901dc2ec000bdc6c79203f6bad7cc3aa09c0ada0064ae9a931b9"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:0db7a8877b1ac1a85d6c749e590a4e73bd3654cd828382a5043cc3019ccd1a98"
+        }
+      ]
+    },
+    {
+      "tag": "v0.45.0-rc.1",
+      "title": "c1zz-blog für Gambio · 0.45.0-rc.1",
+      "published_at": "2026-11-10T09:59:04Z",
+      "body": "# c1zz-blog für Gambio · 0.45.0-rc.1\n\nDieses Update behebt die Befunde des lokalen Audits und vereinheitlicht die Verwaltung.\n\n- Blogaktionen prüfen jetzt native Schreibrechte zusätzlich zu Anmeldung und CSRF. Das Entfernen von Artikeln, Kategorien, Beispielinhalten und Medien benötigt zusätzlich Löschrechte.\n- Darstellungsänderungen bleiben bei Speicherfehlern erhalten. Der ursprüngliche Versionsvergleich schützt weiterhin vor dem Überschreiben paralleler Änderungen.\n- Speicherbuttons werden nur bei Änderungen aktiv. Der Vorschauhinweis zeigt ungespeicherte Änderungen nur dann an, wenn welche vorhanden sind.\n- Kompakte, gut sichtbare Speicherleisten, gestaltete Dateiauswahl, deutlicher Shortcode und hervorgehobene Sperrhinweise.\n- Mobil erscheint das Kategorienmenü aufklappbar oberhalb. Die Vorschau lässt sich per Klick und Tastatur öffnen; Tablet und Desktop unterstützen weiterhin die seitliche Darstellung.\n- Der Modulordner heißt jetzt `GXModules/c1zz/c1zzblog`. Der Installer übernimmt den bisherigen Ordner `StandaloneBlog`; unbekannte Dateien, Symlinks und doppelte Ordner blockieren die Übernahme.\n\nBei installiertem KI-Modul **zuerst Blog 0.45.0, anschließend KI 0.10.0** aktualisieren. Während dieses gemeinsamen Updates die KI-Verwaltung nicht verwenden. Interne Tabellen- und Controllerkennungen bleiben für vorhandene Daten erhalten. Keine Änderungen an Gambio-Kerndateien.\n\nVor dem Update Datenbank, Medien und Module zusammen sichern. Nur `c1zz-blog-install-0.45.0.php` in den Shopordner hochladen und den geführten Ablauf starten. Der Installer entfernt sich nach erfolgreichem Abschluss. [Installation](docs/INSTALLATION.md) · [Teststand und Grenzen](docs/KOMPATIBILITAET.md).\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.45.0.php",
+          "bytes": 437120,
+          "digest": "sha256:802ac0cf3038e0f033561dc71172e9da74575fc8037ca9e17d6bce01891545b7"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:63ac95949cab4c84cfd0acc2b61d3e508c2b7589b451c5ff458aeee0c84edeef"
+        }
+      ]
+    },
+    {
+      "tag": "v0.44.0-rc.1",
+      "title": "c1zz-blog für Gambio · 0.44.0-rc.1",
+      "published_at": "2026-11-09T16:49:44Z",
+      "body": "# c1zz-blog für Gambio · 0.44.0-rc.1\n\nDie Artikelverwaltung ist kompakter und passt zum gemeinsamen c1zz-Stil.\n\n- Klare Tabellenzeilen, dezente grüne Trennlinien und erkennbare Statusmarkierungen.\n- „Artikel“ bündelt Übersicht und Bearbeitung in der oberen Navigation.\n- „Neuer Artikel“ steht links über der Suche: grüner Button mit Plus-Symbol und hervorgehobener Beschriftung.\n- Artikel, Kategorien, Medien und Einstellungen bleiben beim Update erhalten.\n- Das separate [KI-Modul 0.9.0](https://github.com/c1zz/gambio-ki/releases) ergänzt eine Bildbeschreibung zum Kopieren nach ChatGPT oder Gemini.\n\nGambio-eigene Anmeldung, Rechte, Formularschutz, Editor, Modul-Center und Aufgabenverwaltung bleiben die Grundlage. Keine Änderungen an Gambio-Kerndateien. Die normale Deinstallation deaktiviert das Modul und erhält Bloginhalte; vollständige Datenlöschung erfordert eine gesonderte Bestätigung.\n\nModulstand und Installer: **0.44.0**. Nur `c1zz-blog-install-0.44.0.php` hochladen, vorher sichern und den geführten Updateablauf ausführen. Der Installer entfernt sich nach erfolgreichem Abschluss. [Installation](docs/INSTALLATION.md) · [Teststand](docs/KOMPATIBILITAET.md) · [Bilderrundgang](docs/BILDERRUNDGANG.md).\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.44.0.php",
+          "bytes": 433219,
+          "digest": "sha256:e522a66a3909f3b7c15cecec54b0884f1653a0f742df4cc5df3d35aefab7e49a"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:2e6db5c5c241f01f4768791f005247f545c279acb0989656de8b9b00589877c0"
+        }
+      ]
+    },
+    {
+      "tag": "v0.43.0-rc.1",
+      "title": "c1zz-blog für Gambio · 0.43.0-rc.1",
+      "published_at": "2026-11-09T15:02:52Z",
+      "body": "# c1zz-blog für Gambio · 0.43.0-rc.1\n\nDieser Release Candidate macht die Verwaltung einheitlicher und ergänzt die sichtbare Paketversion. Interner Modulstand und Installerdateiname: **0.43.0**.\n\n- Gemeinsamer c1zz-systems-Stil für Hinweise, Buttons und aufklappbare Bereiche.\n- Entfernen, Löschen, Verwerfen und Zurücksetzen eigener Gestaltungswerte sind rot markiert.\n- Tatsächliche Modulversion neben dem Namen, automatisch aus dem Paket gelesen.\n- Eindeutigere Kennzeichnung eigener Tablet-/Mobilwerte und vererbter Desktopwerte.\n- Weiterhin enthalten: eigene Kategorien, Entwürfe, native Gambio-Bearbeitung, Veröffentlichung und Termine, Medien, SEO, Export/Import, verwaltbare Blogadressen und CSS pro Element.\n- Optionales [KI-Modul](https://github.com/c1zz/gambio-ki) mit eigenem Installer und eigener Deinstallation.\n\nGambio-eigene Anmeldung, Rechte, Formularschutz, Editor, Modul-Center und Aufgabenverwaltung werden weiterverwendet. Keine Änderungen an Gambio-Kerndateien. Normale Deinstallation deaktiviert den Blog und erhält Inhalte; vollständige Datenlöschung erfordert eine gesonderte Bestätigung.\n\nNur `c1zz-blog-install-0.43.0.php` hochladen. Vor einem Update sichern. Der Installer entfernt sich nach erfolgreichem Abschluss selbst. Aktuelle Prüfungen und Grenzen: [Kompatibilität](docs/KOMPATIBILITAET.md). Die [13 neuen Ansichten](docs/BILDERRUNDGANG.md) zeigen das Modul im GX26-Testshop.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.43.0.php",
+          "bytes": 432319,
+          "digest": "sha256:654b8960ad4239ae82522ba691d0e6bba94150bcb79e2b2b7a22ad5372e743c6"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:fc4c7c4d475c7b729e15cf2fd9690fa4d6cac758a34aac05e111bbc41bc890cb"
+        }
+      ]
+    },
+    {
+      "tag": "v0.42.0-rc.2",
+      "title": "c1zz-blog für Gambio · 0.42.0-rc.2",
+      "published_at": "2026-11-09T09:30:50Z",
+      "body": "# c1zz-blog für Gambio · 0.42.0-rc.2\n\nDieser Release Candidate ergänzt die Gestaltung direkt am Blogelement und macht frühere Blogadressen verwaltbar. Modulstand und Installerdateiname lauten **0.42.0**.\n\n- **Eigenes CSS am Element:** Visuelle Regler, Farbauswahl und CSS-Code bearbeiten dieselben Regeln mit Vorschau. Gerätebereiche, Hover und Tastaturfokus sind getrennt wählbar. Ausgabe auf den Blog begrenzt; native Gambio-CodeMirror-Integration.\n- **Weiterleitungen bearbeiten oder löschen:** Beim Pfadwechsel ist die Aufbewahrung der bisherigen Adresse optional. Gespeicherte Quellen können geändert und gelöscht werden; das Ziel bleibt die aktuelle Blogadresse. Bereits zwischengespeicherte 301-Antworten können im Browser nachwirken.\n- **Hilfen sichtbar machen:** Gemeinsame blaue Hinweisfelder in der Verwaltung und an Eingaben.\n- **Ein Name:** c1zz-blog für Gambio in Verwaltung, Installer und beiden Modul-Centern. Technische Modulkennungen bleiben für Updates erhalten.\n- **Richtige GX26-Version:** Der Paketbau erzeugt den nativen Versionsbeleg aus der Modulversion. Dadurch zeigt GX26 0.42.0 statt des Fallbacks 1.0.0.\n- **Dokumentation und Bilderrundgang:** 13 aktuelle Ansichten erklären Bedienung und Einbindung.\n\nDas Modul verwendet Gambio-eigene Anmeldung, Rechte, Formularschutz, Editor, Modul-Center, Aufgabenverwaltung und Shoplayout so weit wie möglich. Es verändert keine Kerndateien. Die geführte Deinstallation deaktiviert den Blog und erhält standardmäßig Inhalte und Medien; deren vollständige Löschung ist eine separate ausdrückliche Entscheidung.\n\nNur `c1zz-blog-install-0.42.0.php` hochladen. Vor dem Update Datenbank, Moduldateien und Blogmedien sichern; nicht vorher deinstallieren. Die Prüfsumme gehört zu dieser Veröffentlichung. Das Repository ist privat; GitHub unterstützt den kryptografischen Herkunftsnachweis für diesen Repository-Typ nicht. Dieser Release enthält daher kein Sigstore-Bundle. Die Repository-Sichtbarkeit bleibt unverändert.\n\n`rc.2` korrigiert den Veröffentlichungsablauf für das private Repository. Release-Kennzeichnung, Dokumentation und Quellarchiv verwenden einheitlich **0.42.0-rc.2**. Der Installer ist bytegleich zum geprüften Paket.\n\nGezielt geprüft im vorhandenen GX26.11.0/PHP8.2.31/MariaDB10.10/Malibu-Shop. Der [Teststand](docs/KOMPATIBILITAET.md) trennt aktuelle Ergebnisse von früheren vollständigen Abläufen. Kein neuer vollständiger Frischinstallations-/Deinstallationsnachweis und keine pauschale Freigabe für andere Versionen oder Themes.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.42.0.php",
+          "bytes": 430411,
+          "digest": "sha256:47cf6d0551c71199f36aa3695332f59529049700e1f1a26fd2beb3f6d67afedb"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:f024b0e4b1e8e769a1a8ac058541b267b1d5af260f11df7522df1f389d77ef7c"
+        }
+      ]
+    },
+    {
+      "tag": "v0.40.2-rc.1",
+      "title": "c1zz Blog für Gambio · 0.40.2-rc.1",
+      "published_at": "2026-11-07T16:02:38Z",
+      "body": "# c1zz Blog für Gambio · 0.40.2-rc.1\n\nErster öffentlicher **Release Candidate** unter MIT-Lizenz. Modulstand und Installerdateiname: `0.40.2`.\n\n## Für Shopbetreiber\n\n- Ein PHP-Installer mit eingebettetem, geprüftem Modularchiv.\n- Native Admin-Anmeldung mit automatischer Rückkehr zum Installer.\n- Geführte Installation, Updates und Deinstallation mit fester Fortschrittsanzeige.\n- Artikel, Entwürfe, Kategorien, Versionen, Medien, Veröffentlichungstermine und Export/Import.\n- Liste, Grid, Slider und Magazin; getrennte Geräteoptionen und grafischer Darstellungseditor.\n- Farben, Schriften, Navigation, Seitenleiste, SEO und Shortcode-Widgets.\n- Optionaler Beispielblog statt automatisch eingespielter Inhalte.\n- SHA-256-Prüfsumme und kryptografisch prüfbarer GitHub-Herkunftsnachweis für die komplette Installerdatei.\n\n## Einbindung in Gambio und Deinstallation\n\n**c1zz Blog nutzt Gambio-eigene Funktionen so weit wie möglich und fügt sich in die vorhandene Shopstruktur ein:** native Admin-Anmeldung, Rechte- und Formularprüfungen, Gambio-Editor, Modul-Center, Aufgabenverwaltung sowie Shoplayout und Shopkonfiguration. Installation und Deinstallation nutzen die nativen Modul- und Cacheabläufe.\n\nDer Code liegt im eigenen Verzeichnis `GXModules/c1zz/StandaloneBlog/`; Gambio-Kerndateien und fremde Module werden nicht verändert. Blogdaten und Medien haben eigene Ablagen.\n\nÜber den geführten Deinstallationsablauf werden öffentliche Darstellung, Verwaltung und Zeitplanung deaktiviert. Inhalte und Medien bleiben standardmäßig für eine Wiederinstallation erhalten; ihre vollständige Löschung muss ausdrücklich zusätzlich bestätigt werden. Die Moduldateien bleiben vorhanden. Selbst gesetzte Bloglinks und eingefügte Shortcodes in Shopinhalten sind anschließend selbst zu entfernen.\n\n## Download und Installation\n\nDen **PHP-Installer** und `SHA256SUMS` herunterladen, vor der Ausführung prüfen und nur die PHP-Datei in den Shopordner hochladen. Das GitHub-Source-Code-Archiv ist für die Installation nicht nötig.\n\nAnleitung: https://github.com/c1zz/gambio-blog/blob/main/docs/INSTALLATION.md\n\nEchtheit prüfen: https://github.com/c1zz/gambio-blog/blob/main/SECURITY.md\n\n## Teststatus\n\nAktueller lokaler Testfall: Gambio 26.11.0, PHP 8.2.31, MariaDB 10.10 und Malibu. Anmelderückkehr in Firefox und Chromium geprüft. Frühere GX4-Nachweise und Grenzen sind in der Kompatibilitätsübersicht getrennt beschrieben. Zuerst im Testshop prüfen; vor dem Einsatz sichern.\n\nDas Modul entstand gemeinsam durch **c1zz und KI-Unterstützung**. Es ist kein offizielles Gambio-Produkt; ein unabhängiges Audit oder eine Gambio-Zertifizierung wird nicht behauptet.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.40.2.php",
+          "bytes": 408838,
+          "digest": "sha256:eeba46f6f40a5849ac4117a8dc82b7d30eb80a3cb03579247558bf3abb8539b4"
+        },
+        {
+          "name": "c1zz-blog-install-0.40.2.php.sigstore.json",
+          "bytes": 10918,
+          "digest": "sha256:6611f8f3b67c419b01ef789e2ec67e0da85fe6a26cefd7b82db3dc89c5d75960"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 95,
+          "digest": "sha256:fd2b6f0e902b22323275b35630b20faeb4054cc0dba3580048961c7e52be1d67"
+        }
+      ]
+    }
+  ]
+}
