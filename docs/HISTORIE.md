@@ -4,7 +4,7 @@ Seit dem 11. November 2026 steht in dieser Testphase nur das aktuelle geprüfte 
 
 Tags und Commit-Historie bleiben unverändert. Frühere Dateien einschließlich damaliger Installer sind dadurch weiterhin über die Git-Historie einsehbar; die Bereinigung entfernt die Release-Downloads und ihre Einträge im Updateangebot. Alte Workflow-Läufe oder Tags dürfen nicht erneut zur Veröffentlichung zurückgezogener Pakete verwendet werden. Bereits veröffentlichte Pakete werden niemals unter derselben Versionsnummer mit anderen Bytes ersetzt.
 
-Aktuelles Release: **[v0.48.4-rc.1](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.4-rc.1)**. Es bleibt ein Release Candidate mit dokumentierten Prüfgrenzen. Für eine vorhandene Installation zuerst sichern und den aktuellen Updateweg aus der [Installationsanleitung](INSTALLATION.md) verwenden. Sehr alte Stände ohne integrierten Updater benötigen den aktuellen Root-Installer; bei beiden Modulen zuerst den Blog aktualisieren.
+Aktuelles Release: **[v0.48.15-rc.1](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.15-rc.1)**. Es bleibt ein Release Candidate mit dokumentierten Prüfgrenzen. Für eine vorhandene Installation zuerst sichern und den aktuellen Updateweg aus der [Installationsanleitung](INSTALLATION.md) verwenden. Sehr alte Stände ohne integrierten Updater benötigen den aktuellen Root-Installer; bei beiden Modulen zuerst den Blog aktualisieren.
 
 ## Dokumentierte wichtige Korrekturen
 
@@ -36,3 +36,5 @@ Die Links führen zur erhaltenen Versionshistorie, nicht zu einem empfohlenen In
 | [v0.43.0-rc.1](https://github.com/c1zz/gambio-blog/tree/v0.43.0-rc.1) | 2026-11-09 | Abgelöst; Release-Downloads entfernt |
 | [v0.42.0-rc.2](https://github.com/c1zz/gambio-blog/tree/v0.42.0-rc.2) | 2026-11-09 | Abgelöst; Release-Downloads entfernt |
 | [v0.40.2-rc.1](https://github.com/c1zz/gambio-blog/tree/v0.40.2-rc.1) | 2026-11-07 | Abgelöst; Release-Downloads entfernt |
+
+Am 11. November 2026 wird auch **v0.48.4-rc.1** nach Veröffentlichung und Downloadprüfung des neuen Stands abgelöst. Seine Beschreibung ist in [release-history.json](release-history.json) gesichert; Tag und Commit bleiben erhalten.
