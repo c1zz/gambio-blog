@@ -1,75 +1,128 @@
 {
-  "success": true,
-  "module": "mixed: 0.44.0 and unchanged 0.43.0 views",
+  "date": "2026-11-11",
+  "module": "blog",
+  "module_version": "0.48.15",
+  "blog_version": "0.48.15",
+  "ai_version": "0.12.6",
   "gambio": "26.11.0",
   "theme": "Malibu",
-  "nativeChromium": true,
-  "savedSettingsUnchanged": true,
+  "capture": "Native local Chromium screenshots of installed published releases; illustrative AI texts only in browser DOM",
+  "saved_content_or_settings_changed": false,
+  "provider_requests": 0,
+  "update_started": false,
+  "release_installers_changed": false,
   "screenshots": [
     {
-      "file": "artikelverwaltung.png",
-      "feature": "Artikel, Kategorien, veröffentlichte Inhalte und privater Entwurf",
-      "module_version": "0.44.0"
+      "file": "docs/images/aktualisieren.png",
+      "module_version": "0.48.15",
+      "sha256": "c4338245c08a88138ea8d916839687cab85fbca756334c38effebd08439f6dc4",
+      "width": 1600,
+      "height": 1400,
+      "description": "Versionsstatus und Updates direkt im Modul"
     },
     {
-      "file": "einstieg.png",
-      "feature": "Geführter Einstieg und Beispielblog",
-      "module_version": "0.43.0"
+      "file": "docs/images/artikel-angaben.png",
+      "module_version": "0.48.15",
+      "sha256": "257fceef7f734417dd172393db22eb66af7ec91ac89fc4c346aa8083080cbbc6",
+      "width": 1600,
+      "height": 1100,
+      "description": "Titel, Kategorie, Teaser, Schlagwörter und SEO"
     },
     {
-      "file": "kategorien.png",
-      "feature": "Kategorien unabhängig von Artikeln verwalten",
-      "module_version": "0.43.0"
+      "file": "docs/images/artikel.png",
+      "module_version": "0.48.15",
+      "sha256": "e1654569d8f1aef34f94b0133d9fbe08b4844ffb2476baf03efe000cdad2d58f",
+      "width": 1440,
+      "height": 1600,
+      "description": "Öffentlicher Ratgeber im Shoplayout"
     },
     {
-      "file": "artikel-angaben.png",
-      "feature": "Titel, Kategorie, Teaser, Schlagwörter und SEO",
-      "module_version": "0.43.0"
+      "file": "docs/images/artikelverwaltung.png",
+      "module_version": "0.48.15",
+      "sha256": "63d63b999eb0915b6a51b3049bd5cf4e8e5a09fb12aea9d50f904bad00ae8bc4",
+      "width": 1600,
+      "height": 1320,
+      "description": "Artikel, Kategorien, veröffentlichte Inhalte und privater Entwurf"
     },
     {
-      "file": "editor.png",
-      "feature": "Nativer Gambio-Editor, Quellcode, Entwurf speichern und Vorschau",
-      "module_version": "0.43.0"
+      "file": "docs/images/blog-desktop.png",
+      "module_version": "0.48.15",
+      "sha256": "7c9a715add9798d174f2c105a7cbf48f3616bb371dafd396710bba4d7b4e68ce",
+      "width": 1440,
+      "height": 1000,
+      "description": "Öffentliche Übersicht mit Shopkopf, Seitenleiste, Kategorien und Seitennavigation"
     },
     {
-      "file": "freigabe-termine.png",
-      "feature": "Private Vorschau, ausdrückliche Freigabe und Veröffentlichungstermin",
-      "module_version": "0.43.0"
+      "file": "docs/images/blog-mobil.png",
+      "module_version": "0.48.15",
+      "sha256": "d184500bbfd0ee604a25c7973a06b433473d23d674d179106bd563ed5686a908",
+      "width": 390,
+      "height": 980,
+      "description": "Mobile öffentliche Blogübersicht mit Shopnavigation"
     },
     {
-      "file": "darstellung.png",
-      "feature": "Ungespeicherte Grid-Vorschau mit Gerätewahl und Layoutoptionen",
-      "module_version": "0.43.0"
+      "file": "docs/images/darstellung.png",
+      "module_version": "0.48.15",
+      "sha256": "c826dd46c17df6f1f4967dcc7640d7f2b9853e6637430461da4f3d945a8053fc",
+      "width": 1337,
+      "height": 1300,
+      "description": "Ungespeicherte Grid-Vorschau mit Gerätewahl und Layoutoptionen"
     },
     {
-      "file": "hilfetexte.png",
-      "feature": "Einheitliche c1zz-Hinweise und kompakte Einstellungen",
-      "module_version": "0.43.0"
+      "file": "docs/images/editor.png",
+      "module_version": "0.48.15",
+      "sha256": "dbc32314fc7729e03d32b80e97eb7d9fbf00fae6f2a7e9d94b925ab0a25ca961",
+      "width": 1337,
+      "height": 709,
+      "description": "Nativer Gambio-Editor, Quellcode, Entwurf speichern und Vorschau"
     },
     {
-      "file": "element-css.png",
-      "feature": "Eigene CSS-Regel mit visuellen Reglern und Codeansicht",
-      "module_version": "0.43.0"
+      "file": "docs/images/einstieg.png",
+      "module_version": "0.48.15",
+      "sha256": "1fd995ddd250a4c0ede1986ea73a6140ac7ffecef8429fb6d85c2be2aa126e29",
+      "width": 1600,
+      "height": 1100,
+      "description": "Geführter Einstieg und Beispielblog"
     },
     {
-      "file": "modul-center.png",
-      "feature": "Native GX26-Modulverwaltung mit tatsaechlicher Version",
-      "module_version": "0.44.0"
+      "file": "docs/images/element-css.png",
+      "module_version": "0.48.15",
+      "sha256": "2ee57ee306c01b323e71cc041d3184ecdd213615a2ae380449feb9c792975ee4",
+      "width": 1337,
+      "height": 1136,
+      "description": "Element-CSS in der aktuellen grafischen Vorschau"
     },
     {
-      "file": "blog-desktop.png",
-      "feature": "Öffentliche Übersicht mit Shopkopf, Seitenleiste, Kategorien und Seitennavigation",
-      "module_version": "0.43.0"
+      "file": "docs/images/freigabe-termine.png",
+      "module_version": "0.48.15",
+      "sha256": "5635a65e58a313b30cf60505ce18a68ebe23d8b6d3740c976a9070a6832d27a4",
+      "width": 1336,
+      "height": 1050,
+      "description": "Private Vorschau, ausdrückliche Freigabe und Veröffentlichungstermin"
     },
     {
-      "file": "artikel.png",
-      "feature": "Öffentlicher Ratgeber im Shoplayout",
-      "module_version": "0.43.0"
+      "file": "docs/images/hilfetexte.png",
+      "module_version": "0.48.15",
+      "sha256": "8fe4fb4586e18d739d1f255390aeb9da65417161395ea49b778051bf434f9e78",
+      "width": 1600,
+      "height": 1100,
+      "description": "Aktuelle gemeinsame Gestaltung der Hinweise"
     },
     {
-      "file": "blog-mobil.png",
-      "feature": "Mobile öffentliche Blogübersicht mit Shopnavigation",
-      "module_version": "0.43.0"
+      "file": "docs/images/kategorien.png",
+      "module_version": "0.48.15",
+      "sha256": "1886939c33008b5e41210c10c6493e7e3e9a709b18ecfd01356735b310b1e239",
+      "width": 1600,
+      "height": 1100,
+      "description": "Kategorien unabhängig von Artikeln verwalten"
+    },
+    {
+      "file": "docs/images/modul-center.png",
+      "module_version": "0.48.15",
+      "sha256": "1bf04c4bd7da4ecc8545384e4273eebf60ccef41795ed3d94053ed3dd2dd6bcf",
+      "width": 1600,
+      "height": 1400,
+      "description": "Aktuelle Modulnamen und installierte Versionen"
     }
   ]
 }

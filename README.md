@@ -92,7 +92,7 @@ Die grafische Darstellung und **Alle Einstellungen** bearbeiten dieselben Werte.
 
 **Blogadressen bleiben steuerbar:** Beim Pfadwechsel entscheidest du, ob die bisherige Adresse weiterleiten soll. Gespeicherte Weiterleitungen kannst du unter **Blogadresse** ändern oder löschen. Hilfetexte sind im gemeinsamen c1zz-systems-Stil hervorgehoben. Entfernen, Löschen und Zurücksetzen eigener Werte sind rot markiert.
 
-Die bisherigen Funktionsansichten wurden am 10.11.2026 mit **Blog 0.46.1 und KI 0.11.1** im lokalen GX26-Testshop mit Malibu erneuert. Sie zeigen Beispiel- und Testinhalte sowie die aktuelle Navigation, Speicherleisten und Updateverwaltung. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch den **mobilen Slider**. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
+Alle 14 Funktionsansichten wurden am **11.11.2026 mit Blog 0.48.15 und KI 0.12.6** im lokalen GX26-Testshop mit Malibu neu aufgenommen. Sie zeigen Beispiel- und Testinhalte sowie die aktuelle Navigation, Speicherleisten und Updateverwaltung. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch den **mobilen Slider**. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
 
 ## Was ist tatsächlich geprüft?
 
