@@ -19,10 +19,10 @@ Nicht pauschal Verzeichnisse auf `777` setzen. Der Installer prüft Voraussetzun
 
 ## Datei prüfen und hochladen
 
-1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.0-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
+1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.3-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
 2. Vor dem Hochladen die [Prüfsumme prüfen](../SECURITY.md). Für öffentliche Releases zusätzlich den Herkunftsnachweis gemäß SECURITY.md prüfen.
-3. Nur `c1zz-blog-install-0.48.0.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
-4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.48.0.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
+3. Nur `c1zz-blog-install-0.48.3.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
+4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.48.3.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
 
 Das enthaltene ZIP wird vor der Übernahme geprüft und nur vorübergehend privat geöffnet. Es soll kein separates Blog-ZIP im öffentlichen Shopordner liegen.
 
@@ -103,4 +103,6 @@ Auch nach vollständiger Datenlöschung ist die Shopdatenbank nicht bytegleich m
 
 ## Blogsuche einstellen
 
-Unter **Darstellung → Alle Einstellungen → Suche** Blogtreffer und Live-Vorschläge aktivieren sowie Darstellung, Trefferzahl, Bilder und Kurztexte auswählen. Farben, Schriften und Abstände folgen der Blogdarstellung. Nach dem Speichern die vorhandene Shopsuche ausprobieren; die Blogvorschau zeigt diese Ergebnisseite nicht. Mobil in Malibu mit Enter suchen.
+Unter **Darstellung → Alle Einstellungen → Suche** oder **Darstellung → Visuell → Suche** Blogtreffer und Live-Vorschläge aktivieren sowie Darstellung, Trefferzahl, Bilder und Kurztexte auswählen. Im visuellen Editor zwischen Blogkopf und Beispieltreffern wechseln. Farben, Schriften und Kartenabstände folgen den gemeinsamen Blogeinstellungen. Die Vorschau speichert nichts und führt keine echte Suche aus; erst „Darstellung speichern“ übernimmt Änderungen. Live-Vorschläge im Shopkopf weiterhin nach dem Speichern im Shop prüfen. Mobil in Malibu mit Enter suchen.
+
+Die Blog-Lupe öffnet ein Suchfeld mit integrierter Absenden-Lupe. Der separate Öffner verschwindet dabei. Escape oder ein Klick außerhalb schließen das Feld wieder, ohne den Suchtext zu löschen. „Suchfeld immer sichtbar“ hält es dauerhaft offen. Die eigene Ergebnisseite zeigt optional kleine Vorschaubilder neben den Titeln. Ohne JavaScript bleibt das Formular nutzbar.
