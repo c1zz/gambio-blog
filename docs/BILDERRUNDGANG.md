@@ -2,7 +2,7 @@
 
 Vierzehn Funktionsansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
 
-**Aufnahmen vom 11.11.2026, Blog 0.48.15 / KI 0.12.6:** Alle Ansichten wurden im lokalen Gambio-26.11.0-Shop mit Malibu neu aufgenommen. Die Artikelverwaltung ist auf die optionalen Beispielartikel gefiltert; öffentliche Ansichten zeigen Beispiel- und Testinhalte. Für die Aufnahmen wurden weder Artikel noch Einstellungen gespeichert, keine Veröffentlichung gestartet und keine KI-Anfrage ausgelöst. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
+**Aufnahmen vom 11.11.2026, Blog 0.48.16 / KI 0.12.7:** Alle Ansichten wurden in einer frischen, temporären Gambio-26.11.0-Installation mit Malibu neu aufgenommen. Die Artikelverwaltung ist auf die optionalen Beispielartikel gefiltert; öffentliche Ansichten zeigen Beispiel- und Testinhalte. Die Testumgebung wurde vorher mit den optionalen Beispielartikeln vorbereitet; während der Aufnahmen wurden keine Artikel oder Einstellungen gespeichert und keine KI-Anfragen ausgelöst. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
 
 [Zur Projektübersicht](../README.md) · [Zur Installation](INSTALLATION.md)
 
@@ -125,16 +125,18 @@ Hinweisfelder mit grünem Rand heben die Erläuterungen zur Darstellung hervor. 
 
 ## 13. Name und Version im GX26-Modul-Center
 
-**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.48.15** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
+**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.48.16** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
 
-[![GX26-Modul-Center mit einheitlichem Namen und Version 0.48.15](images/modul-center.png)](images/modul-center.png)
+[![GX26-Modul-Center mit einheitlichem Namen und Version 0.48.16](images/modul-center.png)](images/modul-center.png)
 
 <a id="ansicht-14"></a>
 
 ## 14. Update / Aktualisieren
 
-Die Aufnahme mit Blog **0.48.15** zeigt den vorhandenen Prüfstatus, die gespeicherte Testversionsauswahl und den abgeschlossenen Updateablauf. Für die Aufnahme wurde weder erneut gesucht noch ein Update gestartet. Die Vorbereitung des nächsten Releases ist hier noch nicht enthalten.
+Die Aufnahme mit Blog **0.48.16** zeigt die neue Update-Seite nach frischer Installation. Automatisch gefundene Updates werden hier direkt mit Details und Startknopf angeboten. Für die Aufnahme blieb die automatische Prüfung ausgeschaltet; es wurde kein Update gestartet.
 
 [![Aktueller Versionsstatus und abgeschlossener Updateablauf](images/aktualisieren.png)](images/aktualisieren.png)
 
-Alle 14 Aufnahmen zeigen den veröffentlichten Modulstand 0.48.15. Aufnahmedatum, Versionen und Bildprüfsummen stehen in [screenshots.json](screenshots.json).
+Alle 14 Aufnahmen zeigen den veröffentlichten Modulstand 0.48.16. Aufnahmedatum, Versionen und Bildprüfsummen stehen in [screenshots.json](screenshots.json).
+
+Die Update-Aufnahme zeigt den Fehlerhinweis für GitHub, weil die temporäre Prüfumgebung den Abruf nicht zuließ. Dieser Hinweis ist kein fehlgeschlagenes Modulupdate; eine Installation wurde nicht gestartet.

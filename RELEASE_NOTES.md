@@ -1,15 +1,13 @@
-# c1zz-blog 0.48.15-rc.1
+# c1zz-blog 0.48.16-rc.1
 
-Die Bloggestaltung ist jetzt für Desktop, Tablet und Mobil genauer einstellbar. Die Suchlupe öffnet ein Overlay, ohne Überschrift und Artikel zu verschieben.
+Automatisch gefundene Updates erscheinen jetzt direkt mit Paketdetails und Startknopf auf **Update / Aktualisieren**. Eine zweite manuelle Suche ist nicht mehr nötig. Veraltete Details werden bei aktiver Automatik nachgeladen; „Erneut nach Updates suchen“ bleibt verfügbar.
 
-- **Gesamter Blog:** Prozentuale Breite und optionale Maximalbreite unter Layout steuern Überschrift, Kategorien, Suche, Liste, Grid, Slider, Magazin und Artikelseiten. 100 % und „Keine maximale Breite“ nutzen den verfügbaren Shop-Inhaltsbereich. Eingebundene Widgets behalten ihre eigene Breite.
-- **Artikel:** Position und Ausrichtung des Artikelbilds sowie Textbreite je Gerät wählen. „Volle Breite (ohne Textbegrenzung)“ hebt die Textbegrenzung auf. Eigene Artikelfarben und Schrift für die Artikelüberschrift sind verfügbar.
-- **Kategorien und Suche:** Kategorien vor oder nach der Überschrift; Suchlupe am Anfang oder Ende direkt in der Kategorienreihe, neben oder über der Überschrift beziehungsweise unter den Kategorien. Mobil bleibt die Lupe neben der Kategorienauswahl erreichbar. Ohne JavaScript bleibt ein GET-Suchformular nutzbar.
-- **Suchgestaltung:** Eigene Farben, Schrift und begrenztes CSS für Suchfeld, Overlay und Ergebnisse; Vorschau für Blogkopf, Overlay und Treffer.
-- **Admin:** c1zz-systems-Logo sowie einheitliche Dropdowns und Eingabefelder in Blog und KI. Der Widget-Generator zeigt nur Einstellungen an, die in Blogkarten wirken.
+Das **c1zz-systems-Logo steht links und der Modultitel rechts außen in derselben Kopfzeile**, auch in schmalen Ansichten. Die Screenshots im Bilderrundgang wurden mit diesen Paketständen erneuert.
 
-Bestehende Artikel, Bilder, Einstellungen und KI-Daten bleiben erhalten. Der aktuelle Prüfstand gilt für **Gambio 26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu**. Frische Installation, Speichern und Wiederladen der neuen Werte, normale Wiederinstallation, Updates mit Datenerhalt, isolierte Verhaltenstests und Browserprüfungen sind dokumentiert. [Prüfumfang und Grenzen](docs/KOMPATIBILITAET.md).
+Die Installation startet weiterhin ausschließlich nach ausdrücklicher Bestätigung und Sicherungshinweis. Rechte, CSRF, Paketprüfung und Datenerhalt bleiben erhalten. Keine neue KI-Anbieterfunktion und keine externen KI-Anfragen bei den Tests.
 
-Zum Aktualisieren zuerst sichern, dann **Update / Aktualisieren → Testversionen berücksichtigen → Nach Updates suchen**. Bei beiden Modulen zuerst den Blog aktualisieren. Updates werden ausdrücklich vom Betreiber gestartet. Die Shopfunktion prüft Paketintegrität, noch keine kryptografische Herkunftssignatur. Der separate Herkunftsnachweis des Downloads ist über [SECURITY.md](SECURITY.md) prüfbar; er ersetzt kein unabhängiges Codeaudit.
+Geprüft auf **Gambio 26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu**: vollständige isolierte PHP-Suite, Cache-/Controller-/Sicherheitsprüfungen, PHP-Syntax, Buildertests, Chromium-Regression und frische Installation der exakten Pakete. Umfang und Grenzen stehen im verlinkten Testbericht.
 
-Abschlussprüfung: 22 native Prüfungen nach frischer Installation beider exakten Pakete, 48 Prüfungen beim abschließenden Blogupdate und 79 isolierte Chromiumtests für Editor/DOM bestanden; weitere gezielte Darstellungsprüfungen siehe Testbericht.
+Für dieses Update im bisherigen Modul **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen** verwenden und nach einer Sicherung selbst starten; zuerst den Blog aktualisieren. Die vereinfachte Bedienung greift nach Installation dieser Version. Die Shopfunktion prüft Integrität, noch keine kryptografische Herkunftssignatur. Der separate [Herkunftsnachweis](SECURITY.md) ersetzt kein unabhängiges Codeaudit.
+
+[Prüfumfang und Grenzen](docs/KOMPATIBILITAET.md).

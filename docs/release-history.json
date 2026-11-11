@@ -2,10 +2,43 @@
   "repository": "c1zz/gambio-blog",
   "retired_on": "2026-11-11",
   "reason": "Only the current tested release is offered during this test phase; not all older releases had severe defects.",
-  "current_release": "v0.48.15-rc.1",
+  "current_release": "v0.48.16-rc.1",
   "tags_and_commits_preserved": true,
   "historical_notes_not_current_installation_instructions": true,
   "retired_releases": [
+    {
+      "tag": "v0.48.15-rc.1",
+      "title": "c1zz-blog für Gambio · 0.48.15-rc.1",
+      "published_at": "2026-11-11T19:52:01Z",
+      "body": "# c1zz-blog 0.48.15-rc.1\n\nDie Bloggestaltung ist jetzt für Desktop, Tablet und Mobil genauer einstellbar. Die Suchlupe öffnet ein Overlay, ohne Überschrift und Artikel zu verschieben.\n\n- **Gesamter Blog:** Prozentuale Breite und optionale Maximalbreite unter Layout steuern Überschrift, Kategorien, Suche, Liste, Grid, Slider, Magazin und Artikelseiten. 100 % und „Keine maximale Breite“ nutzen den verfügbaren Shop-Inhaltsbereich. Eingebundene Widgets behalten ihre eigene Breite.\n- **Artikel:** Position und Ausrichtung des Artikelbilds sowie Textbreite je Gerät wählen. „Volle Breite (ohne Textbegrenzung)“ hebt die Textbegrenzung auf. Eigene Artikelfarben und Schrift für die Artikelüberschrift sind verfügbar.\n- **Kategorien und Suche:** Kategorien vor oder nach der Überschrift; Suchlupe am Anfang oder Ende direkt in der Kategorienreihe, neben oder über der Überschrift beziehungsweise unter den Kategorien. Mobil bleibt die Lupe neben der Kategorienauswahl erreichbar. Ohne JavaScript bleibt ein GET-Suchformular nutzbar.\n- **Suchgestaltung:** Eigene Farben, Schrift und begrenztes CSS für Suchfeld, Overlay und Ergebnisse; Vorschau für Blogkopf, Overlay und Treffer.\n- **Admin:** c1zz-systems-Logo sowie einheitliche Dropdowns und Eingabefelder in Blog und KI. Der Widget-Generator zeigt nur Einstellungen an, die in Blogkarten wirken.\n\nBestehende Artikel, Bilder, Einstellungen und KI-Daten bleiben erhalten. Der aktuelle Prüfstand gilt für **Gambio 26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu**. Frische Installation, Speichern und Wiederladen der neuen Werte, normale Wiederinstallation, Updates mit Datenerhalt, isolierte Verhaltenstests und Browserprüfungen sind dokumentiert. [Prüfumfang und Grenzen](docs/KOMPATIBILITAET.md).\n\nZum Aktualisieren zuerst sichern, dann **Update / Aktualisieren → Testversionen berücksichtigen → Nach Updates suchen**. Bei beiden Modulen zuerst den Blog aktualisieren. Updates werden ausdrücklich vom Betreiber gestartet. Die Shopfunktion prüft Paketintegrität, noch keine kryptografische Herkunftssignatur. Der separate Herkunftsnachweis des Downloads ist über [SECURITY.md](SECURITY.md) prüfbar; er ersetzt kein unabhängiges Codeaudit.\n\nAbschlussprüfung: 22 native Prüfungen nach frischer Installation beider exakten Pakete, 48 Prüfungen beim abschließenden Blogupdate und 79 isolierte Chromiumtests für Editor/DOM bestanden; weitere gezielte Darstellungsprüfungen siehe Testbericht.\n",
+      "assets": [
+        {
+          "name": "c1zz-blog-install-0.48.15.php",
+          "bytes": 524848,
+          "digest": "sha256:3a5f7781945f622023f7d1226a0e5854b55077a0be3273cb4337e086fc7055cb"
+        },
+        {
+          "name": "c1zz-blog-install-0.48.15.php.sigstore.json",
+          "bytes": 10805,
+          "digest": "sha256:f9f5567f43a9f310cbda3ecd3fe61158426913544fe86abe14b7fdd982e4b381"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 1061,
+          "digest": "sha256:087b9d37380ed80ad1c4bd2521459784dca35576455f7c3be57022f6c6d8ad2a"
+        },
+        {
+          "name": "release.json",
+          "bytes": 529,
+          "digest": "sha256:7ea169eb54376ae253381ef29cea27055d49746c9351d1255391db23fb720b5a"
+        },
+        {
+          "name": "SHA256SUMS",
+          "bytes": 96,
+          "digest": "sha256:a57fa9618d1902160f23c66ae99f491652de0e1b00cbdf51d2e638f647ac0451"
+        }
+      ]
+    },
     {
       "tag": "v0.48.4-rc.1",
       "title": "c1zz-blog für Gambio · 0.48.4-rc.1",
