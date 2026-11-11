@@ -1,13 +1,9 @@
-# c1zz-blog 0.47.3-rc.1
+# c1zz-blog 0.47.4-rc.1
 
-Unter **Darstellung** ist die **Reihenfolge der Artikel** jetzt im gemeinsamen c1zz-Stil hervorgehoben: grüner Rahmen, größere Bedienfläche und klare Beschriftung. Der Standard bleibt **Artikeldatum: neueste zuerst**.
+Unter Darstellung sind für „Artikel pro Seite (Liste / Grid)“ jetzt **2, 3, 4, 6, 8, 9, 10, 12, 16, 18, 20 und 24** auswählbar. Die zusätzlichen Werte gelten für Desktop, Tablet und Mobil; bestehende Einstellungen bleiben erhalten.
 
-Neu ist **Abstand unter dem Blog**: Theme-Standard oder eigener Wert von **0–240 px**, einstellbar mit Schieberegler und Zahleneingabe. Bestehende Einstellungen behalten den Theme-Standard. Zum Ausprobieren „Eigenen Abstand einstellen“ wählen, beispielsweise **24 px**, speichern und die Blogseite öffnen. Die interne Vorschau zeigt diesen Theme-Abstand nicht.
+Das exakte Paket wurde in einem frischen **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** unter `/shop/` nativ installiert. Geprüft wurden Dropdowns, Speicherung, Seitennavigation und ungültige Werte. Zusätzlich wurde der bestehende lokale Migrationstestshop von 0.47.3 auf 0.47.4 aktualisiert und auf Datenerhalt geprüft. [Prüfumfang und Grenzen](https://github.com/c1zz/gambio-blog/blob/v0.47.4-rc.1/docs/KOMPATIBILITAET.md).
 
-Der eigene Wert ersetzt ausschließlich den unteren Theme-Innenabstand auf Blogübersicht, Kategorien und Artikelseiten. Andere Shopseiten, Einbindungen, Theme-Dateien und die Footer-Reserve bleiben unverändert. Zusätzliche Abstände und die Mindesthöhe des Themes können weiterhin Leerraum erzeugen.
+Bestehende Installationen können unter **Update / Aktualisieren** nach neuen Versionen suchen. Für diesen Release Candidate muss **Testversionen berücksichtigen** aktiviert sein. Der Betreiber startet das Update selbst. Die Erstinstallation erfolgt mit dem einzelnen PHP-Installer; nach erfolgreichem Abschluss wird er entfernt.
 
-Das exakte Paket wurde frisch in **GX26.11.0 / PHP 8.2.31 / MariaDB 10.10 / Malibu** installiert und gezielt auf Speicherung, Grenzwerte, öffentliche Ausgabe und Browserbedienung geprüft. Die isolierten Regressionen bestehen. Kein erneuter vollständiger GitHub-Updatetest oder Deinstallationslauf für diese Darstellungsänderung. [Prüfumfang und Grenzen](https://github.com/c1zz/gambio-blog/blob/v0.47.3-rc.1/docs/KOMPATIBILITAET.md).
-
-Zum Aktualisieren: **Update / Aktualisieren → Auch Testversionen anzeigen → Nach Updates suchen → Jetzt aktualisieren**. Vorher den Shop sichern. Dieses Release enthält nur das Blogmodul; kein KI-Update erforderlich.
-
-Dies bleibt ein Release Candidate. Keine neue Kompatibilitätszusage und kein unabhängiges Codeaudit. Die kryptografische Herkunftssignatur wird im Shop weiterhin nicht geprüft.
+Nur das Blogmodul erhält ein neues Paket; das KI-Modul bleibt bei 0.12.1. Kein erneuter vollständiger GitHub-Updatetest oder Deinstallationslauf für diese Auswahländerung. Die Shopfunktion prüft Integrität, keine kryptografische Herkunftssignatur. [Herkunft und Integrität prüfen](https://github.com/c1zz/gambio-blog/blob/v0.47.4-rc.1/SECURITY.md); kein unabhängiges Codeaudit.
