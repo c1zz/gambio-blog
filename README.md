@@ -1,16 +1,16 @@
 <p align="center"><img src="docs/images/header.svg" alt="c1zz-blog für Gambio – Inhalte gestalten. Direkt im Shop." width="100%"></p>
 
-Aktuell: Mehr Auswahl bei der Artikelzahl pro Seite – passend für zwei-, drei- und vierspaltige Ansichten. Details stehen in den [Release Notes](RELEASE_NOTES.md).
+Aktuell: Blogartikel über die vorhandene Shopsuche finden – mit einstellbarer Darstellung und ohne zusätzliches mobiles Suchfeld. Details stehen in den [Release Notes](RELEASE_NOTES.md).
 
-<p align="center"><strong>Release Candidate · 0.47.4-rc.1 · MIT-Lizenz · Entwickelt von Mensch und KI</strong></p>
+<p align="center"><strong>Release Candidate · 0.48.0-rc.1 · MIT-Lizenz · Entwickelt von Mensch und KI</strong></p>
 
 # Ein Blog, der zu deinem Gambio-Shop passt
 
 Artikel schreiben, Kategorien pflegen und die Darstellung direkt im Shop gestalten: **c1zz-blog für Gambio** ist ein eigenständig installierbares Blogmodul für Gambio. Du brauchst keinen vorbereiteten Blog und keine SSH-Nacharbeiten.
 
-**[Bilderrundgang mit 14 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.47.4-rc.1/c1zz-blog-install-0.47.4.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.4-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
+**[Bilderrundgang mit 14 Ansichten](docs/BILDERRUNDGANG.md)** · **[Installer herunterladen](https://github.com/c1zz/gambio-blog/releases/download/v0.48.0-rc.1/c1zz-blog-install-0.48.0.php)** · **[Release & Prüfsummen](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.0-rc.1)** · **[Installation](docs/INSTALLATION.md)** · **[Echtheit prüfen](SECURITY.md)**
 
-> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.47.4`; `rc.1` kennzeichnet diese Veröffentlichung.
+> Dies ist ein **Release Candidate**. Bitte zuerst in einem Testshop prüfen und vor dem Einsatz den Shop sichern. Der interne Modulstand und der Dateiname lauten `0.48.0`; `rc.1` kennzeichnet diese Veröffentlichung.
 
 **So sehen Besucher den Blog:** Die Desktopansicht zeigt Artikel, Kategorien und Seitennavigation im Malibu-Shoplayout – einschließlich Shopkopf und Seitenleiste.
 
@@ -25,6 +25,8 @@ Du installierst Software eines zunächst fremden Anbieters in einen Shop, mit de
 Ein Shop kann ohne Blog betrieben werden. Mit einem Blog bekommst du Raum, Produkte und ihren Nutzen verständlich zu erklären: mit Ratgebern, Anwendungsbeispielen, Hintergrundwissen und Antworten auf Kundenfragen. So kannst du hilfreiche Inhalte schaffen, die Kaufentscheidungen unterstützen und zum Verkauf beitragen. Das Modul bietet die Werkzeuge; einen bestimmten Umsatz- oder Rankingeffekt versprechen wir nicht.
 
 ## Neu in diesem Release
+
+**Blogsuche:** Das vorhandene Suchfeld findet auch veröffentlichte Blogartikel. Desktop bietet zusätzliche Live-Vorschläge, mobil führt Enter zur gemeinsamen Ergebnisseite. Unter **Darstellung → Alle Einstellungen → Suche** stellst du Liste/Grid, Trefferzahl, Bilder, Kurztexte und Live-Vorschläge ein. Farben, Schrift und Abstände folgen der Blogdarstellung. Der Admin-Menülink heißt jetzt **c1zz-blog**.
 
 **Artikel pro Seite:** Für Liste und Grid stehen jetzt **2, 3, 4, 6, 8, 9, 10, 12, 16, 18, 20 und 24** zur Auswahl. Die neuen Werte 2, 4, 8, 16 und 20 gelten für Desktop, Tablet und Mobil. Bestehende Einstellungen und die Übernahme des Desktopwerts bleiben erhalten. Du findest die Auswahl unter **Darstellung → Alle Einstellungen → Navigation**.
 
@@ -68,8 +70,8 @@ Der Modulcode liegt getrennt unter `GXModules/c1zz/c1zzblog/`. **Gambio-Kerndate
 
 ## In wenigen Schritten loslegen
 
-1. Den PHP-Installer und `SHA256SUMS` aus demselben [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.4-rc.1) herunterladen und **vor der Ausführung prüfen**.
-2. Nur `c1zz-blog-install-0.47.4.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Dateinamen beibehalten.
+1. Den PHP-Installer und `SHA256SUMS` aus demselben [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.0-rc.1) herunterladen und **vor der Ausführung prüfen**.
+2. Nur `c1zz-blog-install-0.48.0.php` in den Shopordner neben `shop.php` und `admin/` hochladen. Dateinamen beibehalten.
 3. Die Datei im Browser öffnen. Falls nötig, **Admin-Anmeldung öffnen** wählen. Gambio verarbeitet die Anmeldung in seinem eigenen Fenster; danach kehrt der Installer automatisch zurück.
 4. Voraussetzungen und Paketprüfung kontrollieren, bei vorhandenen Daten die Sicherung bestätigen und die Einrichtung ausdrücklich starten.
 5. Nach erfolgreichem Abschluss entfernt sich die hochgeladene Installationsdatei selbst. In der Blogverwaltung hilft **Einstieg** beim Anpassen an deinen Shop.

@@ -19,10 +19,10 @@ Nicht pauschal Verzeichnisse auf `777` setzen. Der Installer prüft Voraussetzun
 
 ## Datei prüfen und hochladen
 
-1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.47.4-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
+1. Aus dem [Release](https://github.com/c1zz/gambio-blog/releases/tag/v0.48.0-rc.1) den PHP-Installer und `SHA256SUMS` herunterladen. Das automatisch von GitHub angebotene **Source code**-Archiv ist für die Installation nicht nötig.
 2. Vor dem Hochladen die [Prüfsumme prüfen](../SECURITY.md). Für öffentliche Releases zusätzlich den Herkunftsnachweis gemäß SECURITY.md prüfen.
-3. Nur `c1zz-blog-install-0.47.4.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
-4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.47.4.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
+3. Nur `c1zz-blog-install-0.48.0.php` in den Shopordner hochladen, in dem auch `shop.php` und `admin/` liegen. Bei einem Shop unter `/shop/` ist dessen Unterordner gemeint.
+4. Im Browser `https://dein-shop.example/c1zz-blog-install-0.48.0.php` öffnen; ein Shop-Unterverzeichnis entsprechend voranstellen. Den Versionsdateinamen beibehalten.
 
 Das enthaltene ZIP wird vor der Übernahme geprüft und nur vorübergehend privat geöffnet. Es soll kein separates Blog-ZIP im öffentlichen Shopordner liegen.
 
@@ -100,3 +100,7 @@ Ab Blog 0.45.0 / KI 0.10.0 lauten die Ordner `GXModules/c1zz/c1zzblog` und `GXMo
 Blog und KI haben jeweils eine eigene, standardmäßig ausgeschaltete Löschbestätigung. Beim KI-Modul entfernt sie auch gespeicherte Themenvorschläge; beim Blog entfernt sie Bloginhalte und Medien. Beide entfernen ihre Update-Hinweiseinstellungen. Bereits in den Blog übernommene KI-Inhalte gehören zum Blog und werden durch die KI-Löschung erhalten. Ohne Löschhaken gilt weiterhin Datenerhalt, ausgenommen KI-Zugänge.
 
 Auch nach vollständiger Datenlöschung ist die Shopdatenbank nicht bytegleich mit dem Zustand vor der Installation: Native inaktive Modulmarker, Cacheaufbau und fortgeschrittene Zähler bleiben. Modulcode und eigene redaktionelle Shopverknüpfungen werden nicht automatisch entfernt.
+
+## Blogsuche einstellen
+
+Unter **Darstellung → Alle Einstellungen → Suche** Blogtreffer und Live-Vorschläge aktivieren sowie Darstellung, Trefferzahl, Bilder und Kurztexte auswählen. Farben, Schriften und Abstände folgen der Blogdarstellung. Nach dem Speichern die vorhandene Shopsuche ausprobieren; die Blogvorschau zeigt diese Ergebnisseite nicht. Mobil in Malibu mit Enter suchen.
