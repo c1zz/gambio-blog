@@ -2,7 +2,7 @@
 
 Vierzehn Funktionsansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
 
-**Aufnahmen vom 10.11.2026, Blog 0.46.1 / KI 0.11.1:** Alle Ansichten wurden im lokalen Gambio-26.11.0-Shop mit Malibu neu aufgenommen. Die Artikelverwaltung ist auf die optionalen Beispielartikel gefiltert; öffentliche Ansichten zeigen Beispiel- und Testinhalte. Für die Aufnahmen wurden weder Artikel noch Einstellungen gespeichert, keine Veröffentlichung gestartet und keine KI-Anfrage ausgelöst. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
+**Aufnahmen vom 11.11.2026, Blog 0.48.16 / KI 0.12.7:** Alle Ansichten wurden in einer frischen, temporären Gambio-26.11.0-Installation mit Malibu neu aufgenommen. Die Artikelverwaltung ist auf die optionalen Beispielartikel gefiltert; öffentliche Ansichten zeigen Beispiel- und Testinhalte. Die Testumgebung wurde vorher mit den optionalen Beispielartikeln vorbereitet; während der Aufnahmen wurden keine Artikel oder Einstellungen gespeichert und keine KI-Anfragen ausgelöst. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
 
 [Zur Projektübersicht](../README.md) · [Zur Installation](INSTALLATION.md)
 
@@ -10,9 +10,9 @@ Vierzehn Funktionsansichten zeigen den Weg vom Einstieg über das Schreiben und 
 |---|---|
 | [1. Einstieg](#ansicht-1) | Geführter Einstieg mit vier Schritten und Verwaltung der Beispielartikel |
 | [2. Artikelverwaltung](#ansicht-2) | Artikelübersicht mit Suche, Kategorien, Veröffentlichungsstatus und Aktionen |
-| [3. Artikeldaten und SEO](#ansicht-3) | Artikelformular mit Titel, Kategorie, Kurzbeschreibung und Suchmaschinenfeldern |
+| [3. Artikeldaten und SEO](#ansicht-3) | Artikelformular mit Titel, Kategorie, Kurzbeschreibung und URL-Kürzel |
 | [4. Inhalte schreiben](#ansicht-4) | Nativer Schreibeditor mit Beispieltext, Formatierungsleiste und Entwurfsaktionen |
-| [5. Kategorien verwalten](#ansicht-5) | Kategorieformular mit SEO-Feldern und Liste bestehender Kategorien |
+| [5. Kategorien verwalten](#ansicht-5) | Kategorieformular mit Namen, URL-Kürzel und SEO-Feldern |
 | [6. Freigabe, Termine und Versionen](#ansicht-6) | Freigabe eines privaten Entwurfs, Terminplanung, Aufgabenhinweis und gespeicherte Version |
 | [7. Darstellung mit Vorschau](#ansicht-7) | Grafischer Editor mit Grid-Vorschau und Layoutoptionen für Desktop |
 | [8. Öffentlicher Blog auf Desktop](#ansicht-8) | Öffentliches Bloggrid im vollständigen Malibu-Shoplayout |
@@ -45,7 +45,7 @@ Die Übersicht verbindet Suche, Kategoriefilter und Status mit den Aktionen **Be
 
 Im oberen Teil des Artikelformulars pflegst du Titel, Datum, Kategorie, Kurzbeschreibung, Schlagwörter und URL-Kürzel. SEO-Titel und Meta-Description stehen im selben Formular. Speichern aktualisiert den Entwurf; die Veröffentlichung ist ein eigener Schritt.
 
-[![Artikelformular mit Titel, Kategorie, Kurzbeschreibung und Suchmaschinenfeldern](images/artikel-angaben.png)](images/artikel-angaben.png)
+[![Artikelformular mit Titel, Kategorie, Kurzbeschreibung und URL-Kürzel](images/artikel-angaben.png)](images/artikel-angaben.png)
 
 <a id="ansicht-4"></a>
 
@@ -61,7 +61,7 @@ Dieser Ausschnitt zeigt den Inhaltsbereich weiter unten im selben Formular: nati
 
 Eigene Kategorien lassen sich unabhängig von Artikeln anlegen. Name, URL-Kürzel und Suchmaschinenangaben gehören zur Kategorie. Unter dem Formular stehen die bereits vorhandenen Beispielkategorien.
 
-[![Kategorieformular mit SEO-Feldern und Liste bestehender Kategorien](images/kategorien.png)](images/kategorien.png)
+[![Kategorieformular mit Namen, URL-Kürzel und SEO-Feldern](images/kategorien.png)](images/kategorien.png)
 
 <a id="ansicht-6"></a>
 
@@ -75,7 +75,7 @@ Der Ausschnitt zeigt die Freigabe eines gespeicherten Entwurfs, die Terminplanun
 
 ## 7. Darstellung mit Vorschau
 
-Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **Grid-Vorschau** mit drei Spalten und den passenden Layoutoptionen. Die Vorschau wurde für die Aufnahme geöffnet; gespeicherte Shop-Einstellungen wurden dabei nicht verändert.
+Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **Grid-Vorschau** mit drei Spalten sowie die Gesamtbreite und maximale Breite des Blogs. Die neuen Bereiche **Suche** und **Artikel** sind direkt auswählbar. Die Vorschau wurde für die Aufnahme geöffnet; gespeicherte Shop-Einstellungen wurden dabei nicht verändert.
 
 [![Grafischer Editor mit Grid-Vorschau und Layoutoptionen für Desktop](images/darstellung.png)](images/darstellung.png)
 
@@ -125,16 +125,18 @@ Hinweisfelder mit grünem Rand heben die Erläuterungen zur Darstellung hervor. 
 
 ## 13. Name und Version im GX26-Modul-Center
 
-**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.46.1** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
+**c1zz-blog für Gambio** wird mit dem tatsächlichen Modulstand **0.48.16** angezeigt. Die Kennzeichnung **rc.1** gehört zur GitHub-Veröffentlichung.
 
-[![GX26-Modul-Center mit einheitlichem Namen und Version 0.46.1](images/modul-center.png)](images/modul-center.png)
+[![GX26-Modul-Center mit einheitlichem Namen und Version 0.48.16](images/modul-center.png)](images/modul-center.png)
 
 <a id="ansicht-14"></a>
 
 ## 14. Update / Aktualisieren
 
-Die neue Aufnahme mit Blog **0.47.0** zeigt die automatische Prüfung nach der Adminanmeldung, die gespeicherte Kanalauswahl und die inaktive Speichertaste bei unveränderten Einstellungen. Der reproduzierbar gesetzte Cachezustand zeigt „aktuell“; es wurde kein Update gestartet. „Blog ansehen“ bleibt in der Navigation; die Deinstallation steht mit Abstand am Seitenende. Abgeschlossene Updates werden kompakt mit aufklappbaren Details angezeigt.
+Die Aufnahme mit Blog **0.48.16** zeigt die neue Update-Seite nach frischer Installation. Automatisch gefundene Updates werden hier direkt mit Details und Startknopf angeboten. Für die Aufnahme blieb die automatische Prüfung ausgeschaltet; es wurde kein Update gestartet.
 
 [![Aktueller Versionsstatus und abgeschlossener Updateablauf](images/aktualisieren.png)](images/aktualisieren.png)
 
-Die Aufnahmen zeigen den ausdrücklich genannten älteren Modulstand. Neue Logo-, Eingabe- und Layoutoptionen dieses Releases sind in den [Release Notes](../RELEASE_NOTES.md) beschrieben.
+Alle 14 Aufnahmen zeigen den veröffentlichten Modulstand 0.48.16. Aufnahmedatum, Versionen und Bildprüfsummen stehen in [screenshots.json](screenshots.json).
+
+Die Update-Aufnahme zeigt den Fehlerhinweis für GitHub, weil die temporäre Prüfumgebung den Abruf nicht zuließ. Dieser Hinweis ist kein fehlgeschlagenes Modulupdate; eine Installation wurde nicht gestartet.
