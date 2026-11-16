@@ -1,129 +1,171 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-16",
   "module": "blog",
   "module_version": "0.48.16",
   "blog_version": "0.48.16",
   "ai_version": "0.12.7",
   "gambio": "26.11.0",
   "theme": "Malibu",
-  "capture": "Native Chromium in fresh disposable GX26 installation of exact release packages; synthetic AI fixtures",
+  "capture": "Native Chromium, exact published packages in disposable GX26 with original shop media; dates and scope per image",
   "saved_content_or_settings_changed": false,
   "provider_requests": 0,
   "update_started": false,
-  "release_installers_changed": true,
+  "release_installers_changed": false,
   "screenshots": [
     {
       "file": "docs/images/aktualisieren.png",
       "module_version": "0.48.16",
-      "sha256": "51ec3f4a2d3f39d0caea6cb0883f58cdb6021d57f9c2b7227b56a0effdc39a14",
+      "sha256": "121e344937281986a11802248e9305a9210254faa91220d85e9b10c913ac7d58",
       "width": 1600,
       "height": 1400,
-      "description": "Versionsstatus und Updates direkt im Modul"
+      "description": "Erfolgreiche native GitHub-Versionsabfrage; kein Update gestartet",
+      "date": "2026-11-16",
+      "visible_images_checked": 2,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/artikel-angaben.png",
       "module_version": "0.48.16",
-      "sha256": "dcbbeed6bcf821ecd08d52216df943c0fcb6dcd404b659e65ef742d5db022571",
+      "sha256": "735f15da9efd3b72507c07d0d76ba4949b2993638f725ee5039f987f7f5ca8f4",
       "width": 1600,
       "height": 1100,
-      "description": "Titel, Kategorie, Teaser, Schlagwörter und SEO"
+      "description": "Titel, Kategorie, Teaser, Schlagwörter und SEO",
+      "date": "2026-11-16",
+      "visible_images_checked": 2,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/artikel.png",
       "module_version": "0.48.16",
-      "sha256": "2d68f226190c453467784d801e29e617c0fe4dfdc993a675743fa4add0d63819",
+      "sha256": "d459d7663d33d0e38ab48c67078f8851e09f5463a36ab65afd7ab5c868325c7d",
       "width": 1440,
       "height": 1600,
-      "description": "Öffentlicher Ratgeber im Shoplayout"
+      "description": "Öffentlicher Ratgeber im Shoplayout",
+      "date": "2026-11-16",
+      "visible_images_checked": 8,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/artikelverwaltung.png",
       "module_version": "0.48.16",
-      "sha256": "cc8b57a9a20430dcbc2cfc0430607a836a968406249feb848535a8180b9b92b9",
+      "sha256": "75f5cb167f2e1ddde97bdaacad61f2ed7437b8c832f24f23973bb66b63844800",
       "width": 1600,
       "height": 1320,
-      "description": "Artikel, Kategorien, veröffentlichte Inhalte und privater Entwurf"
+      "description": "Artikel, Kategorien, veröffentlichte Inhalte und privater Entwurf",
+      "date": "2026-11-16",
+      "visible_images_checked": 2,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/blog-desktop.png",
       "module_version": "0.48.16",
-      "sha256": "6bd29c11989a5b78c93032f83f83c610f4c94ef1708d01effe0597ffb57c98ad",
+      "sha256": "e3c4db2d31710e6ea39e7a1fdb5e076fa9b0f45c71452e643c34e5d287fc5074",
       "width": 1440,
       "height": 1000,
-      "description": "Öffentliche Übersicht mit Shopkopf, Seitenleiste, Kategorien und Seitennavigation"
+      "description": "Öffentliche Übersicht mit Shopkopf, Seitenleiste, Kategorien und Seitennavigation",
+      "date": "2026-11-16",
+      "visible_images_checked": 10,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/blog-mobil.png",
       "module_version": "0.48.16",
-      "sha256": "7520929ad4498fad8a0e85318bb5e3a7916e48410d77cdd1c677a562910b53c8",
+      "sha256": "1c5dd4d66bedc717fea3c607e11b8bb39694be2aaae0db3bc0a8f850a3aa9c56",
       "width": 390,
       "height": 980,
-      "description": "Mobile öffentliche Blogübersicht mit Shopnavigation"
+      "description": "Mobile öffentliche Blogübersicht mit Shopnavigation",
+      "date": "2026-11-16",
+      "visible_images_checked": 3,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/darstellung.png",
       "module_version": "0.48.16",
-      "sha256": "69e7ebd870b8948baa8eb8bbff8aae07a7bf4a37d64b49a424e4457e2e7b2872",
+      "sha256": "2f57f3dff941b144cc4e70f6008cd7829f69b3abbcd913b06b4e51d97feed92f",
       "width": 1337,
       "height": 1300,
-      "description": "Ungespeicherte Grid-Vorschau mit Gerätewahl und Layoutoptionen"
+      "description": "Ungespeicherte Grid-Vorschau mit Gerätewahl und Layoutoptionen",
+      "date": "2026-11-16",
+      "visible_images_checked": 7,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/editor.png",
       "module_version": "0.48.16",
-      "sha256": "58cc99c16ed9378ccb09ddfd67a8985912f1647d5389544828b4b1e862f21083",
+      "sha256": "2c3812970521b7722d979800c65555b4642c67fe35763b0a61be4ff5c10517f8",
       "width": 1337,
       "height": 709,
-      "description": "Nativer Gambio-Editor, Quellcode, Entwurf speichern und Vorschau"
+      "description": "Nativer Gambio-Editor, Quellcode, Entwurf speichern und Vorschau",
+      "date": "2026-11-16",
+      "visible_images_checked": 1,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/einstieg.png",
       "module_version": "0.48.16",
-      "sha256": "2ddd80d5a1f78f9f83a8ec6db2cf465e2e58173dc3f7db31cbfb9708ef786246",
+      "sha256": "034d1eaf34303333fd7cad71d9316d9de30a23caed7a53358d437277c0f2ff63",
       "width": 1600,
       "height": 1100,
-      "description": "Geführter Einstieg und Beispielblog"
+      "description": "Geführter Einstieg und Beispielblog",
+      "date": "2026-11-16",
+      "visible_images_checked": 2,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/element-css.png",
       "module_version": "0.48.16",
-      "sha256": "7d608b6b7c22edc0e872eb74c26fe918781826bc780dcb4e4c05b830821bd904",
+      "sha256": "c71cbf01f1aaa33c177c264d20993ce627028822221ccf77cc0d56fe305fb5b1",
       "width": 1337,
       "height": 1300,
-      "description": "Element-CSS in der aktuellen grafischen Vorschau"
+      "description": "Element-CSS in der aktuellen grafischen Vorschau",
+      "date": "2026-11-16",
+      "visible_images_checked": 7,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/freigabe-termine.png",
       "module_version": "0.48.16",
-      "sha256": "7e59d65b763c08f1d01c7ae8c88a22eda9a6dc45e8fc23a18d0080a8f88e29f9",
+      "sha256": "4c25ef5e5954c0e397864601b1a0c115b46a9cc4ce01246da7fe17cf9241d92e",
       "width": 1336,
       "height": 1050,
-      "description": "Private Vorschau, ausdrückliche Freigabe und Veröffentlichungstermin"
+      "description": "Private Vorschau, ausdrückliche Freigabe und Veröffentlichungstermin",
+      "date": "2026-11-16",
+      "visible_images_checked": 1,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/hilfetexte.png",
       "module_version": "0.48.16",
-      "sha256": "b83b1d5c66c6de7cb71af2f5d4ef73bee2b30d37b2fef9e887796955efb82649",
+      "sha256": "95727c32a45cd4a357da3e3a5f4d5307411a69a837847880ab112e5b04287a99",
       "width": 1600,
       "height": 1100,
-      "description": "Aktuelle gemeinsame Gestaltung der Hinweise"
+      "description": "Aktuelle gemeinsame Gestaltung der Hinweise",
+      "date": "2026-11-16",
+      "visible_images_checked": 8,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/kategorien.png",
       "module_version": "0.48.16",
-      "sha256": "515dcc1b6f8c242350a52bce7474867c5f24ebb66f42c14b6d8007d52bc77e28",
+      "sha256": "05f1cc38f104cea747254a361ecbee7c0eb9be8f7df3763b19b5e867c2a6f3dc",
       "width": 1600,
       "height": 1100,
-      "description": "Kategorien unabhängig von Artikeln verwalten"
+      "description": "Kategorien unabhängig von Artikeln verwalten",
+      "date": "2026-11-16",
+      "visible_images_checked": 2,
+      "broken_visible_images": 0
     },
     {
       "file": "docs/images/modul-center.png",
       "module_version": "0.48.16",
-      "sha256": "014aa44097409acc6d3ea6b716bfd0f11ed6c25e6e85cff11fbd3ae4ebc81187",
+      "sha256": "bd23d3667b74c247561af3d48ca10584c2307028fcb69ce2567b3b6799340b28",
       "width": 1600,
       "height": 1400,
-      "description": "Aktuelle Modulnamen und installierte Versionen"
+      "description": "Aktuelle Modulnamen und installierte Versionen",
+      "date": "2026-11-16",
+      "visible_images_checked": 5,
+      "broken_visible_images": 0
     }
   ],
-  "scope": "Capture phase read-only after preparing disposable example data; update error reflects blocked network in test environment"
+  "scope": "No user shop accessed. Example data prepared before capture; no content/settings saved during capture. Real GitHub version checks; no updates or provider requests. Replaced screenshots checked for broken visible images and visible error alerts."
 }
