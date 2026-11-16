@@ -2,7 +2,7 @@
 
 Vierzehn Funktionsansichten zeigen den Weg vom Einstieg über das Schreiben und Gestalten bis zum öffentlichen Blog. Klicke auf ein Bild, um die Bedienelemente in Originalgröße zu lesen.
 
-**Aufnahmen vom 11.11.2026, Blog 0.48.16 / KI 0.12.7:** Alle Ansichten wurden in einer frischen, temporären Gambio-26.11.0-Installation mit Malibu neu aufgenommen. Die Artikelverwaltung ist auf die optionalen Beispielartikel gefiltert; öffentliche Ansichten zeigen Beispiel- und Testinhalte. Die Testumgebung wurde vorher mit den optionalen Beispielartikeln vorbereitet; während der Aufnahmen wurden keine Artikel oder Einstellungen gespeichert und keine KI-Anfragen ausgelöst. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
+**Aufnahmen vom 16.11.2026, Blog 0.48.16 / KI 0.12.7:** Alle Ansichten wurden in einer frischen, temporären Gambio-26.11.0-Installation mit Malibu neu aufgenommen. Die Artikelverwaltung ist auf die optionalen Beispielartikel gefiltert; öffentliche Ansichten zeigen Beispiel- und Testinhalte. Die Testumgebung wurde vorher mit den optionalen Beispielartikeln vorbereitet; während der Aufnahmen wurden keine Artikel oder Einstellungen gespeichert und keine KI-Anfragen ausgelöst. Die Detailbilder zeigen gezielte Ausschnitte. Das Erscheinungsbild hängt vom Theme und den Einstellungen ab. [Teststand](KOMPATIBILITAET.md).
 
 [Zur Projektübersicht](../README.md) · [Zur Installation](INSTALLATION.md)
 
@@ -15,13 +15,13 @@ Vierzehn Funktionsansichten zeigen den Weg vom Einstieg über das Schreiben und 
 | [5. Kategorien verwalten](#ansicht-5) | Kategorieformular mit Namen, URL-Kürzel und SEO-Feldern |
 | [6. Freigabe, Termine und Versionen](#ansicht-6) | Freigabe eines privaten Entwurfs, Terminplanung, Aufgabenhinweis und gespeicherte Version |
 | [7. Darstellung mit Vorschau](#ansicht-7) | Grafischer Editor mit Grid-Vorschau und Layoutoptionen für Desktop |
-| [8. Öffentlicher Blog auf Desktop](#ansicht-8) | Öffentliches Bloggrid im vollständigen Malibu-Shoplayout |
+| [8. Öffentlicher Blog auf Desktop](#ansicht-8) | Öffentliche Blogübersicht im vollständigen Malibu-Shoplayout |
 | [9. Öffentliche Artikelseite](#ansicht-9) | Öffentlicher Ratgeber mit Titelbild, gegliedertem Text und Shopumgebung |
-| [10. Öffentlicher Blog auf Mobilgeräten](#ansicht-10) | Mobile Blogansicht mit Kategorieauswahl und Artikelslider |
+| [10. Öffentlicher Blog auf Mobilgeräten](#ansicht-10) | Mobile Blogansicht mit Kategorieauswahl und Seitennavigation |
 | [11. Eigenes CSS](#ansicht-11) | Vorschau, visuelle Regler und Code pro Elementtyp |
 | [12. Hilfetexte](#ansicht-12) | Hervorgehobene Hinweise in der Verwaltung |
 | [13. Modul-Center](#ansicht-13) | Einheitlicher Produktname und tatsächlicher Modulstand |
-| [14. Update / Aktualisieren](#ansicht-14) | Versionsstatus, Prüfzeit und abgeschlossener Updateablauf |
+| [14. Update / Aktualisieren](#ansicht-14) | Erfolgreicher Versionsabruf mit Prüfzeit |
 
 <a id="ansicht-1"></a>
 
@@ -75,7 +75,7 @@ Der Ausschnitt zeigt die Freigabe eines gespeicherten Entwurfs, die Terminplanun
 
 ## 7. Darstellung mit Vorschau
 
-Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **Grid-Vorschau** mit drei Spalten sowie die Gesamtbreite und maximale Breite des Blogs. Die neuen Bereiche **Suche** und **Artikel** sind direkt auswählbar. Die Vorschau wurde für die Aufnahme geöffnet; gespeicherte Shop-Einstellungen wurden dabei nicht verändert.
+Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout, Karte, Bild oder Text. Hier zeigt der Ausschnitt eine **Grid-Vorschau** mit zwei Spalten sowie die Gesamtbreite und maximale Breite des Blogs. Die neuen Bereiche **Suche** und **Artikel** sind direkt auswählbar. Die Vorschau wurde für die Aufnahme geöffnet; gespeicherte Shop-Einstellungen wurden dabei nicht verändert.
 
 [![Grafischer Editor mit Grid-Vorschau und Layoutoptionen für Desktop](images/darstellung.png)](images/darstellung.png)
 
@@ -83,9 +83,9 @@ Im grafischen Editor wählst du Geräteansicht und Bereich, zum Beispiel Layout,
 
 ## 8. Öffentlicher Blog auf Desktop
 
-Die gespeicherte Desktopansicht verwendet ein Grid mit drei Spalten. Shopkopf und Seitenleiste zeigen die Einbindung in Malibu; innerhalb des Blogs führen Kategorien und Seitennavigation durch die Artikel. Die Aufnahme erfolgt als Gast.
+Die gespeicherte Desktopansicht zeigt Artikel als Liste. Shopkopf und Seitenleiste zeigen die Einbindung in Malibu; innerhalb des Blogs führen Kategorien und Seitennavigation durch die Artikel. Die Aufnahme erfolgt als Gast.
 
-[![Öffentliches Bloggrid im vollständigen Malibu-Shoplayout](images/blog-desktop.png)](images/blog-desktop.png)
+[![Öffentliche Blogübersicht im vollständigen Malibu-Shoplayout](images/blog-desktop.png)](images/blog-desktop.png)
 
 <a id="ansicht-9"></a>
 
@@ -99,9 +99,9 @@ Der Ratgeber zeigt Titel, Kategorie, Datum, Kurzbeschreibung und Titelbild sowie
 
 ## 10. Öffentlicher Blog auf Mobilgeräten
 
-Bei 390 Pixeln Breite verwendet dieser Beispielshop einen Slider mit Pfeilen, Punkten und Artikelzähler. Die Kategorien sind über eine kompakte Auswahl erreichbar. Desktop und Mobil können unterschiedliche Darstellungen verwenden.
+Bei 390 Pixeln Breite zeigt dieser Beispielshop die Artikel untereinander mit Seitennavigation. Die Kategorien sind über eine kompakte Auswahl erreichbar. Desktop und Mobil können unterschiedliche Darstellungen verwenden.
 
-<a href="images/blog-mobil.png"><img src="images/blog-mobil.png" alt="Mobile Blogansicht mit Kategorieauswahl und Artikelslider" width="390"></a>
+<a href="images/blog-mobil.png"><img src="images/blog-mobil.png" alt="Mobile Blogansicht mit Kategorieauswahl und Seitennavigation" width="390"></a>
 
 [Zur Projektübersicht](../README.md) · [Installation](INSTALLATION.md)
 
@@ -135,8 +135,8 @@ Hinweisfelder mit grünem Rand heben die Erläuterungen zur Darstellung hervor. 
 
 Die Aufnahme mit Blog **0.48.16** zeigt die neue Update-Seite nach frischer Installation. Automatisch gefundene Updates werden hier direkt mit Details und Startknopf angeboten. Für die Aufnahme blieb die automatische Prüfung ausgeschaltet; es wurde kein Update gestartet.
 
-[![Aktueller Versionsstatus und abgeschlossener Updateablauf](images/aktualisieren.png)](images/aktualisieren.png)
+[![Erfolgreich abgefragter Versionsstatus mit Prüfzeit](images/aktualisieren.png)](images/aktualisieren.png)
 
 Alle 14 Aufnahmen zeigen den veröffentlichten Modulstand 0.48.16. Aufnahmedatum, Versionen und Bildprüfsummen stehen in [screenshots.json](screenshots.json).
 
-Die Update-Aufnahme zeigt den Fehlerhinweis für GitHub, weil die temporäre Prüfumgebung den Abruf nicht zuließ. Dieser Hinweis ist kein fehlgeschlagenes Modulupdate; eine Installation wurde nicht gestartet.
+Die Update-Aufnahme zeigt eine tatsächlich erfolgreiche GitHub-Versionsabfrage einschließlich Testversionen. Es wurde kein Update installiert. Alle sichtbaren Bilder wurden vor der Aufnahme auf erfolgreiches Laden geprüft; die Aufnahmen wurden anschließend einzeln angesehen.

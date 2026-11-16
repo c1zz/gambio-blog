@@ -84,7 +84,7 @@ Spätere Updates starten direkt unter **Update / Aktualisieren**. Die vollständ
 
 Die grafische Darstellung und **Alle Einstellungen** bearbeiten dieselben Werte. Unter **Eigenes CSS** am ausgewählten Elementtyp bearbeiten visuelle Regler, Farbauswahl und CSS-Code dieselben Regeln. Geräteansicht, Hover und Tastaturfokus lassen sich getrennt gestalten; erst **Darstellung speichern** übernimmt die Änderungen. Du kannst etwa auf Desktop ein Grid und auf Mobil einen Slider verwenden, Bildplatzierung und Textabstände einstellen oder Farben und Schriftgrößen je Gerät anpassen.
 
-**Vorschau und Einstellungen nebeneinander:** Hier ist im grafischen Editor eine **ungespeicherte Grid-Vorschau** geöffnet. Gerätewahl, Spaltenzahl und Artikelzahl sind direkt neben der Vorschau sichtbar. Die öffentliche Desktopaufnahme weiter oben zeigt die gespeicherte Gridansicht.
+**Vorschau und Einstellungen nebeneinander:** Hier ist im grafischen Editor eine **ungespeicherte Grid-Vorschau** geöffnet. Gerätewahl, Spaltenzahl und Artikelzahl sind direkt neben der Vorschau sichtbar. Die öffentliche Desktopaufnahme weiter oben zeigt die gespeicherte Listenansicht.
 
 [![Grafischer Darstellungseditor mit Grid-Vorschau, Gerätewahl und Layoutoptionen](docs/images/darstellung.png)](docs/images/darstellung.png)
 
@@ -92,7 +92,7 @@ Die grafische Darstellung und **Alle Einstellungen** bearbeiten dieselben Werte.
 
 **Blogadressen bleiben steuerbar:** Beim Pfadwechsel entscheidest du, ob die bisherige Adresse weiterleiten soll. Gespeicherte Weiterleitungen kannst du unter **Blogadresse** ändern oder löschen. Hilfetexte sind im gemeinsamen c1zz-systems-Stil hervorgehoben. Entfernen, Löschen und Zurücksetzen eigener Werte sind rot markiert.
 
-Alle 14 Funktionsansichten wurden am **11.11.2026 mit Blog 0.48.16 und KI 0.12.7** im lokalen GX26-Testshop mit Malibu neu aufgenommen. Sie zeigen Beispiel- und Testinhalte sowie die aktuelle Navigation, Speicherleisten und Updateverwaltung. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch den **mobile Blogübersicht**. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
+Alle 14 Funktionsansichten wurden am **16.11.2026 mit Blog 0.48.16 und KI 0.12.7** im lokalen GX26-Testshop mit Malibu neu aufgenommen. Sie zeigen Beispiel- und Testinhalte sowie die aktuelle Navigation, Speicherleisten und Updateverwaltung. Der [Bilderrundgang](docs/BILDERRUNDGANG.md) zeigt auch die **mobile Blogübersicht**. Das Aussehen hängt von deinem Theme und deinen Einstellungen ab.
 
 ## Was ist tatsächlich geprüft?
 
